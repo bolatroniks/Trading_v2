@@ -1,0 +1,15 @@
+2019-03-01 11:17:38,574 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/Dataset.py", line 636, in computeFeatures
+    while idx_from < len(self.df.index):
+AttributeError: 'NoneType' object has no attribute 'index'
+2019-03-01 11:17:38,578 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/Dataset.py", line 636, in computeFeatures
+    while idx_from < len(self.df.index):
+AttributeError: 'NoneType' object has no attribute 'index'
+2019-03-01 11:17:38,762 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/Dataset.py", line 636, in computeFeatures
+    while idx_from < len(self.df.index):
+AttributeError: 'NoneType' object has no attribute 'index'

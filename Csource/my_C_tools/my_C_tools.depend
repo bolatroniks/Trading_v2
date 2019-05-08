@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1523972047 source:/home/joanna/Desktop/Projects/Trading/Csource/my_C_tools/my_C_toolsmodule.c
+	<Python.h>
+	<python2.7/modsupport.h>
+	<math.h>
+	</usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy/arrayobject.h>
+
+1523972402 source:/home/joanna/Desktop/Projects/Trading/Csource/my_C_tools/hello.c
+	<Python.h>
+

@@ -1,0 +1,11 @@
+PYTHON_VERSION = 2.7
+PYTHON_INCLUDE = /usr/include/python$(PYTHON_VERSION)
+# location of the Boost Python include files and library
+BOOST_INC = /usr/include
+BOOST_LIB = /usr/lib
+
+Debug:
+# compile mesh classes
+	g++ -std=c++11 -I /usr/include/python2.7 -fpic -c -o cpp_utils.o cpp_utils.cpp -DDEBUG
+	g++ -o cpp_utils.so -shared cpp_utils.o -lboost_python -lpython2.7 -DDEBUG
+

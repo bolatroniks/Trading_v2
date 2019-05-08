@@ -1,0 +1,2318 @@
+2018-12-23 21:50:35,726 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL2CROW'
+2018-12-23 21:50:35,731 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3BLACKCROW'
+2018-12-23 21:50:35,738 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3INSID'
+2018-12-23 21:50:35,743 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3LINESTRIK'
+2018-12-23 21:50:35,749 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3OUTSID'
+2018-12-23 21:50:35,754 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3STARSINSOUT'
+2018-12-23 21:50:35,760 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3WHITESOLDIER'
+2018-12-23 21:50:35,764 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLABANDONEDBAB'
+2018-12-23 21:50:35,770 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLADVANCEBLOC'
+2018-12-23 21:50:35,775 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLBELTHOL'
+2018-12-23 21:50:35,780 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLBREAKAWA'
+2018-12-23 21:50:35,785 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLCLOSINGMARUBOZ'
+2018-12-23 21:50:35,790 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLCONCEALBABYSWAL'
+2018-12-23 21:50:35,794 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLCOUNTERATTAC'
+2018-12-23 21:50:35,798 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDARKCLOUDCOVE'
+2018-12-23 21:50:35,802 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDOJ'
+2018-12-23 21:50:35,807 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDOJISTA'
+2018-12-23 21:50:35,811 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDRAGONFLYDOJ'
+2018-12-23 21:50:35,815 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLENGULFIN'
+2018-12-23 21:50:35,819 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLEVENINGDOJISTA'
+2018-12-23 21:50:35,824 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLEVENINGSTA'
+2018-12-23 21:50:35,828 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLGAPSIDESIDEWHIT'
+2018-12-23 21:50:35,832 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLGRAVESTONEDOJ'
+2018-12-23 21:50:35,837 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHAMME'
+2018-12-23 21:50:35,843 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHANGINGMA'
+2018-12-23 21:50:35,850 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHARAM'
+2018-12-23 21:50:35,856 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHARAMICROS'
+2018-12-23 21:50:35,860 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHIGHWAV'
+2018-12-23 21:50:35,866 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHIKKAK'
+2018-12-23 21:50:35,872 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHIKKAKEMO'
+2018-12-23 21:50:35,878 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHOMINGPIGEO'
+2018-12-23 21:50:35,883 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLIDENTICAL3CROW'
+2018-12-23 21:50:35,888 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLINNEC'
+2018-12-23 21:50:35,892 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLINVERTEDHAMME'
+2018-12-23 21:50:35,899 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLKICKIN'
+2018-12-23 21:50:35,903 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLKICKINGBYLENGT'
+2018-12-23 21:50:35,908 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLLADDERBOTTO'
+2018-12-23 21:50:35,914 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLLONGLEGGEDDOJ'
+2018-12-23 21:50:35,920 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLLONGLIN'
+2018-12-23 21:50:35,925 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMARUBOZ'
+2018-12-23 21:50:35,931 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMATCHINGLO'
+2018-12-23 21:50:35,936 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMATHOL'
+2018-12-23 21:50:35,940 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMORNINGDOJISTA'
+2018-12-23 21:50:35,947 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMORNINGSTA'
+2018-12-23 21:50:35,952 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLONNEC'
+2018-12-23 21:50:35,957 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLPIERCIN'
+2018-12-23 21:50:35,962 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLRICKSHAWMA'
+2018-12-23 21:50:35,967 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLRISEFALL3METHOD'
+2018-12-23 21:50:35,973 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSEPARATINGLINE'
+2018-12-23 21:50:35,978 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSHOOTINGSTA'
+2018-12-23 21:50:35,983 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSHORTLIN'
+2018-12-23 21:50:35,988 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSPINNINGTO'
+2018-12-23 21:50:35,993 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSTALLEDPATTER'
+2018-12-23 21:50:36,000 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSTICKSANDWIC'
+2018-12-23 21:50:36,006 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTAKUR'
+2018-12-23 21:50:36,012 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTASUKIGA'
+2018-12-23 21:50:36,017 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTHRUSTIN'
+2018-12-23 21:50:36,023 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTRISTA'
+2018-12-23 21:50:36,031 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLUNIQUE3RIVE'
+2018-12-23 21:50:36,036 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLUPSIDEGAP2CROW'
+2018-12-23 21:50:36,041 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLXSIDEGAP3METHOD'
+2018-12-23 21:51:10,395 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL2CROW'
+2018-12-23 21:51:10,400 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3BLACKCROW'
+2018-12-23 21:51:10,405 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3INSID'
+2018-12-23 21:51:10,409 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3LINESTRIK'
+2018-12-23 21:51:10,414 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3OUTSID'
+2018-12-23 21:51:10,419 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3STARSINSOUT'
+2018-12-23 21:51:10,424 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDL3WHITESOLDIER'
+2018-12-23 21:51:10,431 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLABANDONEDBAB'
+2018-12-23 21:51:10,436 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLADVANCEBLOC'
+2018-12-23 21:51:10,443 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLBELTHOL'
+2018-12-23 21:51:10,449 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLBREAKAWA'
+2018-12-23 21:51:10,454 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLCLOSINGMARUBOZ'
+2018-12-23 21:51:10,459 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLCONCEALBABYSWAL'
+2018-12-23 21:51:10,464 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLCOUNTERATTAC'
+2018-12-23 21:51:10,469 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDARKCLOUDCOVE'
+2018-12-23 21:51:10,473 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDOJ'
+2018-12-23 21:51:10,478 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDOJISTA'
+2018-12-23 21:51:10,483 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLDRAGONFLYDOJ'
+2018-12-23 21:51:10,488 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLENGULFIN'
+2018-12-23 21:51:10,493 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLEVENINGDOJISTA'
+2018-12-23 21:51:10,500 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLEVENINGSTA'
+2018-12-23 21:51:10,504 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLGAPSIDESIDEWHIT'
+2018-12-23 21:51:10,509 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLGRAVESTONEDOJ'
+2018-12-23 21:51:10,515 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHAMME'
+2018-12-23 21:51:10,520 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHANGINGMA'
+2018-12-23 21:51:10,526 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHARAM'
+2018-12-23 21:51:10,533 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHARAMICROS'
+2018-12-23 21:51:10,539 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHIGHWAV'
+2018-12-23 21:51:10,544 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHIKKAK'
+2018-12-23 21:51:10,549 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHIKKAKEMO'
+2018-12-23 21:51:10,555 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLHOMINGPIGEO'
+2018-12-23 21:51:10,560 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLIDENTICAL3CROW'
+2018-12-23 21:51:10,567 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLINNEC'
+2018-12-23 21:51:10,574 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLINVERTEDHAMME'
+2018-12-23 21:51:10,581 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLKICKIN'
+2018-12-23 21:51:10,586 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLKICKINGBYLENGT'
+2018-12-23 21:51:10,594 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLLADDERBOTTO'
+2018-12-23 21:51:10,599 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLLONGLEGGEDDOJ'
+2018-12-23 21:51:10,603 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLLONGLIN'
+2018-12-23 21:51:10,609 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMARUBOZ'
+2018-12-23 21:51:10,613 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMATCHINGLO'
+2018-12-23 21:51:10,618 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMATHOL'
+2018-12-23 21:51:10,622 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMORNINGDOJISTA'
+2018-12-23 21:51:10,629 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLMORNINGSTA'
+2018-12-23 21:51:10,633 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLONNEC'
+2018-12-23 21:51:10,638 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLPIERCIN'
+2018-12-23 21:51:10,642 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLRICKSHAWMA'
+2018-12-23 21:51:10,648 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLRISEFALL3METHOD'
+2018-12-23 21:51:10,653 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSEPARATINGLINE'
+2018-12-23 21:51:10,657 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSHOOTINGSTA'
+2018-12-23 21:51:10,661 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSHORTLIN'
+2018-12-23 21:51:10,666 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSPINNINGTO'
+2018-12-23 21:51:10,670 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSTALLEDPATTER'
+2018-12-23 21:51:10,675 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLSTICKSANDWIC'
+2018-12-23 21:51:10,680 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTAKUR'
+2018-12-23 21:51:10,684 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTASUKIGA'
+2018-12-23 21:51:10,688 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTHRUSTIN'
+2018-12-23 21:51:10,693 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLTRISTA'
+2018-12-23 21:51:10,697 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLUNIQUE3RIVE'
+2018-12-23 21:51:10,701 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLUPSIDEGAP2CROW'
+2018-12-23 21:51:10,706 - default - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "Trading/Dataset/DatasetHolder.py", line 258, in appendTimeframesIntoOneDataset
+    ds_l.f_df[cdl] = np.convolve(ds_l.f_df[cdl], fn)[0:len(ds_l.f_df)]
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 1997, in __getitem__
+    return self._getitem_column(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    return self._get_item_cache(key)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/generic.py", line 1350, in _get_item_cache
+    values = self._data.get(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/core/internals.py", line 3290, in get
+    loc = self.items.get_loc(item)
+  File "/usr/local/lib/python2.7/dist-packages/pandas/indexes/base.py", line 1947, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4154)
+  File "pandas/index.pyx", line 159, in pandas.index.IndexEngine.get_loc (pandas/index.c:4018)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12368)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12322)
+KeyError: 'CDLXSIDEGAP3METHOD'

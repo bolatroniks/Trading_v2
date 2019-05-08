@@ -1,0 +1,1 @@
+/usr/bin/g++  -fPIC -I /usr/include/python2.7 -fPIC  -shared -Wl,-soname,libalgo_cpp_utils.so -o libalgo_cpp_utils.so CMakeFiles/algo_cpp_utils.dir/cpp_utils.cpp.o  -L/usr/local/lib -lboost_python -lpython2.7 -Wl,-rpath,/usr/local/lib 

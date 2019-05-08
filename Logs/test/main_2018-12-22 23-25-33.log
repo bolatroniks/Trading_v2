@@ -1,0 +1,10 @@
+2018-12-22 23:25:37,298 - test - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "<ipython-input-60-4d99f170ca02>", line 4, in <module>
+    if str(self.df.index[idx_from]) >= from_time:
+NameError: name 'from_time' is not defined
+2018-12-22 23:26:41,039 - test - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "<ipython-input-61-6627a0602521>", line 4, in <module>
+    if str(self.df.index[idx_from]) >= from_time:
+NameError: name 'from_time' is not defined

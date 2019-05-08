@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1524339721 source:/home/joanna/Desktop/Projects/Trading/cpp_utils/cpp_utils_v2/cpp_utils_v2.cpp
+	<boost/python.hpp>
+	<boost/python/raw_function.hpp>
+	<boost/python/args.hpp>
+	<boost/python/class.hpp>
+	<boost/python/def.hpp>
+	<boost/python/module.hpp>
+	<boost/python/numeric.hpp>
+	<boost/python/overloads.hpp>
+	<boost/python/suite/indexing/map_indexing_suite.hpp>
+	<boost/python/suite/indexing/vector_indexing_suite.hpp>
+	<boost/python/tuple.hpp>
+	<iostream>
+	<sstream>
+	<map>
+	<string>
+	<memory>
+	<vector>
+	<algorithm>
+	<time.h>
+
