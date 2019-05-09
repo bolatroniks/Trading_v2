@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Trading/Strategy/Utils/strategy_func.py" afterDir="false" />
+    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well.">
       <change afterPath="$PROJECT_DIR$/Trading_old/Strategy/Utils/strategy_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/const_and_paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/const_and_paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hidden Markov (Mixture) Model_Regime Subplots.png" beforeDir="false" afterPath="$PROJECT_DIR$/Hidden Markov (Mixture) Model_Regime Subplots.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Dataset/Dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Dataset/DatasetHolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Dataset/DatasetHolder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Dataset/RealTime/Realtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Dataset/RealTime/Realtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Dataset/dataset_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Dataset/dataset_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Execution/AlgoRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Execution/AlgoRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Execution/Broker/Broker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/FeatureExtractors/Bespoke/PCA/PCA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/FeatureExtractors/Bespoke/PCA/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/FeatureExtractors/Technical/ernst_chen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/FeatureExtractors/Technical/johansen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/FeatureExtractors/Technical/johansen_example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Miscellaneous/my_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Miscellaneous/my_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Strategy/Rules/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Strategy/Rules/Rule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Strategy/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Strategy/Strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Strategy/Strategy_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Strategy/Strategy_PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Strategy/Utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Strategy/Utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Training/GUI/design.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Training/GUI/design.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Training/GUI/design.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Training/GUI/design.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Training/Useless/HMM/hmm_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Training/Useless/HMM/hmm_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/Training/VectorizedStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/Training/VectorizedStrategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading_old" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/Dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/DatasetHolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/DatasetHolder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/RealTime/Realtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/RealTime/Realtime.py" afterDir="false" />
@@ -49,187 +23,6 @@
       <change beforePath="$PROJECT_DIR$/Trading_old/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Training/VectorizedStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/VectorizedStrategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_AU200_AUD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_AUD_JPY_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_AUD_NZD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_AUD_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_BCO_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_CAD_JPY_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_CN50_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_CORN_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_DE10YB_EUR_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_DE30_EUR_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_AUD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_CAD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_GBP_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_HUF_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_JPY_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_NOK_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_PLN_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_SEK_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_TRY_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_EUR_ZAR_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_FR40_EUR_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_GBP_AUD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_GBP_CAD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_GBP_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_JP225_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_NATGAS_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_NL25_EUR_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_SG30_SGD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_SOYBN_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_SPX500_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_SUGAR_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_UK100_GBP_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_UK10YB_GBP_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USB02Y_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USB05Y_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USB10Y_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USB30Y_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_CAD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_CNH_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_HUF_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_INR_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_JPY_D.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_JPY_D.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_MXN_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_NOK_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_PLN_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM10_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM11_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM12_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM13_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM14_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM15_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM16_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM17_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM18_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM19_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM1_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM20_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM21_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM22_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM23_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM24_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM25_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM26_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM27_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM28_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM29_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM2_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM30_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM31_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM32_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM33_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM34_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM35_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM36_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM37_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM38_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM39_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM3_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM40_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM41_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM42_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM43_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM44_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM45_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM46_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM47_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM48_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM49_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM4_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM50_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM51_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM52_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM53_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM54_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM55_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM56_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM57_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM58_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM59_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM5_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM60_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM61_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM62_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM63_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM64_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM65_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM66_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM67_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM68_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM69_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM6_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM70_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM71_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM72_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM73_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM74_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM75_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM76_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM77_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM78_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM79_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM7_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM80_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM81_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM82_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM83_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM84_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM85_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM86_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM87_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM88_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM89_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM8_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM90_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM91_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM92_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM93_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM94_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM95_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM96_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM97_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM98_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM99_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_RANDOM9_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_SEK_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_SGD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_TRY_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_TWD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_ZAR_D.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_USD_ZAR_D.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_WHEAT_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/Featured/Oanda_WTICO_USD_D.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AU200_AUD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AU200_AUD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AUD_JPY_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AUD_JPY_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AUD_NZD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AUD_NZD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AUD_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/AUD_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/BCO_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/BCO_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/CAD_JPY_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/CAD_JPY_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/CN50_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/CN50_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/CORN_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/CORN_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/DE10YB_EUR_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/DE10YB_EUR_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/DE30_EUR_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/DE30_EUR_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_AUD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_AUD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_CAD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_CAD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_GBP_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_GBP_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_HUF_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_HUF_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_JPY_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_JPY_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_NOK_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_NOK_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_PLN_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_PLN_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_SEK_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_SEK_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_TRY_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_TRY_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_ZAR_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/EUR_ZAR_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/FR40_EUR_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/FR40_EUR_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/GBP_AUD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/GBP_AUD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/GBP_CAD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/GBP_CAD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/GBP_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/GBP_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/JP225_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/JP225_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/NATGAS_USD_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/NATGAS_USD_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/NL25_EUR_M15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/Oanda/Fx/PCA_New/NL25_EUR_M15.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Other/random_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Other/random_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,6 +42,7 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.29" value="1" />
@@ -256,19 +50,20 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="manip_v1" value="1" />
-          <entry key="py" value="62" />
+          <entry key="py" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="62" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -289,20 +84,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Model/CrossSection/johansen.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Model/TimeSeries/ernst_chen.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Technical/indicators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="188" column="31" lean-forward="true" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
+            <state relative-caret-position="2805">
+              <caret line="188" column="31" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -316,13 +101,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Model/TimeSeries/hmm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Trading/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -427,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -453,53 +247,15 @@
               <item name="FeatureExtractors" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="FeatureExtractors" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="TimeSeries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="FeatureExtractors" type="462c0819:PsiDirectoryNode" />
-              <item name="Technical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Genetic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Miscellaneous" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Strategy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Training" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ChangesTree.GroupingKeys" value="repository" />
+    <property name="ChangesTree.GroupingKeys" value="repository&#10;directory" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Trading/FeatureExtractors/Model/CrossSection" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -548,7 +304,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22378717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -574,6 +329,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
     <MESSAGE value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
@@ -590,10 +346,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Trading/Config/LSTM_512_512_Dropout_Config.xml" />
-    <entry file="file://$PROJECT_DIR$/Trading/Demo/VectorizedStrategy.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/computeFeatures.py" />
     <entry file="file://$PROJECT_DIR$/Trading/AlgoRunner.py" />
     <entry file="file://$PROJECT_DIR$/Trading/computeFeatures -not-normalized_new_features.py" />
@@ -724,19 +476,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Trading/Genetic/GenePCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#25#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Model/CrossSection/johansen.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Model/TimeSeries/ernst_chen.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Technical/indicators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="188" column="31" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trading/Strategy/Utils/strategy_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Technical/cdl_feature_names.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -772,26 +532,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Technical/indicators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="188" column="31" lean-forward="true" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Trading/Strategy/Utils/strategy_func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/Model/TimeSeries/hmm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trading/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
