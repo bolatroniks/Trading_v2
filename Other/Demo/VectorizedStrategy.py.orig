@@ -1,0 +1,324 @@
+# -*- coding: utf-8 -*-
+
+from Trading.Training.DatasetHolder import *
+from Config.const_and_paths import *
+
+#This is the core of the strategy, 
+#the bit that generates signals based on the features up to time t
+
+def compute_predictions (ds):
+    df = ds.f_df #just a short name
+    #adding a new feature
+    #computes the difference between the number of upward trendlines and downward lines which have not yet been broken
+    #positive means more upward lines, possibly uptrend
+    #negative means the opposite
+    df['trendlines_diff_10_D'] = df['no_standing_upward_lines_10_D'] - df['no_standing_downward_lines_10_D']
+    #features below look at the difference between current value of the above feature and its max/min
+    df['trend_diff_change_up_D'] = (df.trendlines_diff_10_D - df.trendlines_diff_10_D.rolling(window=2000).min())
+    df['trend_diff_change_down_D'] = -(df.trendlines_diff_10_D - df.trendlines_diff_10_D.rolling(window=2000).max())
+    
+    #min/max rolling RSI over a window of 10 periods of the fast timeframe
+    #useful to check if RSI off the lows
+    df['min_RSI'] = df.RSI.rolling(window=10).min ()
+    df['max_RSI'] = df.RSI.rolling(window=10).max ()
+
+    #computing predictions
+    preds = np.zeros(len(ds.f_df))
+    
+    #buys if:
+    #RSI < 40 (could be lower threshold) => fading weakness
+    #RSI(slow timeframe) < 70 => not overbought
+    #RSI(slow timeframe) > 50 => strength on the lower frequency timeframe
+    #trendline_diff_D > X => trending up
+    #trend_diff_change_down_D < Y => means that recently, upward lines have not been broken nor new downward lines have been forged
+    preds[(df['RSI'] < 30) & (df['RSI_' + slow_timeframe] < 70) & (df['RSI_' + slow_timeframe ] > 50) & (df['trendlines_diff_10_D'] > 5) & (df['trend_diff_change_down_D'] <= 3)] = 1
+    preds[(df['RSI'] < 30) & (df['RSI'] < 70) & (df['RSI_' + slow_timeframe] < 70) & (df['RSI_' + slow_timeframe] > 50) & (df['trend_diff_change_up_D'] >= 5) & (df['trendlines_diff_10_D'] > -5)] = 1.0
+    
+    #sells if:
+    #opposite of above
+    preds[(df['RSI'] > 70) & (df['RSI_' + slow_timeframe] > 30) & (df['RSI_' + slow_timeframe] < 50) & (df['trendlines_diff_10_D'] < -5) & (df['trend_diff_change_up_D'] <= 3)] = -1    
+    preds[(df['RSI'] > 70) & (df['RSI'] > 30) & (df['RSI_' + slow_timeframe] > 30) & (df['RSI_' + slow_timeframe] < 50) & (df['trend_diff_change_down_D'] >= 5) & (df['trendlines_diff_10_D'] < 5)] = -1.0
+
+    return preds
+    
+def compute_predictions_v2 (ds):
+    df = ds.f_df #just a short name
+    #adding a new feature
+    #computes the difference between the number of upward trendlines and downward lines which have not yet been broken
+    #positive means more upward lines, possibly uptrend
+    #negative means the opposite
+    df['trendlines_diff_10_D'] = df['no_standing_upward_lines_10_D'] - df['no_standing_downward_lines_10_D']
+    #features below look at the difference between current value of the above feature and its max/min
+    df['trend_diff_change_up_D'] = (df.trendlines_diff_10_D - df.trendlines_diff_10_D.rolling(window=2000).min())
+    df['trend_diff_change_down_D'] = -(df.trendlines_diff_10_D - df.trendlines_diff_10_D.rolling(window=2000).max())
+
+    #min/max rolling RSI over a window of 10 periods of the fast timeframe
+    #useful to check if RSI off the lows
+    df['min_RSI'] = df.RSI.rolling(window=10).min ()
+    df['max_RSI'] = df.RSI.rolling(window=10).max ()
+
+    #computing predictions
+    preds = np.zeros(len(ds.f_df))
+
+    #buys if:
+    #RSI < 40 (could be lower threshold) => fading weakness
+    #RSI(slow timeframe) < 70 => not overbought
+    #RSI(slow timeframe) > 50 => strength on the lower frequency timeframe
+    #trendline_diff_D > X => trending up
+    #trend_diff_change_down_D < Y => means that recently, upward lines have not been broken nor new downward lines have been forged
+    preds[(df['RSI'] < 40) & (df['RSI_' + slow_timeframe] < 70) & (df['RSI_' + slow_timeframe ] > 30) & (df['trendlines_diff_10_D'] > 5) & (df['trend_diff_change_down_D'] <= 5)] = 1
+    preds[(df['RSI'] < 40) & (df['RSI'] < 70) & (df['RSI_' + slow_timeframe] < 70) & (df['RSI_' + slow_timeframe] > 30) & (df['trend_diff_change_up_D'] >= 5) & (df['trendlines_diff_10_D'] > -5)] = 1.0
+
+    #sells if:
+    #opposite of above
+    preds[(df['RSI'] > 60) & (df['RSI_' + slow_timeframe] > 30) & (df['RSI_' + slow_timeframe] < 70) & (df['trendlines_diff_10_D'] < -5) & (df['trend_diff_change_up_D'] <= 5)] = -1    
+    preds[(df['RSI'] > 60) & (df['RSI'] > 30) & (df['RSI_' + slow_timeframe] > 30) & (df['RSI_' + slow_timeframe] < 70) & (df['trend_diff_change_down_D'] >= 5) & (df['trendlines_diff_10_D'] < 5)] = -1.0
+
+    return preds
+
+    
+def plot_signals (ds,bSave=False, plot_filename=''):
+    fig = plt.figure ()
+    plt.title ('Signals')
+    axes = plt.gca()
+    ax = axes.twinx ()
+    axes.plot(ds.p_df.Predictions, color='red')
+    ax.plot(ds.f_df.Close)
+    plt.show ()
+    if bSave:
+        fig.savefig(plot_filename)
+
+def plot_pnl (ds, bSave=False, plot_filename=''):
+    fig = plt.figure ()
+    plt.title ('PnL')
+    #pnl = np.array([1 if label == pred else -1 for label, pred in zip (ds.l_df.Labels, ds.p_df.Predictions)])
+    #plt.plot (np.cumsum(pnl))
+    plt.plot(np.cumsum(ds.l_df.Labels * ds.p_df.Predictions))
+    plt.show ()
+    if bSave:
+        fig.savefig(plot_filename)    
+    
+def plot_histogram (ds, bSave=False, plot_filename=''):
+    fig = plt.figure ()
+    plt.title ('Hit ratio - Histogram')
+    plt.hist(ds.l_df.Labels[ds.p_df.Predictions != 0] * ds.p_df.Predictions[ds.p_df.Predictions != 0], bins=5)
+    plt.show ()
+    if bSave:
+        fig.savefig(plot_filename)
+
+plots_path = u'./Analysis/Results/Strategies/Vectorized/Trendlines_and_change_RSI_2_timeframes'
+ccy = 'AUD_USD'
+slow_timeframe = 'D'
+fast_timeframe_list = ['M15']
+daily_delay = 5     #to avoid look-ahead bias
+serial_gap_list = [0] #, 20, 80, 160]   #to remove serial predictions
+from_time = 2004
+to_time = 2014
+
+if True:
+    for fast_timeframe in fast_timeframe_list:
+<<<<<<< HEAD
+        for ccy in fx_list[1:]:
+=======
+<<<<<<< HEAD
+        for ccy in ['AUD_USD']:#full_instrument_list[-1:0:-1]:
+            try:
+                ds_f = Dataset (ccy_pair = ccy, 
+                                  timeframe = fast_timeframe,
+                                  from_time = from_time,
+                                  to_time = to_time)
+                ds_s = Dataset (ccy_pair = ccy, 
+                                  timeframe = slow_timeframe,
+                                  from_time = from_time,
+                                  to_time = to_time)
+                try:
+                    ds_f.loadCandles ()
+                except:
+                    print ('Candles not available for ' + ccy)
+                    break
+                
+                try:
+                    ds_f.loadFeatures ()
+                except:
+                    print ('Features not available, need to compute them')
+                    
+                    ds_f.computeFeatures (bComputeIndicators=True,
+                                                     bComputeNormalizedRatios=True,
+                                                     bComputeCandles=False,
+                                                     bComputeHighLowFeatures=False)
+                    ds_f.saveFeatures ()
+                try:
+                    preds = compute_predictions (ds_f)
+                    
+                except KeyError, AttributeError:
+                    #need to merge with slower timeframe
+                    try:
+                        try:
+                            ds_f.computeFeatures (bComputeIndicators=True,
+                                                     bComputeNormalizedRatios=True,
+                                                     bComputeCandles=False,
+                                                     bComputeHighLowFeatures=False)
+                            ds_f.saveFeatures ()
+                            ds_s.loadFeatures ()
+                        except:
+                            print ('Features not available for slower timeframe, need to compute them')
+                            ds_s.computeFeatures (bComputeIndicators=True,
+                                                     bComputeNormalizedRatios=True,
+                                                     bComputeCandles=True,
+                                                     bComputeHighLowFeatures=True)
+                            ds_s.saveFeatures ()
+                            
+                        dsh = DatasetHolder(from_time=from_time, 
+                                        to_time=to_time, instrument=ccy)
+                        print ('Loading dataframes again into DSH')
+                        dsh.loadMultiFrame (timeframe_list=[slow_timeframe, fast_timeframe])
+                        dsh.appendTimeframesIntoOneDataset (lower_timeframe = fast_timeframe)
+                        
+                        ds_f = dsh.ds_dict[ccy + '_' + fast_timeframe]
+                        ds_f.saveFeatures ()
+                    except:
+                        print ('Something went wrong merging dataframes')
+                        break
+                    
+                try:
+                    ds_f.loadLabels ()
+                    
+                    
+                except:
+                    print ('Labels not available, need to compute them')
+                    ds_f.computeLabels ()
+                    ds.saveLabels ()
+                try:
+                    assert (len (ds_f.f_df) == len (ds_f.l_df))
+                except:
+                    print ('Labels not matching length of features vector, need to recompute them')
+                    ds_f.computeLabels ()
+                    ds.saveLabels ()
+                    
+                try:
+                    preds = compute_predictions (ds_f)
+                except:
+                    print ('Still cannot compute predictions')
+                    break
+                try:    
+                    for serial_gap in serial_gap_list:
+                        ds_f.set_predictions(preds) #uses deepcopy, creates ds.p_df
+                        if serial_gap != 0:
+                            ds_f.removeSerialPredictions(serial_gap)
+                    
+                        plot_signals (ds_f, True, plots_path + '/Signals_' + 
+                                    ccy + '_' + slow_timeframe + '_' + 
+                                    fast_timeframe + 
+                                    ('' if serial_gap == 0 else '_' + 
+                                     str(serial_gap)) + '.png')
+                        
+                        plot_pnl (ds_f, True, plots_path + '/PnL_' + 
+                                    ccy + '_' + slow_timeframe + '_' + 
+                                    fast_timeframe + 
+                                    ('' if serial_gap == 0 else '_' + 
+                                     str(serial_gap)) + '.png')
+                        
+                        plot_histogram (ds_f, True, plots_path + '/Histogram_' + 
+                                    ccy + '_' + slow_timeframe + '_' + 
+                                    fast_timeframe + 
+                                    ('' if serial_gap == 0 else '_' + 
+                                     str(serial_gap)) + '.png')
+                except:
+                    print 'An error ocurred: ' + ccy + fast_timeframe
+            except:
+                pass
+        
+if False:
+    for fast_timeframe in fast_timeframe_list:
+        for ccy in ['AUD_USD']:#fx_list[15::-1]:
+=======
+        for ccy in ['EUR_USD']: #fx_list:
+>>>>>>> 2462d481d8dee09beb737e3b9753a884b8a5ec0b
+>>>>>>> 758d48ccdb373816273124a62fbc7eb0b58b894c
+            try:
+                ds = Dataset (ccy_pair = ccy, 
+                              timeframe = fast_timeframe,
+                              from_time = from_time,
+                              to_time = to_time)
+                ds.loadFeatures ()
+                preds = compute_predictions (ds)
+            except:
+                try:                
+                    dsh = DatasetHolder(from_time=from_time, 
+                                    to_time=to_time, instrument=ccy)
+                    try:
+                        dsh.loadMultiFrame(timeframe_list=[slow_timeframe, fast_timeframe])
+                        ds = dsh.ds_dict[ccy + '_' + fast_timeframe]
+                        ds.computeFeatures (bComputeIndicators=True,
+                                                 bComputeNormalizedRatios=True,
+                                                 bComputeCandles=False,
+                                                 bComputeHighLowFeatures=False)
+                    except:                        
+                        ds = Dataset (ccy_pair = ccy, 
+                              timeframe = fast_timeframe,
+                              from_time = from_time,
+                              to_time = to_time)
+                        ds.computeFeatures (bComputeIndicators=True,
+                                                 bComputeNormalizedRatios=True,
+                                                 bComputeCandles=False,
+                                                 bComputeHighLowFeatures=False)
+                        ds.saveFeatures ()
+                        try:
+                            ds.loadLabels ()
+                            assert (len(ds.f_df) == len (ds.l_df))
+                        except:
+                            ds.computeLabels ()
+                            sa.saveLabels ()
+                        dsh.loadMultiFrame(timeframe_list=[slow_timeframe, fast_timeframe])
+                        
+                    
+                    
+                    
+                    #appends the slow timeframe columns to the fast timeframe one
+                    dsh.appendTimeframesIntoOneDataset(instrument = ccy, 
+                                                       lower_timeframe = fast_timeframe,
+                                                       daily_delay=daily_delay)
+                    ds = dsh.ds_dict[ccy + '_' + fast_timeframe]
+                    ds.saveFeatures ()
+                    preds = compute_predictions (ds)
+                except:
+                    pass
+                    
+            try:
+                ds.loadLabels ()
+                labels = ds.get_active_labels ()
+                
+<<<<<<< HEAD
+                assert (len(ds.f_df) == len (ds.l_df))
+=======
+                assert (len(ds.l_df) == len (ds.f_df))
+>>>>>>> 2462d481d8dee09beb737e3b9753a884b8a5ec0b
+            except:
+                ds.computeLabels ()
+                ds.saveLabels ()
+                
+            try:    
+                for serial_gap in serial_gap_list:
+                    ds.set_predictions(preds) #uses deepcopy, creates ds.p_df
+                    if serial_gap != 0:
+                        ds.removeSerialPredictions(serial_gap)
+                
+                    plot_signals (ds, True, plots_path + '/Signals_' + 
+                                ccy + '_' + slow_timeframe + '_' + 
+                                fast_timeframe + 
+                                ('' if serial_gap == 0 else '_' + 
+                                 str(serial_gap)) + '.png')
+                    
+                    plot_pnl (ds, True, plots_path + '/PnL_' + 
+                                ccy + '_' + slow_timeframe + '_' + 
+                                fast_timeframe + 
+                                ('' if serial_gap == 0 else '_' + 
+                                 str(serial_gap)) + '.png')
+                    
+                    plot_histogram (ds, True, plots_path + '/Histogram_' + 
+                                ccy + '_' + slow_timeframe + '_' + 
+                                fast_timeframe + 
+                                ('' if serial_gap == 0 else '_' + 
+                                 str(serial_gap)) + '.png')
+            except:
+                print 'An error ocurred: ' + ccy + fast_timeframe

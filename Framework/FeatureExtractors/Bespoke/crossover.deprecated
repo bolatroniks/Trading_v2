@@ -1,0 +1,51 @@
+# -*- coding: utf-8 -*-
+
+import numpy as np
+from Trading.Training.Dataset import *
+
+def crossover (ds, args=None):
+    if args is None:
+        args = {}
+
+    if 'lookback_window' in args:
+        lookback_window = args['lookback_window']
+    else:
+        lookback_window = 60
+        
+    if 'crossover_threshold' in args:
+        crossover_threshold = args['crossover_threshold']
+    else:
+        crossover_threshold = 0.0002
+    
+    if 'fast' in args:
+        fast = args['fast']
+    else:
+        fast = 'ma_50_close'
+    
+    if 'slow' in args:
+        slow = args['slow']
+    else:
+        slow = 'ma_200_close'
+    
+    if 'metric' in args:
+        metric = args['metric']
+    else:
+        metric = 'crossover_window'
+        
+    new_feat = np.zeros ((np.shape(ds.X)[0], np.shape(ds.X)[1], 1))
+    idx_fast = ds.getFeatIdx(fast)
+    idx_slow = ds.getFeatIdx(slow)
+    
+    for i in range (ds.X.shape[0]):
+        if metric == 'crossover_window':
+            new_feat [i, -1, 0] = 0
+            if ds.X[i-1, -1, idx_fast] / ds.X[i-1, -1, idx_slow] < (1-crossover_threshold) and\
+                    ds.X[i, -1, idx_fast] / ds.X[i, -1, idx_slow] > (1+crossover_threshold):
+                    new_feat [i, -1, 0] = 1
+            elif ds.X[i-1, -1, idx_fast] / ds.X[i-1, -1, idx_slow] > (1+crossover_threshold)  and\
+                    ds.X[i, -1, idx_fast] / ds.X[i, -1, idx_slow] < (1-crossover_threshold) :
+                    new_feat [i, -1, 0] = -1
+    new_feat [:, 0, 0] =  np.minimum(np.maximum(np.convolve(new_feat[:,0,0], np.ones(lookback_window))[:ds.X.shape[0]], -1.0), 1.0)    
+    
+    return new_feat
+

@@ -1,0 +1,1 @@
+{'trendlines_delta_min': 5, 'resid_min': 1.0, 'rho_min': 0.3, 'criterium': 'first', 'RSI_fast_min': 25.0, 'RSI_slow_min': 50.0, 'rho_max': 0.8500000000000001, 'trendlines_delta_max': 99, 'resid_max': 20.0, 'net_trendlines_max': -3, 'RSI_slow_max': 70.0, 'func': 'compute_predictions_pca', 'RSI_fast_max': 35.0, 'net_trendlines_min': -99, 'serial_gap': 0}

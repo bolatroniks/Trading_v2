@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+from Trading.Training.Dataset import *
+
+def feat_metrics (ds, args=None):
+    if args is None:
+        args = {}
+
+    if 'lookback_window' in args:
+        lookback_window = args['lookback_window']
+    else:
+        lookback_window = 60
+    
+    if 'feat' in args:
+        feat = args['feat']
+    else:
+        feat = 'RSI'
+    
+    if 'metric' in args:
+        metric = args['metric']
+    else:
+        metric = 'peak'
+        
+    new_feat = np.zeros ((np.shape(ds.X)[0], np.shape(ds.X)[1], 1))
+    idx = ds.getFeatIdx(feat)
+    
+    for i in range (lookback_window, ds.X.shape[0]):
+        if metric == 'peak':
+            new_feat [i, -1, 0] = np.max(ds.X[i-lookback_window:i,-1,idx])
+        elif metric == 'bottom':
+            new_feat [i, -1, 0] = np.min(ds.X[i-lookback_window:i,-1,idx])
+        elif metric == 'close_minus_peak':
+            new_feat [i, -1, 0] = ds.X[i,-1,idx] - np.max(ds.X[i-lookback_window:i,-1,idx])
+        elif metric == 'close_minus_bottom':
+            new_feat [i, -1, 0] = ds.X[i,-1,idx] - np.min(ds.X[i-lookback_window:i,-1,idx])
+        elif metric == 'close_minus_average':
+            new_feat [i, -1, 0] = ds.X[i,-1,idx] - np.mean(ds.X[i-lookback_window:i,-1,idx])
+        elif metric == 'close_minus_average_in_sigmas':
+            new_feat [i, -1, 0] = (ds.X[i,-1,idx] - np.mean(ds.X[i-lookback_window:i,-1,idx])) / np.std(ds.X[i-lookback_window:i,-1,idx]) 
+    
+    return new_feat
+    
+    
+    
