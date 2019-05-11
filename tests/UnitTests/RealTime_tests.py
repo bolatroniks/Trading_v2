@@ -1,17 +1,9 @@
 # -*- coding: utf-8 -*-
 
 
-
-from nose.tools import *
 from unittest import TestCase
 import unittest
-import numpy as np
 from Trading.Dataset.RealTime import *
-
-from Trading.Dataset.Oanda import *
-from Config.const_and_paths import *
-
-import sys
 
 test_mode = 'Prod'
 
