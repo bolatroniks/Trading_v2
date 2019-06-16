@@ -1,78 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="Fixing refactoring errors introduced by pycharm">
-      <change afterPath="$PROJECT_DIR$/Trading_old/Cache/CacheManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Cache/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Chromossome.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Functions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Functions/feature_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Functions/predictors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Functions/threshold_inverters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Gene.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/GenePCA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/test_gene.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Reporting/Logging/LogManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Reporting/Logging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Reporting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Stats_Tutorial/linear_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Strategy/Utils/strategy_func.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/GUI/Strats/default_tight.stp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/Hidden Markov (Mixture) Model_Regime Subplots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_macro_claims.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_macro_claims_vs_spx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_macro_claims_vs_spx_refactored.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_recession_prob.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_ust10y_px_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/ReinforcementLearning/rl_snake.py" afterDir="false" />
+    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="Fixing refactoring errors introduced by pycharm, all">
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Cache/CacheManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Cache/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Chromossome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/feature_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/predictors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/threshold_inverters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Gene.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/GenePCA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/test_gene.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Reporting/Logging/LogManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Reporting/Logging/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Reporting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Stats_Tutorial/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Stats_Tutorial/linear_regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Utils/strategy_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/Strats/default_tight.stp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/Hidden Markov (Mixture) Model_Regime Subplots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_macro_claims.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_macro_claims_vs_spx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_macro_claims_vs_spx_refactored.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_recession_prob.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_ust10y_px_only.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/ReinforcementLearning/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/ReinforcementLearning/rl_snake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/Dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/DatasetHolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/DatasetHolder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/Oanda/candlesv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/Oanda/candlesv2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/RealTime/Realtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/RealTime/Realtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/dataset_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/dataset_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Execution/AlgoRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Execution/AlgoRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Execution/Broker/Broker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Miscellaneous/my_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Miscellaneous/my_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/BulkStrategySimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/BulkStrategySimulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/Rules/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/Rules/Rule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/Strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/Strategy_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/Strategy_PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/Utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/Utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/GUI/design.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/GUI/design.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/GUI/design.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/GUI/design.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/EUR-model2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/EUR-model2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/G10-scratch-level0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/G10-scratch-level0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/G10_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/G10_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/HY_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/HY_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Jpy-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Jpy-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers_variable_length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers_variable_length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Autoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Autoencoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Bit_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Bit_Larger_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model_Variable_Length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model_Variable_Length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length_log_rets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length_log_rets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Close.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Close.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/TradingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/TradingModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Training/VectorizedStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/VectorizedStrategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading_old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/Dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/DatasetHolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/DatasetHolder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/Oanda/candlesv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/Oanda/candlesv2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/RealTime/Realtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/RealTime/Realtime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/dataset_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/dataset_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Execution/AlgoRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Execution/AlgoRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Execution/Broker/Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Miscellaneous/my_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Miscellaneous/my_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/BulkStrategySimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/BulkStrategySimulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Rules/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Rules/Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Strategy_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Strategy_PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/Utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/design.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/design.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/design.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/design.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/EUR-model2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/EUR-model2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10-scratch-level0.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10-scratch-level0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/HY_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/HY_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Jpy-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Jpy-Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers_variable_length.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers_variable_length.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Autoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Autoencoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Bit_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Bit_Larger_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model_Variable_Length.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model_Variable_Length.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length_log_rets.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length_log_rets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Close.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Close.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/HMM/hmm_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/TradingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/TradingModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/VectorizedStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/VectorizedStrategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bcompare-4.2.4.22795_amd64.deb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,13 +126,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="45" />
+          <entry key="gitignore" value="24" />
           <entry key="py" value="123" />
-          <entry key="txt" value="174" />
+          <entry key="txt" value="224" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="174" />
+          <entry key="PLAIN_TEXT" value="248" />
           <entry key="Python" value="168" />
         </counts>
       </usages-collector>
@@ -143,9 +150,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -157,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
-              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#25#64#0" expanded="true" />
               </folding>
@@ -267,6 +278,7 @@
         <option value="$PROJECT_DIR$/Trading/Genetic/Functions/feature_functions.py" />
         <option value="$PROJECT_DIR$/Framework/Trading/Dataset/Dataset.py" />
         <option value="$PROJECT_DIR$/Framework/Dataset/Dataset.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -298,17 +310,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Other" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ignored" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ignored" />
+      <recent name="$PROJECT_DIR$/C_and_CPP" />
       <recent name="$PROJECT_DIR$/Other" />
       <recent name="$PROJECT_DIR$/Framework" />
       <recent name="$PROJECT_DIR$/temp" />
-      <recent name="$PROJECT_DIR$/Trading" />
-      <recent name="$PROJECT_DIR$/Trading/FeatureExtractors/Model/CrossSection" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -362,8 +374,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560699085350</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixing refactoring errors introduced by pycharm, all">
+      <created>1560699491423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560699491423</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Moved all C and C++ files into one folder">
+      <created>1560701169374</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560701169374</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -378,7 +413,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -398,7 +433,9 @@
     <MESSAGE value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
     <MESSAGE value="Fixing refactoring errors introduced by pycharm" />
     <MESSAGE value="Fixing refactoring errors introduced by pycharm, 2nd part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing refactoring errors introduced by pycharm, 2nd part" />
+    <MESSAGE value="Fixing refactoring errors introduced by pycharm, all" />
+    <MESSAGE value="Moved all C and C++ files into one folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved all C and C++ files into one folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -533,7 +570,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Genetic/GenePCA.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#25#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/johansen.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -562,9 +605,6 @@
           <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Technical/cdl_feature_names.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -617,10 +657,17 @@
     <entry file="file://$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#25#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>

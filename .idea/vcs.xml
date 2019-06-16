@@ -3,8 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Framework/Trading" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Ignored/Trading_old" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Trading" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Trading_old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ZZZ_Ignored/Trading_old" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/temp/Trading" vcs="Git" />
   </component>
 </project>
