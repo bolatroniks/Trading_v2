@@ -4,7 +4,37 @@
     <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/const_and_paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/const_and_paths.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 00-09-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 00-44-45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 21-31-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 21-35-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 21-38-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 21-38-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2018-12-23 21-50-35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-18 23-03-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-19 18-19-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-19 18-26-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-23 15-06-39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-25 22-08-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-26 00-13-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-26 23-56-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-02-27 16-33-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-03-01 11-17-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-03-05 12-37-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-03-05 18-05-20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-03-05 18-35-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-03-05 18-35-24.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-02 00-21-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-02 00-21-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-28 12-24-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-28 12-31-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-28 12-59-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-28 13-08-36.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default/main_2019-04-28 13-37-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default_strategy_loose/main_2018-12-11 07-34-59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default_strategy_loose/main_2018-12-11 22-43-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/default_strategy_loose/main_2018-12-11 22-46-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/test/main_2018-12-22 23-25-33.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,14 +82,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="45" />
-          <entry key="gitignore" value="31" />
+          <entry key="gitignore" value="37" />
           <entry key="py" value="123" />
-          <entry key="txt" value="300" />
+          <entry key="txt" value="323" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="331" />
+          <entry key="PLAIN_TEXT" value="360" />
           <entry key="Python" value="168" />
         </counts>
       </usages-collector>
@@ -70,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -242,11 +272,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ZZZ_Ignored" />
       <recent name="$PROJECT_DIR$/Ignored" />
       <recent name="$PROJECT_DIR$/C_and_CPP" />
       <recent name="$PROJECT_DIR$/Other" />
       <recent name="$PROJECT_DIR$/Framework" />
-      <recent name="$PROJECT_DIR$/temp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -321,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560701562535</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactored Config">
+      <created>1560702650596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560702650596</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -369,7 +406,8 @@
     <MESSAGE value="Fixing refactoring errors introduced by pycharm, all" />
     <MESSAGE value="Moved all C and C++ files into one folder" />
     <MESSAGE value="Moved ignored files into a proper folder.&#10;Deleted bulky zip files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved ignored files into a proper folder.&#10;Deleted bulky zip files" />
+    <MESSAGE value="refactored Config" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored Config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -600,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
