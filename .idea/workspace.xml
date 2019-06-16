@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well.">
-      <change afterPath="$PROJECT_DIR$/Framework/Cache/CacheManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Cache/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/.v20.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/candles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/candlesv2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/common-old/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/common/args.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/common/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/common/input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/common/view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/Oanda/view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/RealTime/Realtime.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/RealTime/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/dataset_func.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Framework/Dataset/dataset_parser.py" afterDir="false" />
+    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="Fixing refactoring errors introduced by pycharm">
       <change afterPath="$PROJECT_DIR$/Trading_old/Cache/CacheManager.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Trading_old/Cache/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Trading_old/Genetic/Chromossome.py" afterDir="false" />
@@ -48,65 +27,8 @@
       <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_recession_prob.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_ust10y_px_only.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/ReinforcementLearning/rl_snake.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/.spyproject/codestyle.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/.spyproject/encoding.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/.spyproject/vcs.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/.spyproject/workspace.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Cache/CacheManager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Cache/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/DatasetHolder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/.v20.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/candles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/candlesv2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/common-old/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/common/args.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/common/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/common/input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/common/view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/Oanda/view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/RealTime/Realtime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/RealTime/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/dataset_func.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Dataset/dataset_parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Execution/Broker/Broker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/CrossSection/PCA/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/CrossSection/PCA/PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Genetic/Chromossome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Genetic/Chromossome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Genetic/Functions/feature_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Genetic/Functions/feature_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Genetic/Functions/predictors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Genetic/Functions/predictors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Genetic/Gene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Genetic/Gene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Genetic/GenePCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Genetic/GenePCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Strategy/BulkStrategySimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Strategy/BulkStrategySimulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Strategy/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Strategy/Strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/EUR-model2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/EUR-model2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/G10-scratch-level0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/G10-scratch-level0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/G10_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/G10_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/HY_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/HY_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Jpy-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Jpy-Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers_variable_length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers_variable_length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Autoencoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Autoencoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Bit_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Bit_Larger_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model_Variable_Length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Larger_Model_Variable_Length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length_log_rets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Less_Variables_Much_Larger_Model_Variable_Length_log_rets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Close.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Close.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Trading/Training/Useless/TradingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Trading/Training/Useless/TradingModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Dataset/Dataset.py" afterDir="false" />
@@ -117,10 +39,6 @@
       <change beforePath="$PROJECT_DIR$/Trading_old/Execution/AlgoRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Execution/AlgoRunner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Execution/Broker/Broker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Genetic/Chromossome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Genetic/Chromossome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Genetic/Functions/feature_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Genetic/Functions/feature_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Genetic/Functions/predictors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Genetic/Functions/predictors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading_old/Genetic/GenePCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Genetic/GenePCA.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Miscellaneous/my_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Miscellaneous/my_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/BulkStrategySimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/BulkStrategySimulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py" afterDir="false" />
@@ -155,7 +73,6 @@
       <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/HMM/hmm_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Training/Useless/TradingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/Useless/TradingModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading_old/Training/VectorizedStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading_old/Training/VectorizedStrategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/RealTime_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/RealTime_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,34 +98,35 @@
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="manip_v1" value="1" />
-          <entry key="py" value="64" />
+          <entry key="py" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="64" />
+          <entry key="Python" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="45" />
           <entry key="py" value="123" />
-          <entry key="txt" value="113" />
+          <entry key="txt" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="113" />
+          <entry key="PLAIN_TEXT" value="174" />
           <entry key="Python" value="168" />
         </counts>
       </usages-collector>
@@ -217,16 +135,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/Strategy/Utils/strategy_func.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/TimeSeries/hmm.py">
+        <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Model/TimeSeries/hmm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
@@ -240,30 +149,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Framework/Dataset/Dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="540">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="e#25#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Technical/cdl_feature_names.py">
+        <entry file="file://$PROJECT_DIR$/tests/IntegrationTests/TestMultiTimeframeStrategy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Technical/cdl_feature_names.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/utils.py">
+        <entry file="file://$PROJECT_DIR$/Framework/Genetic/utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
@@ -275,7 +196,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Gene.py">
+        <entry file="file://$PROJECT_DIR$/Framework/Genetic/Gene.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
@@ -284,7 +205,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Functions/feature_functions.py">
+        <entry file="file://$PROJECT_DIR$/Framework/Genetic/Functions/feature_functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1620">
               <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
@@ -293,7 +214,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Functions/predictors.py">
+        <entry file="file://$PROJECT_DIR$/Framework/Genetic/Functions/predictors.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
@@ -324,7 +245,7 @@
       </list>
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Trading" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
@@ -361,6 +282,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -368,37 +290,25 @@
               <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trading" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Trading" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Framework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Other" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Other" />
       <recent name="$PROJECT_DIR$/Framework" />
       <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$/Trading" />
       <recent name="$PROJECT_DIR$/Trading/FeatureExtractors/Model/CrossSection" />
-      <recent name="$PROJECT_DIR$/Trading/FeatureExtractors/Model/TimeSeries" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -431,11 +341,33 @@
       <option name="project" value="LOCAL" />
       <updated>1543703614666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well.">
+      <created>1557571032495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557571032496</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixing refactoring errors introduced by pycharm">
+      <created>1560698930806</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560698930806</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixing refactoring errors introduced by pycharm, 2nd part">
+      <created>1560699085350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560699085350</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22378717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -464,7 +396,9 @@
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
     <MESSAGE value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'renato' of https://github.com/bolatroniks/algo into renato&#10;&#10;Adding Rules&#10;&#10;# Conflicts:&#10;#&#9;Trading/Demo/VectorizedStrategy.py&#10;&#10;Update since last speaking to Murilo.&#10;GUI to tune strategy should be here as well." />
+    <MESSAGE value="Fixing refactoring errors introduced by pycharm" />
+    <MESSAGE value="Fixing refactoring errors introduced by pycharm, 2nd part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing refactoring errors introduced by pycharm, 2nd part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,8 +412,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Trading/FeatureExtractors/computeFeatures.py" />
-    <entry file="file://$PROJECT_DIR$/Trading/AlgoRunner.py" />
     <entry file="file://$PROJECT_DIR$/Trading/computeFeatures -not-normalized_new_features.py" />
     <entry file="file://$PROJECT_DIR$/Trading/computeFeatures -not-normalized.py" />
     <entry file="file://$PROJECT_DIR$/Trading/Training/Deprecated/computeFeatures.py" />
@@ -490,14 +422,14 @@
     <entry file="file://$PROJECT_DIR$/Trading/computeFeaturesV2.py" />
     <entry file="file://$PROJECT_DIR$/Trading/computeLabels.py" />
     <entry file="file://$PROJECT_DIR$/Trading/computeLabelsV2.py" />
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Strategy/Rules/multiframe_pca.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Strategy/Rules/multiframe_pca.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Execution/Broker/Order.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Execution/Broker/Order.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
@@ -526,16 +458,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Features.py">
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Features.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Trading/Miscellaneous/Dataset/Dataset.py" />
     <entry file="file://$PROJECT_DIR$/Trading/Miscellaneous/Dataset/dataset_func.py" />
     <entry file="file://$PROJECT_DIR$/Trading/Miscellaneous/Dataset/old-dataset_func.py" />
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Theano/Strategy/strategy_func.py">
+    <entry file="file://$PROJECT_DIR$/Other/Training/Useless/Deprecated/Theano/Strategy/strategy_func.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Training/Useless/Deprecated/Theano/custom_theano.py">
+    <entry file="file://$PROJECT_DIR$/Other/Training/Useless/Deprecated/Theano/custom_theano.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Dataset/dataset_parser.py">
@@ -545,7 +477,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Execution/AlgoRunner.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Execution/AlgoRunner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
@@ -559,7 +491,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Strategy/Rules/Production/MTF_PCA/multiframe_pca.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Dataset/dataset_func.py">
@@ -569,101 +501,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Training/VectorizedStrategy.py">
+    <entry file="file://$PROJECT_DIR$/Other/Training/VectorizedStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Strategy/Utils/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Strategy/Utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Miscellaneous/my_utils.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Miscellaneous/my_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Model/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Chromossome.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Genetic/Chromossome.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/GenePCA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#25#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/CrossSection/johansen.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Genetic/GenePCA.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/TimeSeries/ernst_chen.py">
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/johansen.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Technical/indicators.py">
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Model/TimeSeries/ernst_chen.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Technical/indicators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2805">
           <caret line="188" column="31" selection-start-line="188" selection-start-column="31" selection-end-line="188" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Strategy/Utils/strategy_func.py">
+    <entry file="file://$PROJECT_DIR$/Framework/Trading/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Framework/Strategy/Utils/strategy_func.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Technical/cdl_feature_names.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#33#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Gene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Functions/feature_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/Genetic/Functions/predictors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/FeatureExtractors/Model/TimeSeries/hmm.py">
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Model/TimeSeries/hmm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
@@ -673,17 +566,61 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Trading/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Framework/FeatureExtractors/Technical/cdl_feature_names.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Genetic/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="75">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#33#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Genetic/Gene.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Genetic/Functions/feature_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Genetic/Functions/predictors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/IntegrationTests/TestMultiTimeframeStrategy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Dataset/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="540">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#25#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
