@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Training.VectorizedStrategy import *
+from Framework.Training.VectorizedStrategy import *
 
 #builds dataset of random timeseries, M15 candles and Daily features
 if False:

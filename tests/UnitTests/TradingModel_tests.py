@@ -9,7 +9,7 @@ from nose.tools import *
 from unittest import TestCase
 import unittest
 import numpy as np
-from Trading.Training.TradingModel import TradingModel
+from Framework.Training.TradingModel import TradingModel
 
 test_mode = 'Prod'
 

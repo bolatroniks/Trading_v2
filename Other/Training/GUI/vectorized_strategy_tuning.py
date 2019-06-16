@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from Other.Training.GUI import design
-from Trading.Training.VectorizedStrategy import *
+from Framework.Training.VectorizedStrategy import *
 from Framework.Miscellaneous.my_utils import plot_timeseries_vs_another
 
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas

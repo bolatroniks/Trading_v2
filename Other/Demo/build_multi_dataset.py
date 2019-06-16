@@ -7,7 +7,7 @@ This is a temporary script file.
 import scipy
 from scipy import stats
 
-from Trading.Dataset.DatasetHolder import *
+from Framework.Dataset.DatasetHolder import *
 
 timeframe = 'M15'
 

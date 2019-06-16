@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Dataset.DatasetHolder import *
+from Framework.Dataset.DatasetHolder import *
 
 dsh = DatasetHolder (from_time=2010, 
                      to_time=2011, 

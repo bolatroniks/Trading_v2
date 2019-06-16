@@ -1,4 +1,4 @@
-from Trading.Dataset.DatasetHolder import *
+from Framework.Dataset.DatasetHolder import *
 
 ccy = 'EUR_SEK'
 slow_timeframe = 'D'

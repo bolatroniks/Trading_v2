@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Dataset.Dataset import Dataset
+from Framework.Dataset.Dataset import Dataset
 
 from nose.tools import *
 from unittest import TestCase

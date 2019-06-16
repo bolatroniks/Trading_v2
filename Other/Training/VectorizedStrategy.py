@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-from Trading.Dataset.DatasetHolder import *
+from Framework.Dataset.DatasetHolder import *
 
-from Trading.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
+from Framework.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
 
 import pandas as pd
 import numpy as np
 
 from hashlib import sha1
 
-from Trading.Strategy.Utils.strategy_func import compute_hit_miss_array, plot_signals, plot_pnl, plot_histogram
+from Framework.Strategy.Utils.strategy_func import compute_hit_miss_array, plot_signals, plot_pnl, plot_histogram
 
 PCA_SUFFIX = '012_'
 

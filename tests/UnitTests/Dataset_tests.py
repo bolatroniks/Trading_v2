@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Dataset.Dataset import Dataset
-#from Trading.Training.TradingModel import TradingModel
+from Framework.Dataset.Dataset import Dataset
+#from Framework.Training.TradingModel import TradingModel
 
 from nose.tools import *
 from unittest import TestCase

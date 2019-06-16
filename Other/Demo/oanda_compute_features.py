@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Dataset.Dataset import *
+from Framework.Dataset.Dataset import *
 from Config.const_and_paths import *
 
 fast_timeframe = 'M15'

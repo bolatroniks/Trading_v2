@@ -11,8 +11,8 @@ from nose.tools import assert_equal
 from parameterized import parameterized, param
 import unittest
 
-from Trading.Dataset.DatasetHolder import *
-from Trading.Strategy.Rules import *
+from Framework.Dataset.DatasetHolder import *
+from Framework.Strategy.Rules import *
 
 
 fx_list = ['EUR_USD', 
