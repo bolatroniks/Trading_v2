@@ -4,10 +4,10 @@
 import numpy as np
 
 from Config.const_and_paths import LONG_SIGNAL, SHORT_SIGNAL
-from Trading.Dataset.Dataset import Dataset
-from Trading.Dataset.DatasetHolder import DatasetHolder
-from Trading.Dataset.dataset_func import get_from_time
-from Trading.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
+from Framework.Dataset.Dataset import Dataset
+from Framework.Dataset.DatasetHolder import DatasetHolder
+from Framework.Dataset.dataset_func import get_from_time
+from Framework.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
 from Framework.Miscellaneous.my_utils import parse_kwargs
 
 feature_functions = {}

@@ -10,8 +10,8 @@ from datetime import datetime
 
 from Config.const_and_paths import *
 from Framework.Miscellaneous.my_utils import *
-from Trading.Dataset.Dataset import set_from_to_times
-from Trading.Dataset.DatasetHolder import DatasetHolder
+from Framework.Dataset.Dataset import set_from_to_times
+from Framework.Dataset.DatasetHolder import DatasetHolder
 
 class PCA ():
     def __init__ (self, timeframe='M15', 
@@ -274,7 +274,7 @@ class PCA ():
                       '', '.csv')
     
 if False:
-    from Trading.Dataset.Dataset import *
+    from Framework.Dataset.Dataset import *
     ds = Dataset(ccy_pair='USD_ZAR', from_time='2013-01-01 00:00:00', to_time='2016-03-01 00:00:00', timeframe='M15')
     ds.loadCandles ()
     ds.computeFeatures ()
@@ -321,7 +321,7 @@ if False:
             pass
         
 if False:
-    from Trading.Dataset.Dataset import Dataset
+    from Framework.Dataset.Dataset import Dataset
     
     if False:
         ds = Dataset(timeframe='D')

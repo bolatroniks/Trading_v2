@@ -3,11 +3,11 @@
 #hahaha
 from copy import deepcopy
 
-from Trading.Dataset.Dataset import Dataset
+from Framework.Dataset.Dataset import Dataset
 
-from Trading.Genetic.Functions.threshold_inverters import *
-from Trading.Genetic.Functions.feature_functions import *
-from Trading.Genetic.Functions.predictors import *
+from Framework.Genetic.Functions.threshold_inverters import *
+from Framework.Genetic.Functions.feature_functions import *
+from Framework.Genetic.Functions.predictors import *
 
 #some objects cannot be directly written to a file
 #this function converts them to some basic info that

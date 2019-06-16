@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Genetic.Gene import *
-from Trading.Genetic.GenePCA import GenePCA
-from Trading.Genetic.Chromossome import Chromossome
+from Framework.Genetic.Gene import *
+from Framework.Genetic.GenePCA import GenePCA
+from Framework.Genetic.Chromossome import Chromossome
 
-from Trading.Dataset.Dataset import Dataset
-from Trading.Dataset.DatasetHolder import DatasetHolder
+from Framework.Dataset.Dataset import Dataset
+from Framework.Dataset.DatasetHolder import DatasetHolder
 
 from Config.const_and_paths import *
-from Trading.Strategy.Utils.strategy_func import *
+from Framework.Strategy.Utils.strategy_func import *
 
 import numpy as np
 import gc
@@ -271,7 +271,7 @@ if False:
     
     c3.load(filename = 'Momentum_01_hilo.crx')
     
-if False:
+if True:
     c2 = Chromossome (ds = Dataset(ccy_pair='AUD_NZD', 
                               #from_time='2015-10-01 00:00:00', 
                               from_time = 2010,

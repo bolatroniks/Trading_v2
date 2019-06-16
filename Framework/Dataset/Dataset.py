@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Reporting.Logging.LogManager import LogManager
+from Framework.Reporting.Logging.LogManager import LogManager
 
 try:
-    from Trading.Strategy.Rules import *
+    from Framework.Strategy.Rules import *
 except:
     LogManager.get_logger ().error("Exception occurred", exc_info=True)
 
@@ -16,9 +16,9 @@ if v20_path not in sys.path:
 sys.path.append ('~/.v20.conf')
 
 from Framework.Dataset.RealTime.Realtime import *
-from Trading.FeatureExtractors.Technical.indicators import get_TA_CdL_Func_List
-from Trading.Strategy.Rules.Rule import *
-from Trading.Reporting.Logging.LogManager import LogManager
+from Framework.FeatureExtractors.Technical.indicators import get_TA_CdL_Func_List
+from Framework.Strategy.Rules.Rule import *
+from Framework.Reporting.Logging.LogManager import LogManager
 
 import os
 

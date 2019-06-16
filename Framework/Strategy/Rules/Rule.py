@@ -18,12 +18,12 @@ import matplotlib.pylab as plt
 from matplotlib.pylab import rcParams
 from dateutil.relativedelta import relativedelta
 
-#from Trading.Training.Dataset import Dataset
-#from Trading.Training.TradingModel import TradingModel
+#from Framework.Training.Dataset import Dataset
+#from Framework.Training.TradingModel import TradingModel
 from Config.const_and_paths import NEUTRAL_SIGNAL, LONG_SIGNAL, SHORT_SIGNAL
 
 try:
-    from Trading.FeatureExtractors.Features import *
+    from Framework.FeatureExtractors.Features import *
 except:
     pass
 import operator

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from Trading.Training.Dataset import *
+from Framework.Training.Dataset import *
 
 def crossover (ds, args=None):
     if args is None:

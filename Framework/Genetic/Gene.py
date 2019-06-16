@@ -2,18 +2,18 @@
 
 from copy import deepcopy
 
-from Trading.Dataset.Dataset import Dataset
-from Trading.Dataset.DatasetHolder import DatasetHolder
+from Framework.Dataset.Dataset import Dataset
+from Framework.Dataset.DatasetHolder import DatasetHolder
 
-from Trading.Dataset.dataset_func import get_from_time
+from Framework.Dataset.dataset_func import get_from_time
 
-from Trading.Genetic.utils import prepare_dict_to_save
+from Framework.Genetic.utils import prepare_dict_to_save
 
-from Trading.Genetic.Functions.threshold_inverters import *
-from Trading.Genetic.Functions.feature_functions import *
-from Trading.Genetic.Functions.predictors import *
+from Framework.Genetic.Functions.threshold_inverters import *
+from Framework.Genetic.Functions.feature_functions import *
+from Framework.Genetic.Functions.predictors import *
 
-from Framework.Cache import CacheManager
+from Framework.Cache.CacheManager import CacheManager
 from hashlib import sha1
 
 import os

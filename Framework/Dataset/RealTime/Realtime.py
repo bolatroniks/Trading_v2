@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
 
-#from Trading.Training.TradingModel import *
-from Trading.FeatureExtractors.Bespoke.Trend.TrendlineFeaturesExtractor import *
-from Trading.FeatureExtractors.Technical.indicators import get_TA_CdL_Func_List
+#from Framework.Training.TradingModel import *
+from Framework.FeatureExtractors.Bespoke.Trend.TrendlineFeaturesExtractor import *
+from Framework.FeatureExtractors.Technical.indicators import get_TA_CdL_Func_List
 from Framework.Miscellaneous.my_utils import printProgressBar
 
-#from Trading.Oanda.candlesv2 import *
-#from Trading.RealTime.Realtime import *
-#from Trading.Training.TradingModel import TradingModel
-from Trading.Dataset.dataset_func import *
+#from Framework.Oanda.candlesv2 import *
+#from Framework.RealTime.Realtime import *
+#from Framework.Training.TradingModel import TradingModel
+from Framework.Dataset.dataset_func import *
 from Config.const_and_paths import *
 
 func_list = get_TA_CdL_Func_List ()

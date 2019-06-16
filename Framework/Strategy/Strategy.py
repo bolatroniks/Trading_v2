@@ -6,11 +6,11 @@ from Config.const_and_paths import NEUTRAL_SIGNAL, LONG_SIGNAL
 import time
 
 
-from Trading.Dataset.Dataset import Dataset
-from Trading.Dataset.DatasetHolder import *
-from Trading.Strategy.Rules import *
-from Trading.Execution.Broker import *
-from Trading.Execution.Broker.Order import *
+from Framework.Dataset.Dataset import Dataset
+from Framework.Dataset.DatasetHolder import *
+from Framework.Strategy.Rules import *
+from Framework.Execution.Broker import *
+from Framework.Execution.Broker.Order import *
 
 #This Strategy Class does a lot of things:
 #a) it can trade automatically on Oanda;

@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Strategy.Strategy import *
-from Trading.Strategy.Strategy_PCA import *
-from Trading.Execution.Broker.Broker import *
-from Trading.Strategy.Rules.Rule import *
-from Trading.Execution.Broker.Order import *
-from Trading.Strategy.Rules.Production.MTF_PCA.multiframe_pca import *
+from Framework.Strategy.Strategy import *
+from Framework.Strategy.Strategy_PCA import *
+from Framework.Execution.Broker.Broker import *
+from Framework.Strategy.Rules.Rule import *
+from Framework.Execution.Broker.Order import *
+from Framework.Strategy.Rules.Production.MTF_PCA.multiframe_pca import *
 
-from Trading.Reporting.Logging.LogManager import LogManager
+from Framework.Reporting.Logging.LogManager import LogManager
 
 import time
 import numpy as np
@@ -107,9 +107,9 @@ class AlgoRunner ():
         
 if __name__ == "__main__":
     from Config.const_and_paths import CONFIG_PROD_RULE_PATH, CONFIG_LOG_PATH, V20_CONF, full_instrument_list
-    from Trading.Strategy.Rules.Production.MTF_PCA.multiframe_pca import mtf_pca, mtf_pca_filter_slow, mtf_pca_filter_slow_and_fast
-    from Trading.Strategy.Strategy_PCA import Strategy_PCA
-    from Trading.Execution.Broker.Broker import Oanda
+    from Framework.Strategy.Rules.Production.MTF_PCA.multiframe_pca import mtf_pca, mtf_pca_filter_slow, mtf_pca_filter_slow_and_fast
+    from Framework.Strategy.Strategy_PCA import Strategy_PCA
+    from Framework.Execution.Broker.Broker import Oanda
     import os
     from matplotlib import pyplot as plt
     
@@ -119,7 +119,7 @@ if __name__ == "__main__":
     
     kwargs['serial_gap'] = 0
     
-    from Trading.Strategy.Rules.Rule import *
+    from Framework.Strategy.Rules.Rule import *
     rule=Rule(name='prod_mtf_pca', func = mtf_pca,
               filter_instrument_func = mtf_pca_filter_slow_and_fast,
               bUseHighLowFeatures = True,

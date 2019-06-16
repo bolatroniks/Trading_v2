@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from Trading.Dataset.Dataset import Dataset
-from Trading.Dataset.dataset_func import get_from_time
+from Framework.Dataset.Dataset import Dataset
+from Framework.Dataset.dataset_func import get_from_time
 
 PCA_SUFFIX = '01_'
 

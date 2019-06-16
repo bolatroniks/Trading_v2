@@ -1,5 +1,5 @@
 import numpy as np
-from Trading.Dataset.Dataset import *
+from Framework.Dataset.Dataset import *
 
 def new_high_over_lookback_window (ds, args={}):
     if 'lookback_window' in args:

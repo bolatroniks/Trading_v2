@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from Trading.Strategy.Strategy import *
-from Trading.Execution.Broker import *
-from Trading.Strategy.Rules import *
+from Framework.Strategy.Strategy import *
+from Framework.Execution.Broker import *
+from Framework.Strategy.Rules import *
 
 class Order ():
     def __init__ (self,   instrument=None,

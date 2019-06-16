@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-from Trading.FeatureExtractors.Model.CrossSection.PCA import PCA
-from Trading.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
-from Trading.Strategy.Strategy import Strategy
-from Trading.Dataset.DatasetHolder import DatasetHolder
-from Trading.Dataset.Dataset import Dataset
-from Trading.Dataset.dataset_func import get_from_time
+from Framework.FeatureExtractors.Model.CrossSection.PCA.PCA import PCA
+from Framework.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
+from Framework.Strategy.Strategy import Strategy
+from Framework.Dataset.DatasetHolder import DatasetHolder
+from Framework.Dataset.Dataset import Dataset
+from Framework.Dataset.dataset_func import get_from_time
 from Config.const_and_paths import fx_list, full_instrument_list, NEUTRAL_SIGNAL
-from Trading.Reporting.Logging.LogManager import LogManager
+from Framework.Reporting.Logging.LogManager import LogManager
 
 import numpy as np
 from copy import deepcopy

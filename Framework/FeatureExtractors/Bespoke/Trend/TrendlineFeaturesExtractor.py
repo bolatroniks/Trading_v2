@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Trading.FeatureExtractors.Bespoke.Trend.TrendlineSet import *
+from Framework.FeatureExtractors.Bespoke.Trend.TrendlineSet import *
 import copy
 
 class TrendlineFeaturesExtractor ():
@@ -193,7 +193,7 @@ class TrendlineFeaturesExtractor ():
         return score_hhhl, score_lhll
 
 if False:
-    from Trading.Dataset.Dataset import *
+    from Framework.Dataset.Dataset import *
     
     ds = Dataset(featpath=r'./datasets/Fx/Featured/NotNormalizedNoVolume/', lookback_window=2)
     ds.last = 2000
