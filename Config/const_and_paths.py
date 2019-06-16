@@ -2,25 +2,25 @@
 
 #-----------v20 and Oanda-----------------------#
 root_path = r'/home/joanna/Desktop/Projects/'
-V20_PATH = u'/home/joanna/Desktop/Projects/v20-python-master/src'
-OANDA_PATH = u'/home/joanna/Desktop/Projects/v20-python-master/src'
-OANDA_ORDER_PATH = u'/home/joanna/Desktop/Projects/v20-python-master/src/order'
-V20_CONF='/home/joanna/Desktop/Projects/Trading/Trading/Dataset/Oanda/.v20.conf'
+V20_PATH = root_path + u'v20-python-master/src'
+OANDA_PATH = root_path + u'v20-python-master/src'
+OANDA_ORDER_PATH = root_path + u'v20-python-master/src/order'
+V20_CONF= root_path + 'Trading/Framework/Dataset/Oanda/.v20.conf'
 OANDA_ACCOUNT_ID = '101-004-4638013-001'
 OANDA_MARKET_ORDER_SCRIPT = 'market.py'
-C_UTILS_PATH = r'/home/joanna/Desktop/Projects/Trading/Csource/C_arraytest'
-CPP_UTILS_PATH = './cpp_utils/cpp_utils_v2/bin/Debug'
-PCA_DEFAULT_PATH = r'/home/joanna/Desktop/Projects/Trading/datasets/Oanda/Fx/PCA_New'
+C_UTILS_PATH = root_path + u'Trading/C_and_CPP/Csource/C_arraytest'
+CPP_UTILS_PATH = root_path + u'Trading/C_and_CPP/cpp_utils/cpp_utils_v2/bin/Debug'
+PCA_DEFAULT_PATH = root_path + u'Trading/datasets/Oanda/Fx/PCA_New'
 FEATURES_DEFAULT_PATH = './datasets/Oanda/Fx/Featured'
 PARSED_MKT_DATA_DEFAULT_PATH = './datasets/Oanda/Fx/Parsed'
 LABELS_DEFAULT_PATH = './datasets/Oanda/Fx/Labeled'
 PREDS_DEFAUL_PATH = './datasets/Oanda/Fx/Predicted'
-CONFIG_PROD_RULE_PATH = r'/home/joanna/Desktop/Projects/Trading/Trading/Strategy/Rules/Production'
-CONFIG_LOG_PATH = r'/home/joanna/Desktop/Projects/Trading/Logs'
+CONFIG_PROD_RULE_PATH = root_path + u'Trading/Framework/Strategy/Rules/Production'
+CONFIG_LOG_PATH = root_path + u'Trading/Logs'
 
 #genetic algorithm
-CONFIG_TEST_CHROMOSSOME_PATH = r'/home/joanna/Desktop/Projects/Trading/Files/Genetic'
-CONFIG_TEST_GENES = r'/home/joanna/Desktop/Projects/Trading/Files/Genetic/Genes/Test'
+CONFIG_TEST_CHROMOSSOME_PATH = root_path + u'Trading/Files/Genetic'
+CONFIG_TEST_GENES = root_path + u'Trading/Files/Genetic/Genes/Test'
 #-----------------------------------------------#
 
 
@@ -70,7 +70,7 @@ full_instrument_list = fx_list + commodity_list + equity_list + rates_list
 #-----------GUIs-------------------------------------------------#
 
 #Vectorized Strategy tuner
-strats_path = u'/home/joanna/Desktop/Projects/Trading/Trading/Training/GUI/Strats'
+strats_path = root_path + u'Trading/Framework/Training/GUI/Strats'
 
 #signals
 NEUTRAL_SIGNAL = 0
