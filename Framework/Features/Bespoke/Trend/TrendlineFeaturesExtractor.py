@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Framework.FeatureExtractors.Bespoke.Trend.TrendlineSet import *
+from Framework.Features.Bespoke.Trend.TrendlineSet import *
 import copy
 
 class TrendlineFeaturesExtractor ():

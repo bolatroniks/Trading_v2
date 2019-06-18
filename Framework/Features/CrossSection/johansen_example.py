@@ -8,7 +8,7 @@ Created on Sun Feb  4 22:11:02 2018
 
 import matplotlib.pyplot as plt
 import pickle
-from Framework.FeatureExtractors.Model.CrossSection.johansen import Johansen
+from Framework.Features.CrossSection import Johansen
 import numpy as np
 
 # Fitting dates.
