@@ -189,7 +189,7 @@ def modelfit(alg, X, y, cv_X, cv_y, useTrainCV=False, cv_folds=5, early_stopping
     predprob = alg.predict_proba(cv_X)[:,1]
         
     #Print model report:
-    print "\nModel Report"
+    print "\nFeatures Report"
     print "Accuracy : %.4g" % metrics.accuracy_score(cv_y[predictions!=1], predictions[predictions!=1])
     #print "AUC Score (Train): %f" % metrics.roc_auc_score(cv_y, predprob)
                     

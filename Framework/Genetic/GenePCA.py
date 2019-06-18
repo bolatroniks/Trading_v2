@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from Framework.Genetic.Gene import Gene
-from Framework.FeatureExtractors.Model.CrossSection.PCA.PCA import PCA
+from Framework.Features.CrossSection.PCA.PCA import PCA
 from Framework.Cache.CacheManager import CacheManager
 from Config.const_and_paths import full_instrument_list
 

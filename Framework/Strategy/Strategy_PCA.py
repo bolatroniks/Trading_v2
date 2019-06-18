@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from Framework.FeatureExtractors.Model.CrossSection.PCA.PCA import PCA
-from Framework.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
+from Framework.Features.CrossSection.PCA.PCA import PCA
+from Framework.Features.TimeSeries import halflife
 from Framework.Strategy.Strategy import Strategy
 from Framework.Dataset.DatasetHolder import DatasetHolder
 from Framework.Dataset.Dataset import Dataset

@@ -16,7 +16,7 @@ if v20_path not in sys.path:
 sys.path.append ('~/.v20.conf')
 
 from Framework.Dataset.RealTime.Realtime import *
-from Framework.FeatureExtractors.Technical.indicators import get_TA_CdL_Func_List
+from Framework.Features.Technical.indicators import get_TA_CdL_Func_List
 from Framework.Strategy.Rules.Rule import *
 from Framework.Reporting.Logging.LogManager import LogManager
 

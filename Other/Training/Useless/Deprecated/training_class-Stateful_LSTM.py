@@ -357,7 +357,7 @@ my_train.labelpath = 'C:/Users/Joanna/Desktop/Renato/Data Science/Projects/DeepL
 try:
     #pass
     my_train.loadModel ()
-    print ("Model loaded successfully")
+    print ("Features loaded successfully")
     #model.load_weights (model_path+'/'+model_name)
 except:
     pass

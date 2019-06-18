@@ -227,7 +227,7 @@ for i in range (1000):
                             raise ValueError ('Something went wrong during training')
                 #my_train.modelname = 'G10-scratch_version2_level0'
                 my_train.model.save_weights(modelpath+'/'+my_train.modelname+".hdf5",overwrite=True)
-                f.write ('Model updated\n')
+                f.write ('Features updated\n')
                 pred_train = my_train.model.predict(my_train.dataset.X[-3000:,:,:])
                 pred_cv = my_train.model.predict(my_train.dataset.cv_X)
                 

@@ -23,7 +23,7 @@ from dateutil.relativedelta import relativedelta
 from Config.const_and_paths import NEUTRAL_SIGNAL, LONG_SIGNAL, SHORT_SIGNAL
 
 try:
-    from Framework.FeatureExtractors.Features import *
+    from Framework.Features.Features import *
 except:
     pass
 import operator

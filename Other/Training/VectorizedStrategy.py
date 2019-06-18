@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from Framework.Dataset.DatasetHolder import *
 
-from Framework.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
+from Framework.Features.TimeSeries import halflife
 
 import pandas as pd
 import numpy as np

@@ -7,7 +7,7 @@ from Config.const_and_paths import LONG_SIGNAL, SHORT_SIGNAL
 from Framework.Dataset.Dataset import Dataset
 from Framework.Dataset.DatasetHolder import DatasetHolder
 from Framework.Dataset.dataset_func import get_from_time
-from Framework.FeatureExtractors.Model.TimeSeries.ernst_chen import halflife
+from Framework.Features.TimeSeries import halflife
 from Framework.Miscellaneous.my_utils import parse_kwargs
 
 feature_functions = {}
