@@ -1,18 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from Framework.Genetic.Functions.threshold_inverters import *
-from Framework.Genetic.Functions.feature_functions import *
-from Framework.Genetic.Functions.predictors import *
-
 from Framework.Genetic.Gene import *
 from Framework.Genetic.GenePCA import GenePCA
 from Framework.Dataset.Dataset import Dataset, has_suffix
 from Framework.Genetic.utils import prepare_dict_to_save, adapt_dict_loaded
 
-from Framework.Miscellaneous.my_utils import parse_kwargs
+from Miscellaneous.my_utils import parse_kwargs
 
 from Config.const_and_paths import *
-from Framework.Cache.CacheManager import CacheManager
+from Miscellaneous.Cache.CacheManager import CacheManager
 from hashlib import sha1
 
 import numpy as np

@@ -2,7 +2,7 @@
 
 from Framework.Genetic.Gene import Gene
 from Framework.Features.CrossSection.PCA.PCA import PCA
-from Framework.Cache.CacheManager import CacheManager
+from Miscellaneous.Cache.CacheManager import CacheManager
 from Config.const_and_paths import full_instrument_list
 
 class GenePCA (Gene):

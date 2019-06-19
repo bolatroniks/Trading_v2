@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="Moved some things from a directory that was ignored to another one that should also be ignored">
+    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/View/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/const_and_paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/const_and_paths.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Cache/CacheManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miscellaneous/Cache/CacheManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Cache/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/Dataset/RealTime/Realtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Dataset/RealTime/Realtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Bespoke/Trend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/PCA/PCA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/PCA/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/johansen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/CrossSection/johansen_example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/TimeSeries/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/TimeSeries/ernst_chen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/FeatureExtractors/Model/TimeSeries/hmm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Execution/AlgoRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Execution/AlgoRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Execution/Broker/Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Features/CrossSection/PCA/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Features/CrossSection/PCA/PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Genetic/Chromossome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Genetic/Chromossome.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/Genetic/Functions/feature_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Genetic/Functions/feature_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Genetic/Functions/predictors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Genetic/Functions/predictors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Genetic/Gene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Genetic/Gene.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/Genetic/GenePCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Genetic/GenePCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Strategy/Rules/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Strategy/Rules/Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Genetic/test_gene.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntegrationTests/test_gene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Miscellaneous/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miscellaneous/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Miscellaneous/my_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miscellaneous/my_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Reporting/Logging/LogManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/LogManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Reporting/Logging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Miscellaneous/Cache/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Reporting/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Strategy/BulkStrategySimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Strategy/BulkStrategySimulator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/Strategy/Strategy_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Strategy/Strategy_PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/EUR-model2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/EUR-model2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/G10-scratch-level0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/G10-scratch-level0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/G10_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/G10_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/HY_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/HY_Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Jpy-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Jpy-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" afterDir="false" />
@@ -34,23 +48,21 @@
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/VerySimpleModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/VerySimpleModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateful_LSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateful_LSTM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-refactored.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-refactored.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-very-complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-very-complex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-very-simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class-very-simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/Deprecated/training_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/VerySimpleModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/VerySimpleModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/xgb_test01py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/xgb_test01py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/xgb_test02py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/xgb_test02py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Training/VectorizedStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/VectorizedStrategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Training/Useless/TradingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Training/Useless/TradingModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/DatasetHolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/DatasetHolder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/RealTime/Realtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Dataset/RealTime/Realtime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/FeatureExtractors/Bespoke/PCA/PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Chromossome.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Chromossome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/feature_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/feature_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/predictors.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/Functions/predictors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/GenePCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Genetic/GenePCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/BulkStrategySimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Strategy/BulkStrategySimulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/vectorized_strategy_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/GUI/vectorized_strategy_tuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Candle_Strategies/strategy_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/EUR-model2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/EUR-model2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10-scratch-level0.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10-scratch-level0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/G10_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/HY_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/HY_Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Huge_LSTM_Sparse_Activation_Plus_Dense.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Jpy-Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Jpy-Model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_3x1024_Layers-252timesteps-variable-length.py" afterDir="false" />
@@ -67,20 +79,8 @@
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/Pure_LSTM_Only_Px_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/VerySimpleModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/VerySimpleModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateful_LSTM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateful_LSTM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-refactored.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-refactored.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex-v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-Stateless-Naive-Fixed-Timesteps-More-Complex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-very-complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-very-complex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-very-simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class-very-simple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/Deprecated/training_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/VerySimpleModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/VerySimpleModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/xgb_test01py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/xgb_test01py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/xgb_test02py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/xgb_test02py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/TradingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ZZZ_Ignored/Trading_old/Training/Useless/TradingModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_hmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntegrationTests/test_hmm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,14 +116,14 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="manip_v1" value="1" />
-          <entry key="py" value="69" />
+          <entry key="py" value="74" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="69" />
+          <entry key="Python" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -131,12 +131,12 @@
           <entry key="Python Console" value="45" />
           <entry key="gitignore" value="37" />
           <entry key="py" value="123" />
-          <entry key="txt" value="479" />
+          <entry key="txt" value="538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="516" />
+          <entry key="PLAIN_TEXT" value="575" />
           <entry key="Python" value="168" />
         </counts>
       </usages-collector>
@@ -163,9 +163,34 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Framework/Features/Features.py">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/IntegrationTests/test_gene.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Miscellaneous/my_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -178,49 +203,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Dataset/Dataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding>
                 <element signature="e#25#64#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/IntegrationTests/TestMultiTimeframeStrategy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Genetic/Functions/feature_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/Genetic/Functions/predictors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -271,6 +260,8 @@
         <option value="$PROJECT_DIR$/Framework/Trading/Dataset/Dataset.py" />
         <option value="$PROJECT_DIR$/Framework/Dataset/Dataset.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Miscellaneous/my_utils.py" />
+        <option value="$PROJECT_DIR$/Reporting/__init__.py" />
       </list>
     </option>
   </component>
@@ -302,13 +293,23 @@
             <path>
               <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Features" type="462c0819:PsiDirectoryNode" />
+              <item name="Logging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trading" type="462c0819:PsiDirectoryNode" />
-              <item name="ZZZ_Ignored" type="462c0819:PsiDirectoryNode" />
+              <item name="Miscellaneous" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trading" type="462c0819:PsiDirectoryNode" />
+              <item name="Miscellaneous" type="462c0819:PsiDirectoryNode" />
+              <item name="Cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Trading" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Trading" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,17 +319,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Framework/Model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/View/__init__.py" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Framework/Model" />
-      <recent name="$PROJECT_DIR$/Analysis" />
-      <recent name="$PROJECT_DIR$/ZZZ_Ignored" />
-      <recent name="$PROJECT_DIR$/Ignored" />
-      <recent name="$PROJECT_DIR$/C_and_CPP" />
+      <recent name="$PROJECT_DIR$/View" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Miscellaneous" />
+      <recent name="$PROJECT_DIR$/tests/IntegrationTests" />
+      <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -417,7 +418,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560702802231</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Renamed and re-org'ed directories">
+      <created>1560858341146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560858341146</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Renamed and re-org'ed directories">
+      <created>1560858396017</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560858396017</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added missing init file">
+      <created>1560858432670</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560858432670</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -465,7 +487,9 @@
     <MESSAGE value="Moved ignored files into a proper folder.&#10;Deleted bulky zip files" />
     <MESSAGE value="refactored Config" />
     <MESSAGE value="Moved some things to ignored, like logs and test results" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved some things to ignored, like logs and test results" />
+    <MESSAGE value="Renamed and re-org'ed directories" />
+    <MESSAGE value="added missing init file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added missing init file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -479,9 +503,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Trading/Training/Deprecated/computeFeatures.py" />
-    <entry file="file://$PROJECT_DIR$/Trading/training.py" />
-    <entry file="file://$PROJECT_DIR$/Trading/crawler_experiment.py" />
     <entry file="file://$PROJECT_DIR$/Trading/manip_v1.py" />
     <entry file="file://$PROJECT_DIR$/Trading/manip_v1" />
     <entry file="file://$PROJECT_DIR$/Trading/computeFeaturesV2.py" />
@@ -567,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/Miscellaneous/my_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -675,7 +689,7 @@
     <entry file="file://$PROJECT_DIR$/Framework/Dataset/DatasetHolder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
             <element signature="e#25#64#0" expanded="true" />
           </folding>
@@ -704,6 +718,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework/Features/Features.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/IntegrationTests/test_gene.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reporting/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-column="23" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Miscellaneous/my_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

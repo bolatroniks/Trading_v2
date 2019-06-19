@@ -2,18 +2,11 @@
 
 from copy import deepcopy
 
-from Framework.Dataset.Dataset import Dataset
-from Framework.Dataset.DatasetHolder import DatasetHolder
-
-from Framework.Dataset.dataset_func import get_from_time
-
 from Framework.Genetic.utils import prepare_dict_to_save
 
-from Framework.Genetic.Functions.threshold_inverters import *
 from Framework.Genetic.Functions.feature_functions import *
-from Framework.Genetic.Functions.predictors import *
 
-from Framework.Cache.CacheManager import CacheManager
+from Miscellaneous.Cache.CacheManager import CacheManager
 from hashlib import sha1
 
 import os

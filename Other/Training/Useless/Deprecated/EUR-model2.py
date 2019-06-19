@@ -17,7 +17,7 @@ from keras import backend as K
 import theano.tensor as T
 
 from Trading.Dataset.dataset_func import *
-from Framework.Miscellaneous.my_utils import *
+from Miscellaneous.my_utils import *
 from Trading.Training.Useless.Deprecated.Theano.custom_theano import *
 
 modelpath = './models/weights'

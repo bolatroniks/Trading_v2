@@ -1,16 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from Framework.Strategy.Strategy import *
-from Framework.Strategy.Strategy_PCA import *
 from Framework.Execution.Broker.Broker import *
-from Framework.Strategy.Rules.Rule import *
-from Framework.Execution.Broker.Order import *
-from Framework.Strategy.Rules.Production.MTF_PCA.multiframe_pca import *
 
-from Framework.Reporting.Logging.LogManager import LogManager
-
-import time
-import numpy as np
 from datetime import datetime as dt
 
 class AlgoRunner ():
@@ -107,7 +98,7 @@ class AlgoRunner ():
         
 if __name__ == "__main__":
     from Config.const_and_paths import CONFIG_PROD_RULE_PATH, CONFIG_LOG_PATH, V20_CONF, full_instrument_list
-    from Framework.Strategy.Rules.Production.MTF_PCA.multiframe_pca import mtf_pca, mtf_pca_filter_slow, mtf_pca_filter_slow_and_fast
+    from Framework.Strategy.Rules.Production.MTF_PCA.multiframe_pca import mtf_pca, mtf_pca_filter_slow_and_fast
     from Framework.Strategy.Strategy_PCA import Strategy_PCA
     from Framework.Execution.Broker.Broker import Oanda
     import os

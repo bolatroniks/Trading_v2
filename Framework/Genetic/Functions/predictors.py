@@ -4,7 +4,7 @@
 import numpy as np
 
 from Config.const_and_paths import NEUTRAL_SIGNAL, LONG_SIGNAL, SHORT_SIGNAL
-from Framework.Miscellaneous.my_utils import parse_kwargs
+from Miscellaneous.my_utils import parse_kwargs
 from Framework.Genetic.Functions.threshold_inverters import *
 
 predictor_functions = {}

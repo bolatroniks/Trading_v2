@@ -16,7 +16,7 @@ PARSED_MKT_DATA_DEFAULT_PATH = './datasets/Oanda/Fx/Parsed'
 LABELS_DEFAULT_PATH = './datasets/Oanda/Fx/Labeled'
 PREDS_DEFAUL_PATH = './datasets/Oanda/Fx/Predicted'
 CONFIG_PROD_RULE_PATH = root_path + u'Trading/Framework/Strategy/Rules/Production'
-CONFIG_LOG_PATH = root_path + u'Trading/Logs'
+CONFIG_LOG_PATH = root_path + u'Trading/Analysis/Logs'
 
 #genetic algorithm
 CONFIG_TEST_CHROMOSSOME_PATH = root_path + u'Trading/Files/Genetic'

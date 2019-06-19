@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Framework.Reporting.Logging.LogManager import LogManager
+from Logging import LogManager
 
 try:
     from Framework.Strategy.Rules import *
@@ -18,7 +18,7 @@ sys.path.append ('~/.v20.conf')
 from Framework.Dataset.RealTime.Realtime import *
 from Framework.Features.Technical.indicators import get_TA_CdL_Func_List
 from Framework.Strategy.Rules.Rule import *
-from Framework.Reporting.Logging.LogManager import LogManager
+from Logging import LogManager
 
 import os
 

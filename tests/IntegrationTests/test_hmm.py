@@ -2,11 +2,16 @@
 
 from Framework.Features.TimeSeries.hmm import *
 
+def warn(*args, **kwargs):
+    pass
+import warnings
+warnings.warn = warn
+
 if True:
     #refactored SPX price only
     ret_list = []
     #seed = 555
-    for seed in range (200):
+    for seed in range (50):
     #if True:
         no_states = 3
         year = 1960
@@ -74,3 +79,9 @@ if True:
             break
         
         ret_list.append (new_df.PnL[-2] / new_df.risk_free[-2])
+    
+    if bRandomTest:
+        plt.hist (ret_list, bins = 50)
+        
+        print ('Avg return: ' + str (np.mean (ret_list) - 1))
+        print ('Stdev return: ' + str (np.std (ret_list)))

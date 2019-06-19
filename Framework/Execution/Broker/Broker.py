@@ -3,7 +3,7 @@
 import argparse
 import commands
 
-from Framework.Reporting.Logging.LogManager import LogManager
+from Logging import LogManager
 from Framework.Dataset import config, args as common_args
 import time
 import numpy as np

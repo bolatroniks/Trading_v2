@@ -20,7 +20,7 @@ from keras.regularizers import l2
 import theano.tensor as T
 
 from Trading.Dataset.dataset_func import *
-from Framework.Miscellaneous.my_utils import *
+from Miscellaneous.my_utils import *
 
 modelpath = './models/weights'
 modelname = 'Pure_LSTM_Less_Variables_Much_Larger_Model_variable_length_log_rets'

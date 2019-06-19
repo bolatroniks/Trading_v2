@@ -16,7 +16,7 @@ from keras.layers import LSTM
 from Trading.Dataset.dataset_func import *
 from Trading.Dataset.Dataset import Dataset
 from Trading.Training.Useless.Deprecated.Theano.Strategy.strategy_func import *
-from Framework.Miscellaneous.my_utils import *
+from Miscellaneous.my_utils import *
 
 
 class TradingModel ():

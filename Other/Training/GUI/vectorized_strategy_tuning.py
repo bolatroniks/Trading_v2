@@ -2,7 +2,7 @@
 
 from Other.Training.GUI import design
 from Framework.Training.VectorizedStrategy import *
-from Framework.Miscellaneous.my_utils import plot_timeseries_vs_another
+from View import plot_timeseries_vs_another
 
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt4agg import NavigationToolbar2QT as NavigationToolbar

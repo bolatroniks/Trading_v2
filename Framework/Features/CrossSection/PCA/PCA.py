@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 
-import pandas as pd
 from os import listdir
 from os.path import isfile, join
 import bintrees
 
-from dateutil.relativedelta import relativedelta
 from datetime import datetime
 
 from Config.const_and_paths import *
-from Framework.Miscellaneous.my_utils import *
-from Framework.Dataset.Dataset import set_from_to_times
 from Framework.Dataset.DatasetHolder import DatasetHolder
+
 
 class PCA ():
     def __init__ (self, timeframe='M15', 

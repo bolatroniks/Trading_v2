@@ -2,12 +2,14 @@
 
 from Framework.Dataset.Dataset import *
 from Config.const_and_paths import *
-from Framework.Miscellaneous.my_utils import *
+from Miscellaneous.my_utils import *
 
 from copy import deepcopy
 import ast
 import time
 import re
+
+from View import printProgressBar
 
 if V20_PATH not in sys.path:
     sys.path.append (V20_PATH)

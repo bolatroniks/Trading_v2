@@ -19,7 +19,7 @@ from keras.regularizers import l2
 
 import theano.tensor as T
 
-from Framework.Miscellaneous.my_utils import *
+from Miscellaneous.my_utils import *
 
 modelpath = './models/weights'
 modelname = 'Pure_LSTM_Autoencoder'

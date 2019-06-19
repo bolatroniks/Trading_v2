@@ -4,7 +4,7 @@
 #from Framework.Training.TradingModel import *
 from Framework.Features.Bespoke.Trend.TrendlineFeaturesExtractor import *
 from Framework.Features.Technical.indicators import get_TA_CdL_Func_List
-from Framework.Miscellaneous.my_utils import printProgressBar
+from View import printProgressBar
 
 #from Framework.Oanda.candlesv2 import *
 #from Framework.RealTime.Realtime import *
