@@ -6,7 +6,7 @@ from Framework.Dataset.DatasetHolder import DatasetHolder
 from Framework.Dataset.Dataset import Dataset
 from Framework.Dataset.dataset_func import get_from_time
 from Config.const_and_paths import fx_list, full_instrument_list, NEUTRAL_SIGNAL
-from Logging import LogManager
+from Logging.LogManager import LogManager
 
 import numpy as np
 from copy import deepcopy

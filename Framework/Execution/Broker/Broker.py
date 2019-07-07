@@ -3,7 +3,7 @@
 import argparse
 import commands
 
-from Logging import LogManager
+from Logging.LogManager import LogManager
 from Framework.Dataset import config, args as common_args
 import time
 import numpy as np

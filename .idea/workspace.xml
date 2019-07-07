@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="small clean-up in configs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/const_and_paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/const_and_paths.py" afterDir="false" />
+    <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Execution/Broker/Broker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Framework/Strategy/Strategy_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Strategy/Strategy_PCA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/Framework/Genetic/Gene.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="84" column="8" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -47,11 +47,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/const_and_paths.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -100,10 +109,10 @@
         <option value="$PROJECT_DIR$/Trading/Genetic/Functions/feature_functions.py" />
         <option value="$PROJECT_DIR$/Framework/Trading/Dataset/Dataset.py" />
         <option value="$PROJECT_DIR$/Framework/Dataset/Dataset.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Miscellaneous/my_utils.py" />
         <option value="$PROJECT_DIR$/Reporting/__init__.py" />
         <option value="$PROJECT_DIR$/Config/const_and_paths.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -130,47 +139,7 @@
             <path>
               <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="IntegrationTests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trading_v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trading_v2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="share" type="462c0819:PsiDirectoryNode" />
+              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562511480151</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="small clean-up in configs v2">
+      <created>1562518523105</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562518523105</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -322,6 +298,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18797815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -356,7 +333,8 @@
     <MESSAGE value="Renamed and re-org'ed directories" />
     <MESSAGE value="added missing init file" />
     <MESSAGE value="small clean-up in configs" />
-    <option name="LAST_COMMIT_MESSAGE" value="small clean-up in configs" />
+    <MESSAGE value="small clean-up in configs v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="small clean-up in configs v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -517,7 +495,7 @@
     <entry file="file://$PROJECT_DIR$/Framework/Genetic/Gene.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="84" column="8" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -556,13 +534,6 @@
           <folding>
             <element signature="e#25#64#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -612,7 +583,14 @@
     <entry file="file://$PROJECT_DIR$/Config/const_and_paths.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
