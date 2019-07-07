@@ -4,6 +4,8 @@ from Framework.Genetic.Gene import *
 from Framework.Genetic.GenePCA import GenePCA
 from Framework.Genetic.Chromossome import Chromossome
 
+from Framework.Genetic.Functions.predictors import *
+
 from Framework.Dataset.Dataset import Dataset
 from Framework.Dataset.DatasetHolder import DatasetHolder
 

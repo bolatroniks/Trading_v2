@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+
 import sys
 from matplotlib import pyplot as plt
-
 
 def plot_timeseries_vs_another (ts1 = None, ts2=None,
                    bSameAxis = False,
@@ -15,7 +16,16 @@ def plot_timeseries_vs_another (ts1 = None, ts2=None,
                    color1 = 'red',
                    color2 = 'blue',
                    plot_filename=''):
-
+    
+    """
+    Plots one timeseries vs another
+    @params:
+        ts1   - Optional  : 1st timeseries
+        ts2   - Optional  : 2nd timeseries
+        bSameAxis      - Optional  : if False, 2nd series uses vertical RHS axis
+        figsize      - Optional  : size of the plot
+        ...
+    """
     if ts1 is None and ts2 is None:
         return plt.figure (figsize=figsize)
 
