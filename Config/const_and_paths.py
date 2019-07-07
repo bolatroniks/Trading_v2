@@ -3,28 +3,30 @@
 from os.path import join
 
 #-----------v20 and Oanda-----------------------#
-root_path = u'/home/renato/PycharmProjects'
+project_path = u'/home/renato/PycharmProjects'
 project_name = 'Trading_v2'
 
-V20_PATH = join(root_path, u'v20-python-master/src')
-OANDA_PATH = join(root_path, u'v20-python-master/src')
-OANDA_ORDER_PATH = join(root_path, u'v20-python-master/src/order')
-V20_CONF= join(root_path, project_name, u'Framework/Dataset/Oanda/.v20.conf')
+dataset_path = u'/home/renato/Desktop/Projects/Trading/datasets'
+
+V20_PATH = join(project_path, u'v20-python-master/src')
+OANDA_PATH = join(project_path, u'v20-python-master/src')
+OANDA_ORDER_PATH = join(project_path, u'v20-python-master/src/order')
+V20_CONF= join(project_path, project_name, u'Framework/Dataset/Oanda/.v20.conf')
 OANDA_ACCOUNT_ID = '101-004-4638013-001'
 OANDA_MARKET_ORDER_SCRIPT = 'market.py'
-C_UTILS_PATH = join(root_path, project_name, u'C_and_CPP/Csource/C_arraytest')
-CPP_UTILS_PATH = join(root_path, project_name, u'C_and_CPP/cpp_utils/cpp_utils_v2/bin/Debug')
-PCA_DEFAULT_PATH = join (root_path, project_name, u'datasets/Oanda/Fx/PCA_New')
-FEATURES_DEFAULT_PATH = './datasets/Oanda/Fx/Featured'
-PARSED_MKT_DATA_DEFAULT_PATH = './datasets/Oanda/Fx/Parsed'
-LABELS_DEFAULT_PATH = './datasets/Oanda/Fx/Labeled'
-PREDS_DEFAUL_PATH = './datasets/Oanda/Fx/Predicted'
-CONFIG_PROD_RULE_PATH = join (root_path, project_name, u'Framework/Strategy/Rules/Production')
-CONFIG_LOG_PATH = join(root_path, project_name, u'Analysis/Logs')
+C_UTILS_PATH = join(project_path, project_name, u'C_and_CPP/Csource/C_arraytest')
+CPP_UTILS_PATH = join(project_path, project_name, u'C_and_CPP/cpp_utils/cpp_utils_v2/bin/Debug')
+PCA_DEFAULT_PATH = join (dataset_path, u'Oanda/Fx/PCA_New')
+FEATURES_DEFAULT_PATH = join (dataset_path, u'Oanda/Fx/Featured')
+PARSED_MKT_DATA_DEFAULT_PATH = join (dataset_path, u'Oanda/Fx/Parsed')
+LABELS_DEFAULT_PATH = join (dataset_path, u'Oanda/Fx/Labeled')
+PREDS_DEFAUL_PATH = join (dataset_path, u'Oanda/Fx/Predicted')
+CONFIG_PROD_RULE_PATH = join (project_path, project_name, u'Framework/Strategy/Rules/Production')
+CONFIG_LOG_PATH = join(project_path, project_name, u'Analysis/Logs')
 
 #genetic algorithm
-CONFIG_TEST_CHROMOSSOME_PATH = join(root_path, project_name, u'Files/Genetic')
-CONFIG_TEST_GENES = join (root_path, project_name, u'/Files/Genetic/Genes/Test')
+CONFIG_TEST_CHROMOSSOME_PATH = join(project_path, project_name, u'Files/Genetic')
+CONFIG_TEST_GENES = join (project_path, project_name, u'/Files/Genetic/Genes/Test')
 #-----------------------------------------------#
 
 
@@ -74,7 +76,7 @@ full_instrument_list = fx_list + commodity_list + equity_list + rates_list
 #-----------GUIs-------------------------------------------------#
 
 #Vectorized Strategy tuner
-strats_path = root_path + u'Trading/Framework/Training/GUI/Strats'
+strats_path = project_path + u'Trading/Framework/Training/GUI/Strats'
 
 #signals
 NEUTRAL_SIGNAL = 0

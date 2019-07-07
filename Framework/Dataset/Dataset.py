@@ -754,11 +754,13 @@ class Dataset():
             df_complete = df3[~df3.index.duplicated(keep='last')]
             try:
                 del df_complete['index']
-            except:
-                LogManager.get_logger ().error("Exception occurred", exc_info=True)
+            except Exception as e:
+                print (e.message)
+                LogManager.get_logger ().error(e.message, exc_info=True)
             df_complete = indexDf(df_complete)
-        except:
-            LogManager.get_logger ().error("Exception occurred", exc_info=True)
+        except Exception as e:
+            print (e.message)
+            LogManager.get_logger ().error(e.message, exc_info=True)
         df_complete.to_csv(full_filename)
         
         return self
@@ -781,7 +783,9 @@ class Dataset():
                                               self.ccy_pair, self.timeframe)
                 else:
                     self.df = self.buildCandlesFromLowerTimeframe()
-            except:
+            except Exception as e:
+                print (e.message)
+                LogManager.get_logger ().error(e.message, exc_info=True)
                 self.df = None
             if bTryToComplete:
                 self.completeCandlesDf()
