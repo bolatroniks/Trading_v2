@@ -2,18 +2,22 @@
 
 import sys; sys.argv=['']
 from Config.const_and_paths import *
+import argparse
 
 if V20_PATH not in sys.path:
     sys.path.append (V20_PATH)
-    
+
+if OANDA_PATH not in sys.path:
+    sys.path.append (OANDA_PATH)
 
 
-import argparse
+
 from instrument.view import CandlePrinter
 #import common.config as config
 
 import Framework.Dataset.Oanda.common.config as config
-#import Trading.Oanda.common.args as common.args
+from Framework.Dataset.Oanda.common.args import instrument as args_instrument
+from Framework.Dataset.Oanda.common.args import date_time
 import datetime as dt
 import numpy as np
 import pandas
@@ -165,7 +169,7 @@ def get_candles(instrument='USD_ZAR', granularity='H1', from_time='', to_time=''
 
     parser.add_argument(
         "--instrument",
-        type=Framework.Dataset.Oanda.common.args.instrument,
+        type=args_instrument,
         #type=args.instrument,
         default=instrument,
         help="The instrument to get candles for"
@@ -214,7 +218,7 @@ def get_candles(instrument='USD_ZAR', granularity='H1', from_time='', to_time=''
     parser.add_argument(
         "--from-time",
         default=from_time,
-        type=Framework.Dataset.Oanda.common.args.date_time(),
+        type=date_time(),
         #type=args.date_time(),
         help="The start date for the candles to be fetched. Format is 'YYYY-MM-DD HH:MM:SS'"
     )
@@ -222,7 +226,7 @@ def get_candles(instrument='USD_ZAR', granularity='H1', from_time='', to_time=''
     parser.add_argument(
         "--to-time",
         default=to_time,
-        type=Framework.Dataset.Oanda.common.args.date_time(),
+        type=date_time(),
         #type=args.date_time(),
         help="The end date for the candles to be fetched. Format is 'YYYY-MM-DD HH:MM:SS'"
     )

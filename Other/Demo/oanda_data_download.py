@@ -22,8 +22,9 @@ for ccy in full_instrument_list[20:]:
         try:
             ds.loadSeriesOnline(bSaveCandles=True)
             print ('Loaded data succesfully for ' + str (from_time))
-        except:
+        except Exception as e:
             print ('Failed to load data for ' + str (from_time))
+            raise e
         from_time = to_time
     
     #need to check if all dates were loaded
@@ -42,7 +43,8 @@ for ccy in full_instrument_list[20:]:
                                  bSaveCandles=True)
                 print ('len(df): ' + str (len(ds.df)))
                 from_time += relativedelta (days=7)
-            except:
+            except Exception as e:
+                raise e
                 print ('Failed to load data for ' + str (from_time))
         from_time += relativedelta (days=1)
     
@@ -56,27 +58,27 @@ if False:
     #if not, it computes and saves them
     #could be interesting to implement the label computation in C
     for instrument in full_instrument_list[-1::-1]:
-    try:
-        ds = Dataset(ccy_pair=instrument, timeframe='M15', from_time=2000, to_time=2018)
-        ds.loadLabels ()
-        assert (ds.l_df.index[-1].year == 2018)
-        
-    except (IOError, AssertionError) as error:
         try:
-            ds.set_from_to_times (from_time = ds.l_df.index[-1])
-            ds.loadFeatures ()
-            assert (ds.f_df.index[-1].year == 2018)
-        except (AttributeError, AssertionError) as error:
+            ds = Dataset(ccy_pair=instrument, timeframe='M15', from_time=2000, to_time=2018)
+            ds.loadLabels ()
+            assert (ds.l_df.index[-1].year == 2018)
+            
+        except (IOError, AssertionError) as error:
             try:
+                ds.set_from_to_times (from_time = ds.l_df.index[-1])
+                ds.loadFeatures ()
+                assert (ds.f_df.index[-1].year == 2018)
+            except (AttributeError, AssertionError) as error:
+                try:
+                    ds.loadCandles ()
+                    assert (ds.df.index[-1].year == 2018)
+                except AssertionError:
+                    ds.download_oanda_data(since=ds.df.index[-1].year)
+                except AttributeError:
+                    ds.download_oanda_data(since=2002)
+                ds.set_from_to_times (from_time=2000)
                 ds.loadCandles ()
-                assert (ds.df.index[-1].year == 2018)
-            except AssertionError:
-                ds.download_oanda_data(since=ds.df.index[-1].year)
-            except AttributeError:
-                ds.download_oanda_data(since=2002)
-            ds.set_from_to_times (from_time=2000)
-            ds.loadCandles ()
-            ds.computeFeatures ()
-            ds.computeLabels (bSaveLabels=True)
-    except:
-        raise
+                ds.computeFeatures ()
+                ds.computeLabels (bSaveLabels=True)
+        except:
+            raise

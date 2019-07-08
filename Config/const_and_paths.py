@@ -9,7 +9,7 @@ project_name = 'Trading_v2'
 dataset_path = u'/home/renato/Desktop/Projects/Trading/datasets'
 
 V20_PATH = join(project_path, u'v20-python-master/src')
-OANDA_PATH = join(project_path, u'v20-python-master/src')
+OANDA_PATH = r'/home/renato/Desktop/Projects/v20-python-master/src'
 OANDA_ORDER_PATH = join(project_path, u'v20-python-master/src/order')
 V20_CONF= join(project_path, project_name, u'Framework/Dataset/Oanda/.v20.conf')
 OANDA_ACCOUNT_ID = '101-004-4638013-001'

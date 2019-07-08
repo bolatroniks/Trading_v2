@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="13f0505c-74c9-4efa-8dd9-d7dbdf1f8ea9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Dataset/Dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Execution/Broker/Broker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Execution/Broker/Broker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Framework/Strategy/Strategy_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Framework/Strategy/Strategy_PCA.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -284,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562518523105</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Changed .gitignore and added Analysis/Logs to the repo">
+      <created>1562519142093</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562519142093</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -334,7 +338,8 @@
     <MESSAGE value="added missing init file" />
     <MESSAGE value="small clean-up in configs" />
     <MESSAGE value="small clean-up in configs v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="small clean-up in configs v2" />
+    <MESSAGE value="Changed .gitignore and added Analysis/Logs to the repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed .gitignore and added Analysis/Logs to the repo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,7 +595,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
