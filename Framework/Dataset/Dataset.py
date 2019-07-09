@@ -19,7 +19,7 @@ from Framework.Dataset.RealTime.Realtime import *
 from Framework.Features.Technical.indicators import get_TA_CdL_Func_List
 from Framework.Strategy.Rules.Rule import *
 
-from Framework.Dataset.Oanda.candlesv2 import get_candles
+from Framework.Dataset.Oanda.candlesv2 import *
 
 import os
 

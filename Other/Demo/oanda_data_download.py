@@ -12,7 +12,7 @@ for ccy in full_instrument_list[20:]:
                   to_time='2000-01-31 23:59:59')
     ds.initOnlineConfig ()
     
-    from_time = dt.datetime(2000, 1,1,0,0,0)
+    from_time = dt.datetime(2010, 1,1,0,0,0)
     
     while from_time < dt.datetime.today ():
         to_time = from_time + relativedelta(months=1)
