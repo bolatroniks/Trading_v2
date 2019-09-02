@@ -16,7 +16,10 @@ func_list = get_TA_CdL_Func_List ()
 
 import sys
 import time
-import talib as ta
+try:
+    import talib as ta
+except Exception as e:
+    print (str(e))
 import numpy as np
 from copy import deepcopy
 import re
@@ -24,7 +27,10 @@ import re
 #sys.path.append ('/home/Downloads/v20-python-samples-master/src')
 sys.path.append (V20_PATH)
 sys.path.append(C_UTILS_PATH)
-from _C_arraytest import *
+try:
+    from _C_arraytest import *
+except Exception as e:
+    print (str(e))
 
 def get_labels_suffix (bVaryStopTarget, min_stop, vol_denominator, target_multiple, stop_fn, target_fn):    
     #suffix: to be appended to the df columns so that each different set of parameters result in different columns 
@@ -174,6 +180,9 @@ def computeLabelsOnTheFly (my_df, tf_suffix = '',
     mat[3,:] = my_df['Close' + tf_suffix]
     mat[4,:] = my_df['hist_vol_1m_close' + tf_suffix]
     
+    #C implementation
+    #ToDo: in order to make the stop/target variables, need to pass the levels as
+    #parameters to the C function
     compute_labels (mat, min_stop, vol_denominator, target_multiple, False, True)
     
     [labels, #5
@@ -229,8 +238,8 @@ def computeFeaturesOnTheFly (df,
                              timeframe='D',
                              bComputeIndicators=True,
                              bComputeNormalizedRatios=True,
-                             bComputeCandles=True,
-                             bComputeHighLowFeatures=None,
+                             bComputeCandles=False,
+                             bComputeHighLowFeatures=False,
                              high_low_feat_window = 500,
                              verbose=False):
 

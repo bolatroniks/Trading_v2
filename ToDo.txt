@@ -1,0 +1,46 @@
+Command to look for ToDos (-i => case insensitive) in the code:
+grep -e ToDo -i -rnw --exclude-dir={datasets,venv,Trading_old,.idea} ./
+
+Update Readme file
+- inline with the presentation or just refer it
+- refer to demo files
+
+Add demo files showing how to use Chromossome to create trading rules from scratch
+
+Chromossome/Gene:
+1/ bring implementation of Gene in line with presentation
+- ie, make it simple to create different types of genes
+- timeseries, cross-secion, etc
+- long/short, not buy, not sell, binary conditions
+- symmetrical/asymmetrical
+
+2/ HMM (gene):
+- make it simple to create rules based on HMM
+- eg.: 
+    long USD/ZAR based on SPX monthly HMM state
+    long/short UST based on claims (better PMI) HMM
+    
+3/ candle pattern genes
+- high confidence reversals
+- shooting star / hammer
+- convolution
+
+4/ SVM (based on a Chromossome)
+- activation threshold (at least 70% of signals active)
+- negative sampling (randomly pick examples)
+- save a dataset containing the activations of the genes
+- train classifier based on this dataset
+
+5/ Genetic algorithm selection/championship implementation
+
+Deep Learning (research)
+
+- auto-encoding:
+    - dense or sparse
+    - single candle or small sequence
+    
+- embedding
+    - borrow ideas from NLP, word2vec
+
+
+

@@ -7,8 +7,18 @@ import pandas as pd
 import numpy as np
 #import xgboost as xgb
 #from xgboost import XGBClassifier
-from sklearn import cross_validation, metrics   #Additional scklearn functions
-from sklearn.grid_search import GridSearchCV   #Perforing grid search
+from sklearn import metrics   #Additional scklearn functions
+
+try:
+    from sklearn import cross_validation
+except:
+    from sklearn.model_selection import cross_validate as cross_validation
+
+try:
+    from sklearn.grid_search import GridSearchCV, RandomizedSearchCV   #Perforing grid search
+except:
+    from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+
 #from xgboost import plot_tree
 from matplotlib.pylab import rcParams
 from sklearn.preprocessing import label_binarize
@@ -28,7 +38,7 @@ except:
     pass
 import operator
 
-from sklearn.grid_search import GridSearchCV, RandomizedSearchCV
+
 from Config.const_and_paths import *
 
 def default_stop (my_df, bLive=True, 

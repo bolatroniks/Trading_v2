@@ -123,7 +123,7 @@ if False:
     xv_period = 35
     pred_delay = 0
     claims_delay = 3
-    bRandomTest = True
+    bRandomTest = False
     np.random.seed (35)
     prediction_threshold_margin = 0.5
         
@@ -168,14 +168,14 @@ if False:
     plt.show ()
 
 #refactored claims vs SPX
-if False:
+if True:
     no_states = 3
     year = 1967
     training_period = 30
     xv_period = 10
     pred_delay = 1
     claims_delay = 3
-    bRandomTest = True
+    bRandomTest = False
     np.random.seed (666)
     prediction_threshold_margin = 0.2    
         

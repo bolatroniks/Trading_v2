@@ -4,7 +4,10 @@ import os
 import sys
 import v20
 
-import input
+try:
+    import input
+except Exception as e:
+    print (str(e))
 
 
 #

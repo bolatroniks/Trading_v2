@@ -273,7 +273,7 @@ if False:
     
     c3.load(filename = 'Momentum_01_hilo.crx')
     
-if True:
+if False:
     c2 = Chromossome (ds = Dataset(ccy_pair='AUD_NZD', 
                               #from_time='2015-10-01 00:00:00', 
                               from_time = 2010,
@@ -314,6 +314,7 @@ if True:
                                                           }
                                             },
                                 pred_label = 'halflife',
+                                pred_type = 'binary',
                                 pred_func = fn_pred3,
                                 pred_kwargs = {
                                                 'indic': 'halflife',
@@ -333,24 +334,7 @@ if True:
                                                 'inv_threshold_fn': None
                                             })
 
-# =============================================================================
-#     c2.add_gene (timeframe = 'D', func_dict = {'diff_highs_lows':{'func':feats_operation, 
-#                                                           'kwargs':{'feat1': 'no_standing_highs_10',
-#                                                                     'feat2': 'no_standing_lows_10',
-#                                                                     'operation': 'difference'}
-#                                                           }
-#                                             },
-#                                 pred_type = 'preventer',
-#                                 pred_label = 'diff_highs_lows',
-#                                 pred_func = fn_over_bought_sold,
-#                                 pred_kwargs = {
-#                                                 'indic': 'diff_highs_lows',
-#                                                 'conv_window': 1,
-#                                                 'threshold_overbought': 70,
-#                                                 'threshold_oversold': 30
-#                                             })         
-# =============================================================================
-    
+  
     c2.add_gene (timeframe = 'D', func_dict = {'diff_highs_lows':{'func':feats_operation, 
                                                           'kwargs':{'feat1': 'no_standing_highs_10',
                                                                     'feat2': 'no_standing_lows_10',
@@ -407,15 +391,15 @@ if True:
                                          'threshold_max': 0.5,
                                          'inv_threshold_fn': inv_fn_identity})
     
+    if True:
+        c2.run ()
+        c2.ds.removeSerialPredictions (50)
+        print (str (c2.get_stats ()))
+        
+        plot_pnl (c2.ds)
+        plot_signals (c2.ds)
 
-    c2.run ()
-    c2.ds.removeSerialPredictions (50)
-    print (str (c2.get_stats ()))
-    
-    plot_pnl (c2.ds)
-    plot_signals (c2.ds)
-
-if True:
+if False:
     c = Chromossome (ds = Dataset(ccy_pair='USD_ZAR', 
                               #from_time='2015-10-01 00:00:00', 
                               from_time = 2006,

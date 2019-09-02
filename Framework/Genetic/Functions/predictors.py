@@ -22,6 +22,20 @@ def fn_pred_preventer (ds, **kwargs):
     
     return ret_prevent_buy, ret_prevent_sell
     
+def fn_pred_asymmetric (ds, **kwargs):
+    indic = parse_kwargs (['indic', 'indicator'], 'RSI', **kwargs)
+    
+    threshold_min = parse_kwargs (['threshold_min'], -9999, **kwargs)
+    threshold_max = parse_kwargs (['threshold_max'], 9999, **kwargs)
+
+    direction = parse_kwargs (['direction', 'direc', 'long_short', 'buy_sell'], 1, **kwargs)
+
+
+    ret = np.ones (len(ds.f_df)) * NEUTRAL_SIGNAL
+    ret [(ds.f_df[indic] > threshold_min) & (ds.f_df[indic] < threshold_max)] = LONG_SIGNAL * direction
+
+    return ret
+    
 
 #generic function to compute predictions based on one feature
 def fn_pred3 (ds, **kwargs):

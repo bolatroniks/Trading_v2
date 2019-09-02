@@ -171,3 +171,73 @@ def merge_timeframes (ds, **kwargs):
                                              bConvolveCdl = bConvolveCdl)
 
     return ds.f_df['Close_' + ds.timeframe]
+
+#------------------------------calendar functions------------------------#
+def is_first_business_day (ds, **kwargs):
+    df = ds.f_df
+    
+    return [True] + list((np.diff([_.month for _ in df.index]) != 0))
+
+def is_turn_of_month (ds, **kwargs):
+    df = ds.f_df
+    
+    first_business_days = is_first_business_day (ds, **kwargs)
+    
+    days_ahead = parse_kwargs (['days_ahead'], 2, **kwargs)
+    days_after = parse_kwargs (['days_after'], 1, **kwargs)
+    
+    ret = np.zeros (len (first_business_days))
+    for i in range (len (first_business_days)):
+        if True in list (first_business_days [np.maximum(i - days_ahead, 0):np.minimum(i + days_after + 1, len (first_business_days))]):
+            ret [i] = 1
+    return ret
+
+def is_just_before_close (ds, **kwargs):
+    df = ds.f_df
+    
+    periods_ahead = parse_kwargs (['periods_ahead'], 2, **kwargs)
+    periods_after = parse_kwargs (['periods_after'], -1, **kwargs)
+    closing_time = parse_kwargs (['closing_time'], 21, **kwargs)
+    
+    closings = [(_.hour == closing_time) & (_.minute == 0) for _ in df.index]
+    
+    ret = np.zeros (len (closings))
+    for i in range (len (closings)):
+        if True in list (closings [np.maximum(i - periods_ahead, 0):np.minimum(i + periods_after + 1, len (closings))]):
+            ret [i] = 1
+    return ret
+    
+#-------------------candle features-----------------------------------#
+strong_bearish_reversals = ['CDL3BLACKCROWS', 
+                           'CDLIDENTICAL3CROWS', 
+                           'CDLEVENINGSTAR', 
+                           'CDL3LINESTRIKE']
+
+reliable_bearish_patterns = ['CDLEVENINGDOJISTAR',
+                             'CDL3OUTSIDE', 
+                             'CDLENGULFING',
+                             'CDLBELTHOLD',
+                             'CDLABANDONEDBABY'
+                             ]
+
+strong_bullish_reversals = ['CDL3WHITESOLDIERS',
+                           'CDLMORNINGSTAR'
+                           ]
+
+reliable_bearish_patterns = ['CDL3LINESTRIKE',
+                             'CDLMORNINGDOJISTAR',
+                             'CDL3OUTSIDE', 
+                             'CDLENGULFING',
+                             'CDLBELTHOLD',
+                             'CDLABANDONEDBABY'
+                             ]
+
+def fn_candle_reversal (ds, **kwargs):
+    df = ds.f_df
+    conv_window = parse_kwargs (['conv_window'], 20, **kwargs)
+    
+    df['strong_bearish_reversals'] = SHORT_SIGNAL * np.convolve(df[[feat for feat in strong_bearish_reversals]].abs().sum(axis=1), np.ones (conv_window))[0:len(df)]
+    df['strong_bullish_reversals'] = LONG_SIGNAL * np.convolve(df[[feat for feat in strong_bullish_reversals]].abs().sum(axis=1), np.ones (conv_window))[0:len(df)]
+
+def fn_candle_features (ds, **kwargs):
+    pass

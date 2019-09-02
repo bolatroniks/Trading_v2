@@ -202,8 +202,10 @@ def loadFeaturesNames (path, filename, other_feats_list=['./datasets/Macro/vix2.
 def indexDf (df, index='Date'):
     df[index] = pd.to_datetime(df[index],infer_datetime_format =True)
     df.index = df[index]
-    df = df.sort_values(by=index, ascending=True)
-    del df[index]
+
+    del df[index]    
+    
+    df = df.sort_index(ascending=True)    
 
     return df
 

@@ -379,27 +379,30 @@ class Dataset():
         #stars from 1: because of the situation where idx[0] - ratio < 0
         data = np.zeros((len(idx), len(cols)), float)
         data[1:, 0] = arr[idx[1:] - ratio, 0]  # open
-        data[1:, 1] = [np.max(arr[idx[i] - ratio:idx[i], 1])
+        data[1:, 1] = [np.max(arr[ np.maximum(idx[i] - ratio, 0):idx[i], 1])
                       for i in range(1, len(idx))]  # high
-        data[1:, 2] = [np.min(arr[idx[i] - ratio:idx[i], 2])
+        data[1:, 2] = [np.min(arr[ np.maximum(idx[i] - ratio, 0):idx[i], 2])
                       for i in range(1, len(idx))]  # low
         data[1:, 3] = arr[idx[1:], 3]  # close
         data[2:, 4] = np.log(data[2:, 3] / data[1:-1, 3])  # change
-        data[1:, 5] = [np.sum(arr[idx[i] - ratio:idx[i], 5])
+        data[1:, 5] = [np.sum(arr[ np.maximum(idx[i] - ratio, 0):idx[i], 5])
                       for i in range(1, len(idx))]  # volume
         
         #'fixes' the situation where idx[0] - ratio < 0
         #code looks uglier, but better fix it like this to avoid overhead
-        if idx[0] - ratio - 0:
+        if idx[0] - ratio < 0:
             first_idx = 0
         else:
             first_idx = idx[0] - ratio
-        data[0, 0] = arr[first_idx, 0]  # open
-        data[0, 1] = np.max(arr[first_idx:idx[0], 1]) #high                      
-        data[0, 2] = np.min(arr[first_idx:idx[0], 1]) # low
-        data[0, 3] = arr[idx[0], 3]  # close
-        data[1, 4] = np.log(data[1, 3] / data[0, 3])  # change
-        data[0, 5] = np.sum(arr[first_idx:idx[0], 5]) # volume
+        try:
+            data[0, 0] = arr[first_idx, 0]  # open
+            data[0, 1] = np.max(arr[first_idx:idx[0], 1]) #high                      
+            data[0, 2] = np.min(arr[first_idx:idx[0], 1]) # low
+            data[0, 3] = arr[idx[0], 3]  # close
+            data[1, 4] = np.log(data[1, 3] / data[0, 3])  # change
+            data[0, 5] = np.sum(arr[first_idx:idx[0], 5]) # volume
+        except:
+            pass
         #end of fudge
 
         self.df = pandas.core.frame.DataFrame(data=data, index=df.index[idx], columns=cols)
@@ -540,6 +543,7 @@ class Dataset():
             
         return self
 
+    #ToDo: implement target depending on vol
     def computeLabels(self, bSaveLabels=False,
                       from_time=None,
                       to_time=None,
@@ -548,6 +552,7 @@ class Dataset():
                       target_multiple=None,
                       min_stop=None,
                       vol_denominator=None,
+                      periods_ahead_returns = [10, 25, 50],
                       bBuildY=False  # for supervised learning
                       ):
 
@@ -582,9 +587,9 @@ class Dataset():
         close_col = ('Close' if 'Close' in self.f_df.columns else 'Close_' + self.timeframe)
         vol_col = ('hist_vol_1m_close' if 'hist_vol_1m_close' in self.f_df.columns else 'hist_vol_1m_close_' + self.timeframe)
             
-        self.l_df ['ret_10_periods'] = np.log(self.l_df.shift(-10)[close_col] / self.l_df[close_col]) / self.f_df[vol_col]
-        self.l_df ['ret_25_periods'] = np.log(self.l_df.shift(-35)[close_col] / self.l_df[close_col]) / self.f_df[vol_col]
-        self.l_df ['ret_50_periods'] = np.log(self.l_df.shift(-50)[close_col] / self.l_df[close_col]) / self.f_df[vol_col]
+        for t in periods_ahead_returns:
+            #self.l_df ['ret_periods_' + str (t)] = np.log(self.l_df.shift(-t)[close_col] / self.l_df[close_col]) / self.f_df[vol_col]
+            self.l_df ['ret_periods_' + str (t)] = np.array(self.l_df.shift(-t)[close_col] / self.l_df[close_col] - 1) / self.f_df[vol_col]
 
         self.get_active_labels()
 
@@ -755,10 +760,15 @@ class Dataset():
             df_complete = df3[~df3.index.duplicated(keep='last')]
             try:
                 del df_complete['index']
+            except KeyError:
+                pass
             except Exception as e:
                 print (e.message)
                 LogManager.get_logger ().error(e.message, exc_info=True)
-            df_complete = indexDf(df_complete)
+            try:
+                df_complete = indexDf(df_complete)
+            except KeyError:
+                pass
         except Exception as e:
             print (e.message)
             LogManager.get_logger ().error(e.message, exc_info=True)
@@ -785,8 +795,12 @@ class Dataset():
                 else:
                     self.df = self.buildCandlesFromLowerTimeframe()
             except Exception as e:
-                print (e.message)
-                LogManager.get_logger ().error(e.message, exc_info=True)
+                try:
+                    print (e.message)
+                    LogManager.get_logger ().error(e.message, exc_info=True)
+                except:
+                    print (str(e))
+                    LogManager.get_logger ().error(str(e), exc_info=True)
                 self.df = None
             if bTryToComplete:
                 self.completeCandlesDf()
@@ -1384,8 +1398,10 @@ class Dataset():
                                           bSaveCandles=True)
                     print ('len(df): ' + str(len(self.df)))
                     from_time += relativedelta(days=7)
-                except:
+                except Exception as e:
                     print ('Failed to load data for ' + str(from_time))
+                    print (e.message + '\n')
+                    
             from_time += relativedelta(days=1)
 
         self.loadCandles(from_time=2000, to_time=str(dt.datetime.today()))

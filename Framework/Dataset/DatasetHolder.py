@@ -140,11 +140,14 @@ class DatasetHolder ():
     
     def loadMultiFrame (self, timeframe_list=['D', 'M15'],
                         ccy_pair_list = None, 
-                        bComputeFeatures=[False, True],        
+                        bComputeFeatures= None,        
                         bComputeLabels=True,
-                        bLoadFeatures=[True, False],
                         bLoadLabels=False):
         
+        if bComputeFeatures is None:
+            bComputeFeatures = [True for i in range (len (timeframe_list))]
+            
+        bLoadFeatures = [not _ for _ in bComputeFeatures]
         if ccy_pair_list is None:
             ccy_pair_list = [self.instrument]
 

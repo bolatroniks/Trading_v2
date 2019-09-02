@@ -13,10 +13,18 @@ import os
 import pandas as pd
 import json
 
+#ToDo: create a gene with labelling rules
+#ToDo: option to compute candle as well as high low features should be part of a gene
+#ToDo: create sample genes and add them to a dictionary (add set methods that return the gene itself for easy customization)
+
+#TODO: need a more elegant solution for this
+B_COMPUTE_HIGH_LOW_FEATURES = False
+
 class Gene ():
     count = 0
 
-    def __init__ (self, ds, gene_id = None, gene_type = 'default', func_dict = {},
+    def __init__ (self, ds, gene_id = None, 
+                  gene_type = 'default', func_dict = {},
                   pred_type = None,
                   status = True,
                   pred_label = '',
@@ -33,6 +41,7 @@ class Gene ():
         
         self.ds = ds
         self.gene_type = gene_type
+        
         self.timeframe = self.ds.timeframe
         self.func_dict = func_dict #dictionary of functions to compute new features
         self.pred_label = (pred_label if pred_label.find ('pred:') >= 0 else 'pred:' + pred_label)
@@ -41,7 +50,29 @@ class Gene ():
         self.feat_to_keep = feat_to_keep
         self.feat_computed = False
         self.pred_computed = False
-        self.pred_type = pred_type
+        
+        if pred_type is not None:
+            self.pred_type = pred_type
+        else:
+            if 'inv_threshold_fn' in pred_kwargs.keys ():
+                if pred_kwargs ['inv_threshold_fn'] is not None:
+                    self.pred_type = 'symmetric'
+                else:
+                    self.pred_type = 'binary'
+            elif self.pred_func is not None:
+                self.pred_type = 'binary'
+            else:
+                self.pred_type = 'dummy'
+
+        #TODO: implement the idea below clearly and correctly        
+        # there are the following types of genes:
+        #   1/ symmetric (None): strategy buys and sells an asset using the same criteria
+        #   2/ bynary: when active, allows signals to be generated, when inactive, suppress both buy and sell signals
+        #   3/ preventer: when active, prevents either buying, selling or both
+        #   4/ asymmetric: for long only or short only strategies
+        #           eg.: long SPX at the turn of the month;
+        #               long stocks at the turn of the quarter when bonds outperformed massively
+        
         self.status = status    #means gene is active if True
                               #just to perform some quick tests suppressing some genes
         
@@ -125,7 +156,8 @@ class Gene ():
                 if self.ds.timeframe == 'D' or self.ds.timeframe == 'W':
                     if not self.ds.bLoadCandlesOnline:
                         try:
-                            self.ds.loadFeatures ()
+                            raise Exception
+                            #self.ds.loadFeatures ()
                         except:
                             #changes the start data of the dataset, in order to compute features with a large lookback window correctly
                             old_start = pd.Timestamp(self.ds.from_time)
@@ -138,7 +170,8 @@ class Gene ():
                             
                             self.ds.set_from_to_times (from_time = new_start)
                             self.ds.loadCandles ()
-                            self.ds.computeFeatures(bSaveFeatures=True)
+                            self.ds.computeFeatures(bSaveFeatures=True, 
+                                                    bComputeHighLowFeatures = B_COMPUTE_HIGH_LOW_FEATURES)
                     else:
                         #changes the start data of the dataset, in order to compute features with a large lookback window correctly
                         old_start = pd.Timestamp(self.ds.from_time)
@@ -155,14 +188,18 @@ class Gene ():
                     self.ds.computeFeatures()
                 
             for feat, func_args in self.func_dict.iteritems ():
-                self.ds.f_df [feat] = func_args['func'] (ds=self.ds, **func_args['kwargs'])
+                self.ds.f_df [feat] = func_args['func'] (ds=self.ds, 
+                                                         **func_args['kwargs'])
                
             self.feat_computed = True
         
         return self
     
     def compute_predictions (self, ds = None, func = None, kwargs = {}):
-        
+        if ds is not None:
+            self.ds = ds
+        else:
+            ds = self.ds
         #will be using for caching and retrieving predictions
         d = {'gene': prepare_dict_to_save(self.to_dict ()),
                      'instrument': ds.ccy_pair,

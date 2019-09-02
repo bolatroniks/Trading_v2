@@ -48,6 +48,7 @@ class Chromossome ():
         f.write (json.dumps(prepare_dict_to_save(self.to_dict ())))
         f.close ()
         
+    #ToDo: fix save/load functionality
     def load (self, filename, path = None):
         self.clear_genes ()
         
@@ -139,6 +140,7 @@ class Chromossome ():
                     if g is not None:
                         ds = g.ds
                     else:
+                        
                         if timeframe == self.ds.timeframe:
                             ds = self.ds
                         else:
@@ -403,13 +405,14 @@ class Chromossome ():
                     if g.pred_type == 'binary':
                         binary_pred += self.ds.p_df[g.pred_label]
                         binary_threshold += 1
-                    if g.pred_type == 'directional':
+                    if g.pred_type == 'symmetric' or g.pred_type == 'asymmetric':
                         direc_pred += self.ds.p_df[g.pred_label]
                         direc_threshold += 1
                     if g.pred_type == 'preventer': #lack of better name
                         #this prevents buying or selling
                         stop_buy_pred += self.ds.p_df[g.pred_label + '_not_buy']
                         stop_sell_pred += self.ds.p_df[g.pred_label + '_not_sell']
+                    
                         
                 else:
                     if 'inv_threshold_fn' in g.pred_kwargs:
@@ -422,7 +425,7 @@ class Chromossome ():
                         k = None
                     if k is not None:                    
                         if g.pred_kwargs[k] is not None:
-                            pred_type = 'directional'
+                            pred_type = 'symmetric'
                             direc_pred += self.ds.p_df[g.pred_label]
                             direc_threshold += 1
                         else:
@@ -441,6 +444,7 @@ class Chromossome ():
                                      (direc_pred * direc_pred >= direc_threshold * direc_threshold) * \
                                      np.sign (direc_pred)
         #preventers kick in
+        #TODO: there is a bug here, this logic is not working
         self.ds.p_df.Predictions = np.maximum(self.ds.p_df.Predictions, NEUTRAL_SIGNAL) * (stop_buy_pred == 0) + \
                                     np.minimum(self.ds.p_df.Predictions, NEUTRAL_SIGNAL) * (stop_sell_pred == 0)
             
@@ -562,18 +566,22 @@ class Chromossome ():
         if self.ds.l_df is None or len (self.ds.p_df) != len (self.ds.l_df):
             self.ds.computeLabels (min_stop = 0.015) #TODO: need to improve this
         
+        ret = {}
         if len (self.ds.p_df) >= len (self.ds.l_df):
             preds = self.ds.p_df.Predictions [-len (self.ds.l_df):]
             labels = self.ds.l_df.Labels
-            ret10 = self.ds.l_df.ret_10_periods
-            ret25 = self.ds.l_df.ret_25_periods
-            ret50 = self.ds.l_df.ret_50_periods
+            
+            for col in self.ds.l_df.columns:
+                if 'ret_periods_' in col:
+                    ret[col]  = self.ds.l_df[col]
+                    
         else:
             preds = self.ds.p_df.Predictions
             labels = self.ds.l_df.Labels  [-len (self.ds.p_df):]
-            ret10 = self.ds.l_df.ret_10_periods [-len (self.ds.p_df):]
-            ret25 = self.ds.l_df.ret_25_periods [-len (self.ds.p_df):]
-            ret50 = self.ds.l_df.ret_50_periods [-len (self.ds.p_df):]
+            for col in self.ds.l_df.columns:
+                if 'ret_periods_' in col:
+                    ret[col] = self.ds.l_df[col]
+            
             
         stats_dict = {'Overall': {
                                     'hit_ratio': np.float(np.count_nonzero( 
@@ -581,10 +589,15 @@ class Chromossome ():
                                     )) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001),
                                     'longs': np.float(np.count_nonzero (preds == 1)) / np.float (len(preds)),
                                     'shorts': np.float(np.count_nonzero (preds == -1)) / np.float (len(preds)),
-                                    'ret_10': np.sum (preds * ret10) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001),
-                                    'ret_25': np.sum (preds * ret25) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001),
-                                    'ret_50': np.sum (preds * ret50) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001)
+                                    #'ret_10': np.sum (preds * ret10) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001),
+                                    #'ret_25': np.sum (preds * ret25) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001),
+                                    #'ret_50': np.sum (preds * ret50) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001)
                                 }}
+        
+        for col in self.ds.l_df.columns:
+            if 'ret_periods_' in col:
+                stats_dict['Overall'][col] = np.sum (preds * ret[col]) / (np.float(np.count_nonzero(preds != NEUTRAL_SIGNAL)) + 0.000001)
+        
         
         for i, g in enumerate(self.genes['full_list']):
             stats_dict [g.gene_id] = {'status': g.status}
@@ -619,9 +632,10 @@ class Chromossome ():
                                 stats_dict [g.gene_id] ['hit_ratio'] = np.float(np.count_nonzero( 
                                         (self.ds.p_df[g.pred_label] == self.ds.l_df.Labels) & (self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)
                                         )) / (np.float(np.count_nonzero(self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)) + 0.0000001)
-                                stats_dict [g.gene_id] ['ret_10'] = np.sum (self.ds.p_df[g.pred_label] * self.ds.l_df.ret_10_periods) / (np.float(np.count_nonzero(self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)) + 0.000001)
-                                stats_dict [g.gene_id] ['ret_25'] = np.sum (self.ds.p_df[g.pred_label] * self.ds.l_df.ret_25_periods) / (np.float(np.count_nonzero(self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)) + 0.000001)
-                                stats_dict [g.gene_id] ['ret_50'] = np.sum (self.ds.p_df[g.pred_label] * self.ds.l_df.ret_50_periods) / (np.float(np.count_nonzero(self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)) + 0.000001)
+                                for col in self.ds.l_df.columns:
+                                    if 'ret_periods_' in col:                        
+                                        stats_dict [g.gene_id] [col] = np.sum (self.ds.p_df[g.pred_label] * self.ds.l_df[col]) / (np.float(np.count_nonzero(self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)) + 0.000001)
+                                
                             else:
                                  stats_dict [g.gene_id] ['active'] = np.float(np.count_nonzero (self.ds.p_df[g.pred_label] != NEUTRAL_SIGNAL)) / np.float (len(self.ds.p_df))
         return stats_dict
@@ -649,6 +663,8 @@ class Chromossome ():
     def get_permutations (self):
         permutations = []
         
+        #ToDo: check if chromossome is to long, if so, generates a random sample of permutations instead
+        
         #base case
         if len ([_ for _ in self.get_genes_in_proper_order () if _.pred_func is not None or _.func_dict != {}]) == 0: 
             return [self]
@@ -662,8 +678,16 @@ class Chromossome ():
             l2 = [_.clone () for _ in l1]
             [_.add_gene (g) for _ in l2]
         
-        return permutations + l1 + l2
-            
+        self.permutations = permutations + l1 + l2
+        return self.permutations
+    
+    def get_perm_hit_ratios (self):
+        try:
+            self.permutations #checks if it's already been computed
+        except:
+            self.get_permutations ()
+        return zip (range (len(self.permutations)), [len(_.get_genes_in_proper_order ()) for _ in self.permutations],
+                     [_.get_stats ()['Overall']['hit_ratio'] for _ in self.permutations])
             
     def clone (self):
         crx = Chromossome (ds = self.ds)
