@@ -507,14 +507,18 @@ class Dataset():
                         'D': 0.02,
                          'H4': 0.01,
                          'H1': 0.007,
-                         'M15': 0.005}
+                         'M15': 0.005,
+                         'M5':0.005,
+                         'M1': 0.005}
 
         vol_denom_dict = {
                             'W': 1,
                             'D': 5,
                           'H4': 10,
                           'H1': 20,
-                          'M15': 30}
+                          'M15': 30,
+                          'M5': 30,
+                          'M1': 30}
 
         if bVaryStopTarget is not None:
             self.bVaryStopTarget = bVaryStopTarget
@@ -680,8 +684,8 @@ class Dataset():
                         to_time=None,
                         bComputeIndicators=None,
                         bComputeNormalizedRatios=None,
-                        bComputeCandles=None,
-                        bComputeHighLowFeatures=None,
+                        bComputeCandles=False,
+                        bComputeHighLowFeatures=False, #by default, these are not computed, if needed, should be encoded in the gene
                         bBuildXSet=False
                         ):
 
@@ -787,7 +791,7 @@ class Dataset():
             self.loadSeriesOnline()
         else:
             try:
-                if self.timeframe == 'M15':
+                if self.timeframe == 'M15' or self.timeframe == 'M5' or self.timeframe == 'M1':
                     self.df = self.loadCsv2DF(self.parsedpath,
                                               self.parsed_filename_prefix,
                                               self.parsed_filename_suffix,
@@ -1371,7 +1375,10 @@ class Dataset():
         from_time = dt.datetime(since, 1, 1, 0, 0, 0)
 
         while from_time < dt.datetime.today():
-            to_time = from_time + relativedelta(months=1)
+            if self.timeframe != 'M1' and self.timeframe != 'M5':
+                to_time = from_time + relativedelta(months=1)
+            else:
+                to_time = from_time + relativedelta(days=3)
 
             self.set_from_to_times(from_time=str(from_time),
                                    to_time=str(to_time))

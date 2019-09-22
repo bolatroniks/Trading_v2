@@ -239,6 +239,11 @@ static PyObject *rowx2_v2(PyObject *self, PyObject *args)
 	return Py_BuildValue("i", 1);
 }
 
+//ToDo: create function - compute_labels_v2
+//should take a vector of stop and target prices
+//stop_long, target_long, stop_short and target_short
+//in addition to NEUTRAL, LONG_SIGNAL and SHORT_SIGNAL
+//should have an additional level OPEN_POSITION
 static PyObject *compute_labels(PyObject *self, PyObject *args)
 {
 	PyArrayObject *mat;  // The python objects to be extracted from the args

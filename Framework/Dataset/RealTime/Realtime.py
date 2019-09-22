@@ -232,6 +232,122 @@ def computeLabelsOnTheFly (my_df, tf_suffix = '',
             pass
     return ret_dict
 
+def compute_hilo_features_on_the_fly (my_df, high_low_feat_window = 500):
+    x = np.array(my_df['Close'])
+    x_rsi = np.array (my_df['RSI'])
+    for relevant_threshold in [10]:
+        score_list_lhll = []
+        score_list_hhhl = []            
+        rsi_score_list_hhhl = []
+        rsi_score_list_lhll = []
+        dist_standing_high_list = []
+        dist_standing_low_list = []
+        dist_relevant_low_list = []
+        dist_relevant_high_list = []
+        no_standing_highs_list = []
+        no_standing_lows_list = []
+        no_standing_upward_lines_list = []
+        no_standing_downward_lines_list = []
+    
+        seg_length = high_low_feat_window
+        
+        #print ("Series no: "+str(series_no)+' thres: '+str(relevant_threshold))
+        
+        for i in range (0, len(x)):
+            if np.mod(i, 100) ==0 and True: #verbose:
+                printProgressBar (i+1, len(x), 
+                                  suffix = 'Computing High Low(' + str (relevant_threshold) + '): ',
+                                  length = 50)
+                #print ('Processing '+str(i))
+            if i >= seg_length:
+                tfe = TrendlineFeaturesExtractor (x=x[i-seg_length:i])
+                tfe.ts.identifyRecentHighLows(seg_length,relevant_threshold,False)
+                #score_list.append(tfe.getHHHLScore())
+                a, b = tfe.getHHHLScoreV2()
+                score_list_hhhl.append(a)
+                score_list_lhll.append(b)
+                
+                tfe2 = TrendlineFeaturesExtractor (x=x_rsi[i-seg_length:i])
+                tfe2.ts.identifyRecentHighLows(seg_length,relevant_threshold,False)        
+                a, b = tfe2.getHHHLScoreV2()
+                rsi_score_list_hhhl.append(a)
+                rsi_score_list_lhll.append(b)
+                
+                tfe.ts.checkStandingHighsLows ()
+                no_standing_highs_list.append (len(tfe.ts.standing_highs_list))
+                no_standing_lows_list.append (len(tfe.ts.standing_lows_list))
+                
+                tfe.ts.checkStandingLines(True)
+                no_standing_upward_lines_list.append (tfe.ts.upward_lines_status_list.count(True))
+                tfe.ts.checkStandingLines(False)
+                no_standing_downward_lines_list.append (tfe.ts.downward_lines_status_list.count(True))        
+                
+                a, b, c, d = tfe.getCloserRelevantHighLow (exclude_last_pts=50)
+                dist_relevant_high_list.append (c)
+                dist_relevant_low_list.append (d)
+                
+                tfe.ts.checkStandingHighsLows ()
+                a, b, c, d = tfe.getCloserStandingHighLow()
+                dist_standing_high_list.append (c)
+                dist_standing_low_list.append (d)
+            
+            else:
+                score_list_lhll.append (0)
+                score_list_hhhl.append (0)
+                rsi_score_list_hhhl.append (0)
+                rsi_score_list_lhll.append (0)
+                dist_standing_high_list.append (0)
+                dist_standing_low_list.append (0)
+                dist_relevant_low_list.append (0)
+                dist_relevant_high_list.append (0)
+                no_standing_highs_list.append (0)
+                no_standing_lows_list.append (0)
+                no_standing_upward_lines_list.append (0)
+                no_standing_downward_lines_list.append (0)
+        my_df['score_list_lhll_'+str(relevant_threshold)] = score_list_lhll
+        my_df['score_list_hhhl_'+str(relevant_threshold)] = score_list_hhhl
+        my_df['rsi_score_list_hhhl_'+str(relevant_threshold)] = rsi_score_list_hhhl
+        my_df['rsi_score_list_lhll_'+str(relevant_threshold)] = rsi_score_list_lhll
+        my_df['dist_standing_high_'+str(relevant_threshold)] = dist_standing_high_list
+        my_df['dist_standing_low_'+str(relevant_threshold)] = dist_standing_low_list
+        my_df['dist_relevant_low_'+str(relevant_threshold)] = dist_relevant_low_list
+        my_df['dist_relevant_high_'+str(relevant_threshold)] = dist_relevant_high_list
+        my_df['no_standing_highs_'+str(relevant_threshold)] = no_standing_highs_list
+        my_df['no_standing_lows_'+str(relevant_threshold)] = no_standing_lows_list
+        my_df['no_standing_upward_lines_'+str(relevant_threshold)] = no_standing_upward_lines_list
+        my_df['no_standing_downward_lines_'+str(relevant_threshold)] = no_standing_downward_lines_list
+              
+        my_df['ratio_standing_up_downward_lines_'+str(relevant_threshold)] = np.asarray(no_standing_upward_lines_list,dtype=float) / np.asarray(no_standing_downward_lines_list,dtype=float)
+        my_df['ratio_standing_highs_lows_'+str(relevant_threshold)] = np.asarray(no_standing_highs_list,dtype=float) / np.asarray(no_standing_lows_list,dtype=float)
+        my_df['ratio_dist_relevant_highs_lows_'+str(relevant_threshold)] = np.asarray(dist_relevant_high_list,dtype=float) / np.asarray(dist_relevant_low_list,dtype=float)
+        my_df['ratio_dist_standing_highs_lows_'+str(relevant_threshold)] = np.asarray(dist_standing_high_list,dtype=float) / np.asarray(dist_standing_low_list,dtype=float)
+        
+        
+
+        my_df['dist_standing_high_normbyvol'+str(relevant_threshold)] = dist_standing_high_list / hist_vol_3m
+        my_df['dist_standing_low_normbyvol'+str(relevant_threshold)] = dist_standing_low_list / hist_vol_3m
+        my_df['dist_relevant_low_normbyvol'+str(relevant_threshold)] = dist_relevant_low_list / hist_vol_3m
+        my_df['dist_relevant_high_normbyvol'+str(relevant_threshold)] = dist_relevant_high_list / hist_vol_3m
+
+def compute_candle_features_on_the_fly (df, o = None, 
+                                        h = None, 
+                                        l = None, 
+                                        c = None):
+    if (o is None) or (h is None) or (l is None) or (c is None):
+        c = np.asarray(df.Close)
+        h = np.asarray(df.High)
+        l = np.asarray(df.Low)
+        o = np.asarray(df.Open)
+        
+    func_list = get_TA_CdL_Func_List ()    
+            
+    for func in func_list:
+        a = str (func)                
+        func_name = a[a.find('CDL'):].split(' ')[0]
+        func_name = re.sub('[^A-Za-z0-9]+', '', func_name)
+        df[func_name] = func (o, h, l,
+                                    c) / 100
+
 def computeFeaturesOnTheFly (df, 
                              rolling_window=60, 
                              lookback_window=252, 
@@ -297,6 +413,12 @@ def computeFeaturesOnTheFly (df,
         elif timeframe == 'M15':
             ann_factor = (252.0*4/0.0625) ** 0.5
             window_factor = 24.0 * 4
+        elif timeframe == 'M5':
+            ann_factor = (252.0*4*3/0.0625) ** 0.5
+            window_factor = 24.0 * 4 * 3    
+        elif timeframe == 'M1':
+            ann_factor = (252.0*4*15/0.0625) ** 0.5
+            window_factor = 24.0 * 4 *15
         
         my_df['hist_vol_2wk_close'] = my_df['Change'].rolling(window=int(10 * window_factor)).std() * ann_factor 
         my_df['hist_vol_1m_close'] = my_df['Change'].rolling(window=int(22 * window_factor)).std() * ann_factor
@@ -441,116 +563,16 @@ def computeFeaturesOnTheFly (df,
         
         #-------------Candle Stick Patterns--------------------#
         if bComputeCandles:
-            func_list = get_TA_CdL_Func_List ()
+            compute_candle_features_on_the_fly (my_df, open_a, high, low, close)
             
-            for func in func_list:
-                a = str (func)                
-                func_name = a[a.find('CDL'):].split(' ')[0]
-                func_name = re.sub('[^A-Za-z0-9]+', '', func_name)
-                my_df[func_name] = func (open_a, high, low,
-                                            close) / 100
             print ('Computed candle patterns in ' + str (time.time() - t))
             t = time.time ()
         #-----------------------------------------------------#
         
         #compute new features based on highs-lows
         if bComputeHighLowFeatures:
-            x = np.array(my_df['Close'])
-            x_rsi = np.array (my_df['RSI'])
-            for relevant_threshold in [10]:
-                score_list_lhll = []
-                score_list_hhhl = []            
-                rsi_score_list_hhhl = []
-                rsi_score_list_lhll = []
-                dist_standing_high_list = []
-                dist_standing_low_list = []
-                dist_relevant_low_list = []
-                dist_relevant_high_list = []
-                no_standing_highs_list = []
-                no_standing_lows_list = []
-                no_standing_upward_lines_list = []
-                no_standing_downward_lines_list = []
             
-                seg_length = high_low_feat_window
-                
-                #print ("Series no: "+str(series_no)+' thres: '+str(relevant_threshold))
-                
-                for i in range (0, len(x)):
-                    if np.mod(i, 100) ==0 and True: #verbose:
-                        printProgressBar (i+1, len(x), 
-                                          suffix = 'Computing High Low(' + str (relevant_threshold) + '): ',
-                                          length = 50)
-                        #print ('Processing '+str(i))
-                    if i >= seg_length:
-                        tfe = TrendlineFeaturesExtractor (x=x[i-seg_length:i])
-                        tfe.ts.identifyRecentHighLows(seg_length,relevant_threshold,False)
-                        #score_list.append(tfe.getHHHLScore())
-                        a, b = tfe.getHHHLScoreV2()
-                        score_list_hhhl.append(a)
-                        score_list_lhll.append(b)
-                        
-                        tfe2 = TrendlineFeaturesExtractor (x=x_rsi[i-seg_length:i])
-                        tfe2.ts.identifyRecentHighLows(seg_length,relevant_threshold,False)        
-                        a, b = tfe2.getHHHLScoreV2()
-                        rsi_score_list_hhhl.append(a)
-                        rsi_score_list_lhll.append(b)
-                        
-                        tfe.ts.checkStandingHighsLows ()
-                        no_standing_highs_list.append (len(tfe.ts.standing_highs_list))
-                        no_standing_lows_list.append (len(tfe.ts.standing_lows_list))
-                        
-                        tfe.ts.checkStandingLines(True)
-                        no_standing_upward_lines_list.append (tfe.ts.upward_lines_status_list.count(True))
-                        tfe.ts.checkStandingLines(False)
-                        no_standing_downward_lines_list.append (tfe.ts.downward_lines_status_list.count(True))        
-                        
-                        a, b, c, d = tfe.getCloserRelevantHighLow (exclude_last_pts=50)
-                        dist_relevant_high_list.append (c)
-                        dist_relevant_low_list.append (d)
-                        
-                        tfe.ts.checkStandingHighsLows ()
-                        a, b, c, d = tfe.getCloserStandingHighLow()
-                        dist_standing_high_list.append (c)
-                        dist_standing_low_list.append (d)
-                    
-                    else:
-                        score_list_lhll.append (0)
-                        score_list_hhhl.append (0)
-                        rsi_score_list_hhhl.append (0)
-                        rsi_score_list_lhll.append (0)
-                        dist_standing_high_list.append (0)
-                        dist_standing_low_list.append (0)
-                        dist_relevant_low_list.append (0)
-                        dist_relevant_high_list.append (0)
-                        no_standing_highs_list.append (0)
-                        no_standing_lows_list.append (0)
-                        no_standing_upward_lines_list.append (0)
-                        no_standing_downward_lines_list.append (0)
-                my_df['score_list_lhll_'+str(relevant_threshold)] = score_list_lhll
-                my_df['score_list_hhhl_'+str(relevant_threshold)] = score_list_hhhl
-                my_df['rsi_score_list_hhhl_'+str(relevant_threshold)] = rsi_score_list_hhhl
-                my_df['rsi_score_list_lhll_'+str(relevant_threshold)] = rsi_score_list_lhll
-                my_df['dist_standing_high_'+str(relevant_threshold)] = dist_standing_high_list
-                my_df['dist_standing_low_'+str(relevant_threshold)] = dist_standing_low_list
-                my_df['dist_relevant_low_'+str(relevant_threshold)] = dist_relevant_low_list
-                my_df['dist_relevant_high_'+str(relevant_threshold)] = dist_relevant_high_list
-                my_df['no_standing_highs_'+str(relevant_threshold)] = no_standing_highs_list
-                my_df['no_standing_lows_'+str(relevant_threshold)] = no_standing_lows_list
-                my_df['no_standing_upward_lines_'+str(relevant_threshold)] = no_standing_upward_lines_list
-                my_df['no_standing_downward_lines_'+str(relevant_threshold)] = no_standing_downward_lines_list
-                      
-                my_df['ratio_standing_up_downward_lines_'+str(relevant_threshold)] = np.asarray(no_standing_upward_lines_list,dtype=float) / np.asarray(no_standing_downward_lines_list,dtype=float)
-                my_df['ratio_standing_highs_lows_'+str(relevant_threshold)] = np.asarray(no_standing_highs_list,dtype=float) / np.asarray(no_standing_lows_list,dtype=float)
-                my_df['ratio_dist_relevant_highs_lows_'+str(relevant_threshold)] = np.asarray(dist_relevant_high_list,dtype=float) / np.asarray(dist_relevant_low_list,dtype=float)
-                my_df['ratio_dist_standing_highs_lows_'+str(relevant_threshold)] = np.asarray(dist_standing_high_list,dtype=float) / np.asarray(dist_standing_low_list,dtype=float)
-                
-                
-    
-                my_df['dist_standing_high_normbyvol'+str(relevant_threshold)] = dist_standing_high_list / hist_vol_3m
-                my_df['dist_standing_low_normbyvol'+str(relevant_threshold)] = dist_standing_low_list / hist_vol_3m
-                my_df['dist_relevant_low_normbyvol'+str(relevant_threshold)] = dist_relevant_low_list / hist_vol_3m
-                my_df['dist_relevant_high_normbyvol'+str(relevant_threshold)] = dist_relevant_high_list / hist_vol_3m
-                
+            compute_hilo_features_on_the_fly (my_df, high_low_feat_window = high_low_feat_window)    
             print ('Computed high_low features in ' + str (time.time() - t))
             t = time.time ()
             

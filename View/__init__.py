@@ -3,6 +3,42 @@
 import sys
 from matplotlib import pyplot as plt
 
+#ToDo: verify that my daily data candles match external sources
+def plot_candles (ds = None, 
+                  df = None, 
+                  o = None,
+                  h = None,
+                  l = None,
+                  c = None,
+                  bShow = True):
+    if ds is not None:
+        if ds.f_df is not None:
+            df = ds.f_df
+        elif ds.df is not None:
+            df = ds.df
+        else:
+            return
+    if df is not None:
+        o = df.Open
+        h = df.High
+        l = df.Low
+        c = df.Close
+    
+    fig = plt.figure (figsize = (20, 10))
+    plt.style.use ('ggplot')
+    
+    fn_plot_stick = lambda i: plt.plot ([i + 6, i + 6], [l[i], h[i]], color = ('blue' if c[i] > o[i] else 'red') )
+    fn_plot_body = lambda i: plt.plot ([i + 6, i + 6], [o[i], c[i]], color = ('blue' if c[i] > o[i] else 'red'), linewidth=5)
+    #for i in range (len (o)): 
+    map (fn_plot_stick, range (len (o)))
+    map (fn_plot_body, range (len (o)))
+    #plt.plot ([i, i], [o, c], color = ('blue' if c[i] > o[i] else 'red') )
+    
+    if bShow:
+        plt.grid (True)
+        plt.show ()
+    return fig
+
 def plot_timeseries_vs_another (ts1 = None, ts2=None,
                    bSameAxis = False,
                    figsize=(10,5),

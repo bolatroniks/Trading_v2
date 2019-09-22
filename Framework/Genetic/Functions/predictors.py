@@ -12,13 +12,20 @@ predictor_functions = {}
 #generic function to compute prevent predictions
 def fn_pred_preventer (ds, **kwargs):
     indic = parse_kwargs (['indic', 'indicator'], 'RSI_overbought', **kwargs)
-    dual_indic = parse_kwargs (['dual', 'dual_indic', 'dual_indicator'], 'RSI_oversold', **kwargs)
+    dual_indic = parse_kwargs (['dual', 'dual_indic', 'dual_indicator'], None, **kwargs)
     
     #threshold_min = parse_kwargs (['threshold_min'], -0.5, **kwargs)
     threshold_max = parse_kwargs (['threshold_max'], 0.5, **kwargs)
+    threshold_min = parse_kwargs (['threshold_min'], -0.5, **kwargs)
     
-    ret_prevent_buy = ds.f_df[indic] > threshold_max
-    ret_prevent_sell = ds.f_df[dual_indic] > threshold_max
+    inv_threshold_fn = parse_kwargs (['inv_threshold_fn', 'inv_fn'], inv_fn_symmetric, **kwargs)
+    
+    if dual_indic is not None:
+        ret_prevent_buy = (ds.f_df[indic] > threshold_max) | (ds.f_df[indic] < threshold_min)
+        ret_prevent_sell = (ds.f_df[dual_indic] > threshold_max) | (ds.f_df[dual_indic] < threshold_min);
+    else:
+        ret_prevent_buy = (ds.f_df[indic] > threshold_max) | (ds.f_df[indic] < threshold_min)
+        ret_prevent_sell = (ds.f_df[indic] < inv_threshold_fn(threshold_max) ) | (ds.f_df[indic] > inv_threshold_fn(threshold_min))
     
     return ret_prevent_buy, ret_prevent_sell
     

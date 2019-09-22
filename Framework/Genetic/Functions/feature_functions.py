@@ -10,6 +10,8 @@ from Framework.Dataset.dataset_func import get_from_time
 from Framework.Features.TimeSeries.ernst_chen import halflife
 from Miscellaneous.my_utils import parse_kwargs
 
+from Framework.Dataset.RealTime.Realtime import compute_candle_features_on_the_fly
+
 feature_functions = {}
 
 #lambda to compute predictions
@@ -20,6 +22,7 @@ fn_pred2 = lambda ds: ds.f_df['new_hilo']
 window = 126
 fn_feat = lambda ds: (ds.f_df.Close >= ds.f_df.Close.rolling(window).max ()) * LONG_SIGNAL + \
                 (ds.f_df.Close <= ds.f_df.Close.rolling(window).min ()) * SHORT_SIGNAL
+                
 
 def fn_over_bought_sold (ds, **kwargs):
     indic = parse_kwargs (['indic'], 'RSI', **kwargs)
@@ -236,8 +239,32 @@ def fn_candle_reversal (ds, **kwargs):
     df = ds.f_df
     conv_window = parse_kwargs (['conv_window'], 20, **kwargs)
     
+    if strong_bearish_reversals [0] not in df.columns:
+        compute_candle_features_on_the_fly (ds.f_df)
+    
     df['strong_bearish_reversals'] = SHORT_SIGNAL * np.convolve(df[[feat for feat in strong_bearish_reversals]].abs().sum(axis=1), np.ones (conv_window))[0:len(df)]
     df['strong_bullish_reversals'] = LONG_SIGNAL * np.convolve(df[[feat for feat in strong_bullish_reversals]].abs().sum(axis=1), np.ones (conv_window))[0:len(df)]
 
 def fn_candle_features (ds, **kwargs):
-    pass
+    compute_candle_features_on_the_fly (ds.f_df)
+    
+def fn_hammer (ds, **kwargs):
+    MIN_BAR_LENGTH = parse_kwargs (['MIN_BAR_LENGTH', 'min_bar_length'], 0.001, **kwargs)    
+    MIN_CANDLE_BODY_RATIO = parse_kwargs (['MIN_CANDLE_BODY_RATIO', 'min_candle_body_ratio'], 2.5, **kwargs)
+    conv_window = parse_kwargs (['conv_window'], 1, **kwargs)
+    
+    if 'CDLHAMMER' not in ds.f_df.columns:
+        compute_candle_features_on_the_fly (ds.f_df)
+        
+    #compute candle
+    signals = ((ds.f_df.CDLHAMMER == 1) & \
+               (np.abs((ds.f_df.High - ds.f_df.Low) / (ds.f_df.Open - ds.f_df.Close) >= MIN_CANDLE_BODY_RATIO)) & \
+                        (((ds.f_df.High - ds.f_df.Low) / ds.f_df.Open) >= MIN_BAR_LENGTH)) * LONG_SIGNAL
+                
+    signals += ((ds.f_df.CDLINVERTEDHAMMER == 1) & \
+                (np.abs((ds.f_df.High - ds.f_df.Low) / (ds.f_df.Open - ds.f_df.Close) >= MIN_CANDLE_BODY_RATIO)) & \
+                        (((ds.f_df.High - ds.f_df.Low) / ds.f_df.Open) >= MIN_BAR_LENGTH)) * SHORT_SIGNAL
+    
+    signals = np.convolve(signals, np.ones (conv_window))[0:len(signals)]
+                
+    return signals

@@ -4,6 +4,7 @@ from Framework.Genetic.Gene import *
 from Framework.Genetic.GenePCA import GenePCA
 from Framework.Dataset.Dataset import Dataset, has_suffix
 from Framework.Genetic.utils import prepare_dict_to_save, adapt_dict_loaded
+from Framework.Genetic.Functions.predictors import *
 
 from Miscellaneous.my_utils import parse_kwargs
 
