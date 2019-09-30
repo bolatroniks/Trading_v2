@@ -103,7 +103,7 @@ def plot_timeseries_vs_another (ts1 = None, ts2=None,
     return fig
 
 
-def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█'):
+def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 40, fill = '█'):
     """
     Call in a loop to create terminal progress bar
     @params:

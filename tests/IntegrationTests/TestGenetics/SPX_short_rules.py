@@ -11,6 +11,7 @@ from Framework.Dataset.DatasetHolder import DatasetHolder
 
 from Config.const_and_paths import *
 from Framework.Strategy.Utils.strategy_func import *
+from Framework.Strategy.StrategySimulation import StrategySimulation
 
 import numpy as np
 import gc
@@ -18,7 +19,7 @@ import gc
 if True:
     ds = Dataset(ccy_pair='UK100_GBP', 
                               from_time = 2000,
-                              to_time=2014, 
+                              to_time=2013, 
                               timeframe='H1')
 
     ds.loadCandles ()
@@ -77,3 +78,12 @@ if True:
     c.run ()
     c.ds.removeSerialPredictions (10)
     plot_pnl (c.ds)
+
+kwargs = {'func_update_stop': fn_stop_update_trailing_v1,
+            'func_trigger_entry' : fn_stop_entry,
+            'trailing_bars_trigger_entry' : 5,
+            'kill_after' : 3,
+            'trailing_bars' : 5,
+            'move_proportion' : 0.7}
+strat = StrategySimulation (ds = c.ds, signals = None, **kwargs)
+strat.run ()

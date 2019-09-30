@@ -240,8 +240,7 @@ class DatasetHolder ():
                                         higher_timeframe='D',
                                         lower_timeframe='H4',
                                         daily_delay = 0,
-                                        bComputeFeatures=False,
-                                        bConvolveCdl=True,
+                                        bComputeFeatures=False,                                        
                                         conv_window=10,
                                         bCpp=False):
         self.init_instrument (instrument)
@@ -254,7 +253,7 @@ class DatasetHolder ():
         
         print ('DSH.append... f_df before: ' + str (ds_l.f_df.shape))
 
-        if bConvolveCdl:
+        if ds_h.bConvolveCdl and not ds_h.bConvolved:
             fn = np.ones (conv_window)
             
             func_list = get_TA_CdL_Func_List ()

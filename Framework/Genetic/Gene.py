@@ -196,10 +196,10 @@ class Gene ():
         return self
     
     def compute_predictions (self, ds = None, func = None, kwargs = {}):
-        if ds is not None:
-            self.ds = ds
-        else:
+        if ds is None:            
             ds = self.ds
+        else:
+            self.ds = ds
         #will be using for caching and retrieving predictions
         d = {'gene': prepare_dict_to_save(self.to_dict ()),
                      'instrument': ds.ccy_pair,

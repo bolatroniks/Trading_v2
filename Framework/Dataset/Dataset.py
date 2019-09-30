@@ -61,7 +61,7 @@ class Dataset():
                  timeframe='D',  # daily
                  from_time=None,  # starting date for which to load data
                  to_time=None,  # end date for which to load data
-                 bConvolveCdl=True,  # candlestick patterns are a vector of 0s and 1s (or 100s)
+                 bConvolveCdl=False,  # candlestick patterns are a vector of 0s and 1s (or 100s)
                  # this parameter tells whether to convolve these features with a window function
 
                  # dataframes - core of this class
@@ -330,8 +330,7 @@ class Dataset():
     # uses fast timeframe data to build slower ones
     def buildCandlesFromLowerTimeframe(self, ds = None, df=None, lower_timeframe='M15',
                                        hour_daily_open = 9, hour_daily_close = 17):
-        cols = ['Open', 'High', 'Low', 'Close', 'Change', 'Volume']
-
+        
         if ds is not None:
             df = ds.df
             lower_timeframe = ds.timeframe            
@@ -341,6 +340,8 @@ class Dataset():
                              bLoadCandlesOnline=self.bLoadCandlesOnline)
             ds_aux.loadCandles()
             df = ds_aux.df
+        
+        cols = df.columns
         
         if self.timeframe == 'H1':
             idx = np.array([i for i in range(len(df.index)) if df.index[i].minute == 0])
@@ -375,17 +376,26 @@ class Dataset():
                 ratio = ( 4 * 6 + 2 ) * 16
 
         arr = np.array(df)
+        open_idx = list(df.columns).index('Open')
+        high_idx = list(df.columns).index('High')
+        low_idx = list(df.columns).index('Low')
+        close_idx = list(df.columns).index('Close')
+        change_idx = list(df.columns).index('Change')
+        volume_idx = list(df.columns).index('Volume')
 
-        #stars from 1: because of the situation where idx[0] - ratio < 0
+        #ToDo: replace "- ratio" by idx[n-1]
+        #starts from 1: because of the situation where idx[0] - ratio < 0
         data = np.zeros((len(idx), len(cols)), float)
-        data[1:, 0] = arr[idx[1:] - ratio, 0]  # open
-        data[1:, 1] = [np.max(arr[ np.maximum(idx[i] - ratio, 0):idx[i], 1])
+        data[1:, open_idx] = arr[idx[1:] - ratio + 1, open_idx]  # open
+        data[1:, high_idx] = [np.max(arr[ np.maximum(idx[i] - ratio + 1, 0):idx[i] + 1, high_idx])
                       for i in range(1, len(idx))]  # high
-        data[1:, 2] = [np.min(arr[ np.maximum(idx[i] - ratio, 0):idx[i], 2])
+        data[1:, low_idx] = [np.min(arr[ np.maximum(idx[i] - ratio + 1, 0):idx[i] + 1, low_idx])
                       for i in range(1, len(idx))]  # low
-        data[1:, 3] = arr[idx[1:], 3]  # close
-        data[2:, 4] = np.log(data[2:, 3] / data[1:-1, 3])  # change
-        data[1:, 5] = [np.sum(arr[ np.maximum(idx[i] - ratio, 0):idx[i], 5])
+        data[1:, close_idx] = arr[idx[1:], close_idx]  # close
+        
+        #ToDo: check if change and volume indices are not off by 1
+        data[2:, change_idx] = np.log(data[2:, close_idx] / data[1:-1, close_idx])  # change
+        data[1:, volume_idx] = [np.sum(arr[ np.maximum(idx[i] - ratio, 0):idx[i], volume_idx])
                       for i in range(1, len(idx))]  # volume
         
         #'fixes' the situation where idx[0] - ratio < 0
@@ -395,12 +405,12 @@ class Dataset():
         else:
             first_idx = idx[0] - ratio
         try:
-            data[0, 0] = arr[first_idx, 0]  # open
-            data[0, 1] = np.max(arr[first_idx:idx[0], 1]) #high                      
-            data[0, 2] = np.min(arr[first_idx:idx[0], 1]) # low
-            data[0, 3] = arr[idx[0], 3]  # close
-            data[1, 4] = np.log(data[1, 3] / data[0, 3])  # change
-            data[0, 5] = np.sum(arr[first_idx:idx[0], 5]) # volume
+            data[0, open_idx] = arr[first_idx, open_idx]  # open
+            data[0, high_idx] = np.max(arr[first_idx:idx[0], high_idx]) #high                      
+            data[0, low_idx] = np.min(arr[first_idx:idx[0], low_idx]) # low
+            data[0, close_idx] = arr[idx[0], close_idx]  # close
+            data[1, change_idx] = np.log(data[1, close_idx] / data[0, close_idx])  # change
+            data[0, volume_idx] = np.sum(arr[first_idx:idx[0], volume_idx]) # volume
         except:
             pass
         #end of fudge
@@ -640,7 +650,15 @@ class Dataset():
         return self
 
     def set_predictions(self, pred = None):
-        self.p_df = deepcopy(self.f_df.ix[:, 0:6])
+        try:
+            cols = [u'Close', u'Open', u'High', u'Low', u'Volume', u'Change']
+            #self.p_df = deepcopy(self.f_df.ix[:, 0:6])
+            self.p_df = deepcopy (self.f_df[cols]) 
+        except KeyError:
+            
+            cols = [_ + '_' + str (self.timeframe) for _ in cols]
+            self.p_df = deepcopy (self.f_df[cols])
+        self.p_df.columns = [u'Close', u'Open', u'High', u'Low', u'Volume', u'Change']
         
         if pred is not None:
             self.p_df['Predictions'] = deepcopy(pred)
@@ -808,7 +826,9 @@ class Dataset():
                 self.df = None
             if bTryToComplete:
                 self.completeCandlesDf()
-                
+        
+        df = self.df
+        
         return self
 
     def completeCandlesDf(self):

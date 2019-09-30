@@ -385,7 +385,9 @@ class Chromossome ():
         
         for i, g in enumerate(self.genes['full_list']):
             if g.pred_func is not None:
+                aux_ds = g.ds
                 g.compute_predictions (ds = self.ds)
+                g.ds = aux_ds
         self.aggregate_predictions ()
                 
     def aggregate_predictions (self):
@@ -544,8 +546,7 @@ class Chromossome ():
                         instrument = self.ds.ccy_pair,
                         higher_timeframe = tf,
                          lower_timeframe = self.get_last_fast_timeframe_gene ().timeframe,
-                         daily_delay = 1, 
-                         bConvolveCdl = True)
+                         daily_delay = 1)
                 
         #adds suffixes to features and indicators used in the predictions
         self.add_suffixes ()

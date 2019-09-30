@@ -11,6 +11,7 @@ from Framework.Dataset.DatasetHolder import DatasetHolder
 
 from Config.const_and_paths import *
 from Framework.Strategy.Utils.strategy_func import *
+from Framework.Strategy.StrategySimulation import *
 
 import numpy as np
 import gc
@@ -18,7 +19,7 @@ import gc
 
 
 #Turn of the month strategy for the SPX
-if True:
+if False:
     ds = Dataset(ccy_pair='SPX500_USD', 
                               from_time = 2000,
                               to_time=2019, 
@@ -68,9 +69,9 @@ if True:
 
 
 #Buy before the close - SPX500 and DAX
-if False:
+if True:
     ds = Dataset(ccy_pair='SPX500_USD', 
-                              from_time = 2000,
+                              from_time = 2010,
                               to_time=2019, 
                               timeframe='M15')
 
@@ -114,3 +115,17 @@ if False:
     c.run ()
     c.ds.removeSerialPredictions (5)    
     plot_pnl (c.ds)
+    
+    kwargs = {'func_update_stop': fn_stop_update_trailing_v1,
+              'func_init_target': fn_target_init_v1,
+              'func_init_stop': fn_stop_init_v1,
+              'func_force_exit': fn_force_exit_n_bars,
+              'n_bars': 5,
+            'target_multiple' : 1.5,
+            'trailing_bars_trigger_entry' : 2,
+            'kill_after' : 3,
+            'trailing_bars' : 20,
+            'move_proportion' : 0.6}
+    strat = StrategySimulation (ds = c.ds, signals = None, **kwargs)
+    strat.run ()
+    strat.diagnostics ()
