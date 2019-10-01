@@ -11,8 +11,8 @@ Chromossome/Gene:
 1/ bring implementation of Gene in line with presentation
 - ie, make it simple to create different types of genes
 - timeseries, cross-secion, etc
-- long/short, not buy, not sell, binary conditions
-- symmetrical/asymmetrical
+DONE - long/short, not buy, not sell, binary conditions
+DONE - symmetrical/asymmetrical
 
 2/ HMM (gene):
 - make it simple to create rules based on HMM
@@ -21,9 +21,9 @@ Chromossome/Gene:
     long/short UST based on claims (better PMI) HMM
     
 3/ candle pattern genes
-- high confidence reversals
-- shooting star / hammer
-- convolution
+DONE - high confidence reversals
+DONE - shooting star / hammer
+DONE - convolution
 
 4/ SVM (based on a Chromossome)
 - activation threshold (at least 70% of signals active)
@@ -32,6 +32,18 @@ Chromossome/Gene:
 - train classifier based on this dataset
 
 5/ Genetic algorithm selection/championship implementation
+- create a gene pool
+    - make a list of features already implemented
+    - to implement:
+        -trend stationarity: ct, ctt, halflife > x
+        - ARDL, VECM, EC
+        - HMM
+        
+- create a big chromossome and generate permutations
+
+IMPORTANT:
+    - some rules already show promising results
+    - need to put these to run
 
 Deep Learning (research)
 

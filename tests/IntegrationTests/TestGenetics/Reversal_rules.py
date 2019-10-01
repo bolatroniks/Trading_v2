@@ -16,7 +16,7 @@ from Framework.Strategy.StrategySimulation import *
 import numpy as np
 import gc
 
-if True:
+if False:
     c = Chromossome (ds = Dataset(ccy_pair='AUD_USD',
                                   #from_time='2015-10-01 00:00:00', 
                                   from_time = 2000,
@@ -85,8 +85,8 @@ if False:
                                                     'inv_threshold_fn': None
                                                 })
 
-if False:
-    c = Chromossome (ds = Dataset(ccy_pair='XAU_USD',
+if True:
+    c = Chromossome (ds = Dataset(ccy_pair='USD_ZAR',
                                   #from_time='2015-10-01 00:00:00', 
                                   from_time = 2000,
                                   to_time=2013, 
@@ -183,18 +183,18 @@ c.run ()
 c.ds.computeLabels ()
 c.ds.computeLabels (min_stop = 0.02, target_multiple = 1.5)
 
-c.ds.removeSerialPredictions (40)
+c.ds.removeSerialPredictions (10)
 plot_pnl (c.ds)
 
 kwargs = {'func_update_stop': fn_stop_update_trailing_v1,
           'func_init_target': fn_target_init_v1,
           'func_init_stop': fn_stop_init_v1,
           'func_force_exit': fn_force_exit_n_bars,
-          'n_bars': 24,
+          'n_bars': 240,
             'func_trigger_entry' : None, #fn_stop_entry,
             'trailing_bars_trigger_entry' : 5,
             'kill_after' : 3,
-            'trailing_bars' : 80,
+            'trailing_bars' : 10,
             'target_multiple': 2,
             'move_proportion' : 0.5}
 strat = StrategySimulation (ds = c.ds, signals = None, **kwargs)

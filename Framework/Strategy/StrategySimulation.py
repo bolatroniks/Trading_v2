@@ -18,11 +18,11 @@ SIGNAL_CANCELLED = -999
 #None: trade has not yet been entered
 #SIGNAL_CANCELLED: signal is not longer valid
 #price at which the trade has been entered
-def fn_stop_entry (trade):
+def fn_stop_entry (trade, **kwargs):
     signal_idx = trade.start_idx - 1
     
-    trailing_bars = parse_kwargs (['trailing_bars_trigger_entry'], 0, **trade.kwargs)
-    kill_after = parse_kwargs (['kill_after'], 5, **trade.kwargs)
+    trailing_bars = parse_kwargs (['trailing_bars_trigger_entry'], 0, **kwargs)
+    kill_after = parse_kwargs (['kill_after'], 5, **kwargs)
     stop_entry_level = (trade.ds.p_df.High[signal_idx - trailing_bars:signal_idx + 1].max () \
                         if trade.direction == LONG_SIGNAL else \
                         trade.ds.p_df.Low[signal_idx - trailing_bars:signal_idx + 1].min ())
@@ -43,11 +43,11 @@ def fn_stop_entry (trade):
     return None
 
 #ToDo:
-def fn_target_update_trailing_v1 (trade):
+def fn_target_update_trailing_v1 (trade, **kwargs):
     return trade.targets [-1]
 
-def fn_force_exit_n_bars (trade):
-    n_bars = parse_kwargs (['n_bars'], None, **trade.kwargs)
+def fn_force_exit_n_bars (trade, **kwargs):
+    n_bars = parse_kwargs (['n_bars'], None, **kwargs)
     
     if n_bars is None:
         return
@@ -56,8 +56,8 @@ def fn_force_exit_n_bars (trade):
         return True
     
 
-def fn_stop_init_v1 (trade):
-    trailing_bars = parse_kwargs (['trailing_bars'], 5, **trade.kwargs)
+def fn_stop_init_v1 (trade, **kwargs):
+    trailing_bars = parse_kwargs (['trailing_bars'], 5, **kwargs)
     trailing_low = np.min (trade.ds.p_df.Low[trade.start_idx-trailing_bars:trade.start_idx+1])
     trailing_high = np.max (trade.ds.p_df.High[trade.start_idx-trailing_bars:trade.start_idx+1])
     
@@ -66,12 +66,12 @@ def fn_stop_init_v1 (trade):
     else:
         return trailing_high
     
-def fn_target_init_v1 (trade):
-    trailing_bars = parse_kwargs (['trailing_bars'], 5, **trade.kwargs)
+def fn_target_init_v1 (trade, **kwargs):
+    trailing_bars = parse_kwargs (['trailing_bars'], 5, **kwargs)
     trailing_low = np.min (trade.ds.p_df.Low[trade.start_idx-trailing_bars:trade.start_idx+1])
     trailing_high = np.max (trade.ds.p_df.High[trade.start_idx-trailing_bars:trade.start_idx+1])
     
-    target_multiple = parse_kwargs (['target_multiple'], 2, **trade.kwargs)
+    target_multiple = parse_kwargs (['target_multiple'], 2, **kwargs)
     
     if trade.direction == LONG_SIGNAL:
         return np.maximum(trailing_high, trade.start_px + target_multiple * ( trade.start_px - trade.stops[0]))
@@ -79,11 +79,11 @@ def fn_target_init_v1 (trade):
         return np.minimum(trailing_low, trade.start_px - target_multiple * ( trade.stops[0] - trade.start_px))
 
 #ToDo: stop should also take into account a margin (absolue + fn(vol))
-def fn_stop_update_trailing_v1 (trade):
+def fn_stop_update_trailing_v1 (trade, **kwargs):
     idx = trade.indices[-1]
     
-    trailing_bars = parse_kwargs (['trailing_bars'], 5, **trade.kwargs)
-    move_proportion = parse_kwargs (['move_proportion'], 0.5, **trade.kwargs)
+    trailing_bars = parse_kwargs (['trailing_bars'], 5, **kwargs)
+    move_proportion = parse_kwargs (['move_proportion'], 0.5, **kwargs)
     
     if trade.direction == LONG_SIGNAL:
         trailing_low = np.min (trade.ds.p_df.Low[idx-trailing_bars:idx+1])
@@ -110,7 +110,7 @@ class TradeSimulation ():
         self.start_idx = start_idx
         self.start_t = parse_kwargs (['start_t'], None, **kwargs)
         self.quantity = parse_kwargs (['quantity'], 1, **kwargs)
-        
+                        
         self.func_trigger_entry = parse_kwargs (['func_trigger_entry', 'fn_trigger_entry', 'fn_entry'], None, **kwargs)
         self.func_force_exit = parse_kwargs (['func_force_exit', 'fn_force_exit'], None, **kwargs)
         
@@ -120,6 +120,17 @@ class TradeSimulation ():
         self.func_update_target = func_update_target = parse_kwargs (['func_update_target'], None, **kwargs)
         self.kwargs = kwargs
         
+        self.func_d = {}
+        self.kwargs_d = {}
+        
+        for k in ['trigger_entry', 'force_exit', 
+                    'init_stop', 'init_target',
+                    'update_stop', 'update_target']:
+            v = parse_kwargs ([k], None, **kwargs)
+            if v is not None:
+                self.func_d [k] = parse_kwargs (['func'], None, **v)
+                self.kwargs_d [k] = parse_kwargs (['kwargs'], None, **v)
+                    
         self.open_lag = []
         self.high_lag = []
         self.low_lag = []
@@ -131,10 +142,8 @@ class TradeSimulation ():
         self.ts = []
         self.indices = []
         self.stops = []
-        self.stops = []
+        self.stops = []        
         
-        self.func_update_stop = func_update_stop
-        self.func_update_target = func_update_target   
         self.isAlive = True
         self.isValid = True #checks whether trade not stopped before start
         self.mtms = []
@@ -142,10 +151,17 @@ class TradeSimulation ():
         
         self.handle_entry_point ()
         
+    def exec_func (self, func_name):
+        if func_name not in self.func_d.keys ():
+            raise Exception ("Function not found")            
+        
+        if func_name in self.kwargs_d.keys ():
+            kw = self.kwargs_d [func_name]
+        else:
+            kw = self.kwargs
+        return self.func_d [func_name] (self, **kw)
+        
     def handle_entry_point (self):
-        #ToDo: implement logic whereby trade is not entered at the next day's Open
-        #       eg.: stop buy to enter a Long position
-        #ToDo: logic to force exit, eg: exit position in case of reversal
         try:            
             if self.isEntered:
                 return   #the trade has already been entered into
@@ -163,7 +179,7 @@ class TradeSimulation ():
                 #ToDo: handle the case where only the timestamp is passed
                 pass
         
-        if self.func_trigger_entry is None: #buys at the next bar's open price
+        if self.func_trigger_entry is None and 'trigger_entry' not in self.func_d.keys (): #buys at the next bar's open price
             self.isEntered = True   #bool variable that tells whether the trade has already been triggered
                                     
             self.start_px = self.ds.p_df.Open[self.start_idx]
@@ -172,7 +188,10 @@ class TradeSimulation ():
         else:
             self.isEntered = False
             try:
-                self.start_px = self.func_trigger_entry (self)
+                if self.func_trigger_entry is not None:
+                    self.start_px = self.func_trigger_entry (self, **self.kwargs)
+                elif 'trigger_entry' in self.func_d.keys ():                    
+                    self.start_px = self.exec_func('trigger_entry')
             except:
                 self.isAlive = False
                 self.isValid = False
@@ -187,15 +206,19 @@ class TradeSimulation ():
                     self.isEntered = True
             
         if self.isEntered:  #the trade has been triggered            
-            if self.func_init_stop is None:
+            if self.func_init_stop is None and 'init_stop' not in self.func_d.keys ():
                 self.stops = ([self.ds.p_df.Low[self.start_idx - 1]] if self.direction == LONG_SIGNAL else [self.ds.p_df.High[self.start_idx - 1]])
-            else:
-                self.stops = [self.func_init_stop (self)] 
+            elif self.func_init_stop is not None:
+                self.stops = [self.func_init_stop (self, **self.kwargs)]
+            elif 'init_stop' in self.func_d.keys ():          
+                self.stops = [self.exec_func('init_stop')]
             
-            if self.func_init_target is None:
+            if self.func_init_target is None and 'init_target' not in self.func_d.keys ():
                 self.targets = ([self.start_px + 2 * (self.start_px - self.stops[0])] if self.direction == LONG_SIGNAL else [self.start_px - 2 * np.abs(self.start_px - self.stops[0])])
-            else:
-                self.targets = [self.func_init_target (self)]
+            elif self.func_init_target is not None:
+                self.targets = [self.func_init_target (self, **self.kwargs)]
+            elif 'init_target' in self.func_d.keys ():                
+                self.targets = [self.exec_func ('init_target')]
             
         if len (self.indices) > 0:
             self.indices += [self.indices[-1] + 1]
@@ -306,13 +329,21 @@ class TradeSimulation ():
                     return
             
             #checks whether trade should be exited by force
-            if self.func_force_exit is not None:
-                if self.func_force_exit (self):
-                    #force exit
-                    self.events.append ('Force exit')
-                    self.isAlive = False
-                    self.mtms.append ((self.ds.p_df.Close[self.ts[-1]] / self.start_px - 1) * self.quantity * (1 if self.direction == LONG_SIGNAL else -1))
-                    return
+            if self.func_force_exit is not None or 'force_exit' in self.func_d.keys ():
+                if self.func_force_exit is not None:
+                    if self.func_force_exit (self, **self.kwargs):
+                        #force exit
+                        self.events.append ('Force exit')
+                        self.isAlive = False
+                        self.mtms.append ((self.ds.p_df.Close[self.ts[-1]] / self.start_px - 1) * self.quantity * (1 if self.direction == LONG_SIGNAL else -1))
+                        return
+                elif 'force_exit' in self.func_d.keys ():                    
+                    if self.exec_func('force_exit'):
+                        #force exit
+                        self.events.append ('Force exit')
+                        self.isAlive = False
+                        self.mtms.append ((self.ds.p_df.Close[self.ts[-1]] / self.start_px - 1) * self.quantity * (1 if self.direction == LONG_SIGNAL else -1))
+                        return
                 else:
                     #nothing happens
                     pass
@@ -329,12 +360,16 @@ class TradeSimulation ():
                 return
             
             if self.func_update_stop is not None:
-                self.stops.append (self.func_update_stop (self))
+                self.stops.append (self.func_update_stop (self, **self.kwargs))
+            elif 'update_stop' in self.func_d.keys ():
+                self.stops.append (self.exec_func ('update_stop'))
             else:
                 self.stops.append ( self.stops [-1] )
                 
             if self.func_update_target is not None:
-                self.targets.append (self.func_update_target (self))
+                self.targets.append (self.func_update_target (self, **self.kwargs))
+            elif 'update_target' in self.func_d.keys ():
+                self.targets.append (self.exec_func ('update_target'))
             else:
                 self.targets.append ( self.targets [-1] )
             
@@ -426,33 +461,59 @@ class StrategySimulation ():
         
         self.ds.p_df['Aggregated MtM'] = aggregated_mtm
         
-    def diagnostics (self):
-        fig = plt.figure ()
-        plt.title ('Strat aggregated MtM ' + self.ds.ccy_pair)
-        self.ds.p_df['Aggregated MtM'].cumsum ().plot ()
-        plt.show ()
-        
-        fig = plt.figure ()
-        plt.title ('PnL per trade histogram')
-        mtms = [trade.mtms[-1] for trade in self.valid_trades]
-        plt.hist (mtms, bins = 100)
-        plt.show ()
-        
+    def diagnostics (self, bVerbose = False, bShowPlots = False):
         mtms_0 = [trade.mtms[0] for trade in self.valid_trades]
+        mtms = [trade.mtms[-1] for trade in self.valid_trades]
+        cum_ret = self.ds.p_df['Aggregated MtM'].cumsum()[-1]
+        delta_t = (self.ds.p_df.index[-1] - self.ds.p_df.index[0]).days / 365.25
+        sigma = self.ds.p_df['Aggregated MtM'].std () * (delta_t * 252 )** 0.5
         
-        print ('######----Trade statistics-----########')
-        print ('Number of bars: ' + str (len(self.ds.p_df)))
-        print ('Signals: ' + str (len(self.trades)))
-        print ('Valid trades: ' + str (len(self.valid_trades)))
-        print ('Mean MtM(0): ' + str (np.mean(mtms_0)) )
-        print ('Std MtM(0): ' + str (np.std(mtms_0)))
-        print ('count MtM(0) < 0 - ' + str (np.count_nonzero(np.array (mtms_0) < 0)))
-        print ('count MtM(0) > 0 - ' + str (np.count_nonzero(np.array (mtms_0) > 0)))
-        print ('Mean MtM(t): ' + str (np.mean(mtms)) )
-        print ('Std MtM(t): ' + str (np.std(mtms)))
-        print ('count MtM(t) < 0 - ' + str (np.count_nonzero(np.array (mtms) < 0)))
-        print ('count MtM(t) > 0 - ' + str (np.count_nonzero(np.array (mtms) > 0)))
-        print ('Cumulative return: ' + str (self.ds.p_df['Aggregated MtM'].cumsum()[-1]))
+        self.stats = {'no_bars': len(self.ds.p_df),
+                      'no_signals' : len(self.trades),
+                      'no_valid_trades' : len(self.valid_trades),
+                      'mean_mtm_0' : np.mean(mtms_0),
+                      'std_mtm_0' : np.std(mtms_0),
+                      'count_mtm_0_positive' : np.count_nonzero(np.array (mtms_0) > 0),
+                      'count_mtm_0_negative' : np.count_nonzero(np.array (mtms_0) < 0),
+                      'mean_mtm_T' : np.mean(mtms),
+                      'std_mtm_T' : np.std(mtms),
+                      'count_mtm_T_positive' : np.count_nonzero(np.array (mtms) > 0),
+                      'count_mtm_T_negative' : np.count_nonzero(np.array (mtms) < 0),
+                      'cum_ret' : cum_ret,
+                      'sigma': sigma,
+                      'sharpe': cum_ret / sigma,
+                      't_start': str(self.ds.p_df.index[0]),
+                      't_end': str(self.ds.p_df.index[-1]),
+                     }
+        
+        if bShowPlots:
+            fig = plt.figure ()
+            plt.title ('Strat aggregated MtM ' + self.ds.ccy_pair)
+            self.ds.p_df['Aggregated MtM'].cumsum ().plot ()
+            plt.show ()
+            
+            fig = plt.figure ()
+            plt.title ('PnL per trade histogram')
+            
+            plt.hist (mtms, bins = 100)
+            plt.show ()
+            
+        if bVerbose:
+            print ('######----Trade statistics-----########')
+            print ('Number of bars: ' + str (len(self.ds.p_df)))
+            print ('Signals: ' + str (len(self.trades)))
+            print ('Valid trades: ' + str (len(self.valid_trades)))
+            print ('Mean MtM(0): ' + str (np.mean(mtms_0)) )
+            print ('Std MtM(0): ' + str (np.std(mtms_0)))
+            print ('count MtM(0) < 0 - ' + str (np.count_nonzero(np.array (mtms_0) < 0)))
+            print ('count MtM(0) > 0 - ' + str (np.count_nonzero(np.array (mtms_0) > 0)))
+            print ('Mean MtM(t): ' + str (np.mean(mtms)) )
+            print ('Std MtM(t): ' + str (np.std(mtms)))
+            print ('count MtM(t) < 0 - ' + str (np.count_nonzero(np.array (mtms) < 0)))
+            print ('count MtM(t) > 0 - ' + str (np.count_nonzero(np.array (mtms) > 0)))
+            print ('Cumulative return: ' + str (self.ds.p_df['Aggregated MtM'].cumsum()[-1]))
+        
+        return self.stats
 
 #generates signals    
 if False:

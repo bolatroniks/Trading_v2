@@ -128,7 +128,6 @@ def slim_dataset (ds, **kwargs):
 #to be used to save memory when the need might arise
 
 #function that merges two datasets with two different timeframes
-#ToDo: refactor to accomodate more than 2 timeframes
 def merge_timeframes (ds, **kwargs):
     if 'ds_slow' in kwargs.keys ():
         ds_lower_tf = kwargs ['ds_slow']

@@ -13,8 +13,6 @@ import os
 import pandas as pd
 import json
 
-#ToDo: create a gene with labelling rules
-#ToDo: option to compute candle as well as high low features should be part of a gene
 #ToDo: create sample genes and add them to a dictionary (add set methods that return the gene itself for easy customization)
 
 #TODO: need a more elegant solution for this
