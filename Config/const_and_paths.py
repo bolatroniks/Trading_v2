@@ -25,6 +25,8 @@ PREDS_DEFAUL_PATH = join (dataset_path, u'Oanda/Fx/Predicted')
 CONFIG_PROD_RULE_PATH = join (project_path, project_name, u'Framework/Strategy/Rules/Production')
 CONFIG_LOG_PATH = join(project_path, project_name, u'Analysis/Logs')
 
+CONFIG_MACRO_DATA_PATH = r'/home/joanna/Desktop/Projects/Trading/datasets/Macro'
+
 #genetic algorithm
 CONFIG_TEST_CHROMOSSOME_PATH = join(project_path, project_name, u'Files/Genetic')
 CONFIG_TEST_GENES = join (project_path, project_name, u'/Files/Genetic/Genes/Test')

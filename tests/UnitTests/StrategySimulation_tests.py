@@ -116,15 +116,19 @@ kwargs2 = {
                                     'target_multiple': 2,
                                 }
                         },
-        'func_init_stop': {'func': fn_stop_init_v1, 
+        'init_stop': {'func': fn_stop_init_v1, 
                         'kwargs': {
                                     'trailing_bars' : 10,
                                     'move_proportion' : 0.5,
                                 }
                         },
-        'func_force_exit': {'func': fn_force_exit_n_bars, 
+        'force_exit': {'func': fn_force_exit_n_bars, 
                         'kwargs': {
-                                    'n_bars': 240,
+                                    'n_bars': 20,
                                 }
                         }
         }
+                        
+strat2 = StrategySimulation (ds = c.ds, signals = None, **kwargs2)
+strat2.run ()
+strat2.diagnostics ()

@@ -45,4 +45,22 @@ class TestDataset (TestCase):
     def test_loadSeriesOnline (self):
         self.my_ds.loadSeriesOnline ()
         assert (self.my_ds.df.shape == (715, 6))
+
+#Testing loading macro data functionality
+if False:
+    ds = Dataset (ccy_pair='SPX500_USD', timeframe = 'H1', from_time = 2006, to_time = 2010)    
+    ds.loadCandles ()
+    ds.computeFeatures ()
     
+    #loads macro dataframe
+    df = ds.loadMacroData (filename = 'initial_claims.csv', bReturnMacroDf=True)    
+    feat = 'ICSA'
+    #computes an additional feature in the macro dataframe
+    df['ICSA_Change'] = np.log(df[feat].rolling (window = 4).mean () / df[feat].shift (4).rolling (window = 12).mean ())
+    
+    #merges the macro dataframe into the features dataframe
+    ds.mergeMacroDf(df)
+    
+#testing a gene based on macro data
+if False:
+    ds = Dataset (ccy_pair='SPX500_USD', timeframe = 'H1', from_time = 2006, to_time = 2010)

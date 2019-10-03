@@ -20,7 +20,7 @@ from Framework.Features.Technical.indicators import get_TA_CdL_Func_List
 from Framework.Strategy.Rules.Rule import *
 
 from Framework.Dataset.Oanda.candlesv2 import *
-
+from Config.const_and_paths import *
 import os
 
 func_list = get_TA_CdL_Func_List ()
@@ -1031,6 +1031,51 @@ class Dataset():
         df = df[~df.index.duplicated(keep='last')]
 
         return df
+    
+    #this funcion loads a separate dataframe containing, for instance, Macro data
+    #Implied vols, VIX, CESI, etc
+    def loadMacroData (self, filename, 
+                       path = CONFIG_MACRO_DATA_PATH, 
+                       bReturnMacroDf = False,
+                       offset_macro_timeframe = 0,
+                       offset_dataset_timeframe = 0):
+        macro_df = pd.read_csv (os.path.join (path, filename))
+        
+        if len (macro_df.columns) > 1:
+            macro_df = indexDf (macro_df, macro_df.columns[0])
+        
+        #offsets based on macro data timeframe
+        for col in macro_df.columns:
+            macro_df[col] = macro_df[col].shift (offset_macro_timeframe)
+        #in case one wants to perform operations in the raw data
+        #eg.: compute moving averages, 3m/3m saar
+        if bReturnMacroDf:
+            return macro_df
+        
+        return self.mergeMacroDf (macro_df, offset = offset_dataset_timeframe)
+    
+    #once the macro data is ready to be merged with the features frame
+    #call mergeMacroDf passing the macro dataframe
+    #it'll be merged with the features dataframe
+    def mergeMacroDf (self, macro_df, offset = 0):  
+        bMerge = False
+        for col in macro_df.columns:
+            if col not in self.f_df.columns:
+                bMerge = True
+                
+        if bMerge:
+            self.f_df = self.f_df.merge(macro_df, how = 'outer', 
+                                  left_index = True, 
+                                  right_index = True)
+            
+            #offsets based on dataset timeframe
+            for col in macro_df.columns:
+                self.f_df[col] = self.f_df[col].shift (offset)
+                
+            self.f_df = self.f_df.fillna(method = 'ffill')
+            self.f_df = self.f_df.loc[self.from_time:self.to_time]
+            
+        return self
 
     def evaluateRule(self, instrument=None,
                      timeframe=None,

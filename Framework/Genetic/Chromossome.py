@@ -20,7 +20,8 @@ class Chromossome ():
     res = {}
     
     def __init__ (self, name = None, ds = None, bDebug = False, bSlim = False,
-                  path = CONFIG_TEST_CHROMOSSOME_PATH):
+                  path = CONFIG_TEST_CHROMOSSOME_PATH,
+                  filename = None):
         self.name = name
         self.ds = ds
         self.bDebug = bDebug
@@ -28,8 +29,17 @@ class Chromossome ():
         self.genes = {'full_list':[]}
         for tf in TF_LIST:
             self.genes[tf] = []
-            
-        self.add_gene (ds = self.ds) #dummy gene
+        
+        try:
+            self.add_gene (ds = self.ds) #dummy gene
+        except:
+            pass
+        
+        try:
+            if filename is not None:
+                self.load (filename)
+        except Exception as e:
+            print (e.message)
             
     def to_dict (self):
         outdict = {}
@@ -58,7 +68,12 @@ class Chromossome ():
         
         f = open (os.path.join (self.path, filename), 'r')
         
-        chromossome_dict = adapt_dict_loaded(json.loads(f.read ()))
+        self.dict = chromossome_dict = adapt_dict_loaded(json.loads(f.read ()))
+        
+        #fastest timeframe
+        tf = TF_LIST[np.min([TF_LIST.index(parse_kwargs (['timeframe', 'tf'], None, **v)) for k, v in self.dict.iteritems ()])]
+        
+        self.ds = Dataset (ccy_pair = 'SPX500_USD', timeframe = tf)
         
         for k, v in chromossome_dict.iteritems ():
             if k.find ('gene') >= 0:
