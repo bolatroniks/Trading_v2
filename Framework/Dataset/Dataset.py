@@ -1038,7 +1038,10 @@ class Dataset():
                        path = CONFIG_MACRO_DATA_PATH, 
                        bReturnMacroDf = False,
                        offset_macro_timeframe = 0,
-                       offset_dataset_timeframe = 0):
+                       offset_dataset_timeframe = 0,
+                       sel_cols = None, #columns of the macro dataframe selected
+                       suffix = 'macro',
+                       ):
         macro_df = pd.read_csv (os.path.join (path, filename))
         
         if len (macro_df.columns) > 1:
@@ -1052,19 +1055,28 @@ class Dataset():
         if bReturnMacroDf:
             return macro_df
         
-        return self.mergeMacroDf (macro_df, offset = offset_dataset_timeframe)
+        return self.mergeMacroDf (macro_df, offset = offset_dataset_timeframe, 
+                                  sel_cols = sel_cols, suffix = suffix
+                                  )
     
     #once the macro data is ready to be merged with the features frame
     #call mergeMacroDf passing the macro dataframe
     #it'll be merged with the features dataframe
-    def mergeMacroDf (self, macro_df, offset = 0):  
+    def mergeMacroDf (self, macro_df, offset = 0, 
+                      sel_cols = None, #columns of the macro dataframe selected
+                      suffix = 'macro'
+                      ):
         bMerge = False
-        for col in macro_df.columns:
-            if col not in self.f_df.columns:
+        if sel_cols is None:
+            sel_cols = macro_df.columns
+            
+        for col in sel_cols:
+            if col + '_' + suffix not in self.f_df.columns:
                 bMerge = True
+        macro_df.columns = [col + '_' + suffix for col in macro_df.columns]
                 
         if bMerge:
-            self.f_df = self.f_df.merge(macro_df, how = 'outer', 
+            self.f_df = self.f_df.merge(macro_df, how = 'outer',
                                   left_index = True, 
                                   right_index = True)
             

@@ -2,13 +2,16 @@
 
 #dsdsd
 import numpy as np
+import os
 
 from Config.const_and_paths import LONG_SIGNAL, SHORT_SIGNAL
+from Config.const_and_paths import CONFIG_MACRO_DATA_PATH
 from Framework.Dataset.Dataset import Dataset
 from Framework.Dataset.DatasetHolder import DatasetHolder
 from Framework.Dataset.dataset_func import get_from_time
 from Framework.Features.TimeSeries.ernst_chen import halflife
 from Miscellaneous.my_utils import parse_kwargs
+
 
 from Framework.Dataset.RealTime.Realtime import compute_candle_features_on_the_fly
 
@@ -267,3 +270,77 @@ def fn_hammer (ds, **kwargs):
     signals = np.convolve(signals, np.ones (conv_window))[0:len(signals)]
                 
     return signals
+
+def rates_diff_wrap (ds, **kwargs):
+    for_ccy, dom_ccy = ds.ccy_pair.split ('_')
+    
+    path = parse_kwargs('path', os.path.join(CONFIG_MACRO_DATA_PATH, 'Rates'), **kwargs)
+    offset = parse_kwargs('offset', 1, **kwargs)
+    rates_files_dict = {'AUD': 'Australia 2-Year Bond Yield Historical Data.csv',
+                        'JPY': 'Japan 2-Year Bond Yield Historical Data_2005_2019.csv',
+                        'USD': 'United States 2-Year Bond Yield Historical Data.csv',
+                        'CAD': 'Canada 2-Year Bond Yield Historical Data.csv',
+                        'NZD': 'New Zealand 2-Year Bond Yield Historical Data.csv',
+                        'NOK': 'Norway 2-Year Bond Yield Historical Data.csv',
+                        'SEK': 'Sweden 2-Year Bond Yield Historical Data.csv',
+                        'EUR': 'Germany 2-Year Bond Yield Historical Data.csv',
+                        'GBP': 'United Kingdom 2-Year Bond Yield Historical Data.csv',
+                        }
+    
+    for ccy in [for_ccy, dom_ccy]:
+        if ccy in rates_files_dict:
+            ds.loadMacroData (filename = rates_files_dict[ccy], path = path, suffix = ccy + '_rates', offset_macro_timeframe = offset)
+    
+    ds.f_df['rates_diff_level'] = ds.f_df['Price_' + for_ccy + '_rates'] - ds.f_df['Price_' + dom_ccy + '_rates']
+    
+    delta_t = parse_kwargs (['delta_t'], 22, **kwargs)
+    
+    if type (delta_t) == list:
+        for t in delta_t:
+            ds.f_df['rates_diff_change_' + str (t)] = ds.f_df['rates_diff_level'] - ds.f_df['rates_diff_level'].shift (t)
+    else:
+        ds.f_df['rates_diff_change'] = ds.f_df['rates_diff_level'] - ds.f_df['rates_diff_level'].shift (delta_t)
+        
+    return #ToDo: maybe need to return smtg
+        
+def load_macro_data_wrap (ds, **kwargs):
+    filename = parse_kwargs ('filename', 'initial_claims.csv', **kwargs)
+    
+    smooth_window = parse_kwargs (['change_smooth_window', 'smooth_window'], 1, **kwargs)
+    
+    smooth_window_fast = parse_kwargs (['change_smooth_window_fast', 'smooth_window_fast'], None, **kwargs)
+    smooth_window_slow = parse_kwargs (['change_smooth_window_slow', 'smooth_window_slow'], None, **kwargs)
+    
+    
+    feat = parse_kwargs (['feat', 'feature', 'series'], None, **kwargs)
+    df = ds.loadMacroData (filename = 'initial_claims.csv', bReturnMacroDf=True,
+                           offset_macro_timeframe = 1)
+    
+    if feat is None:
+        feat = df.columns [0]
+    
+    #computes an additional feature in the macro dataframe
+    df[feat + '_change'] = np.log(df[feat].rolling (window = smooth_window).mean () / df[feat].shift (smooth_window).rolling (window = smooth_window).mean ())
+    
+    if smooth_window_fast is not None and smooth_window_slow is not None:
+        df[feat + '_change_fast_slow'] = np.log(df[feat].rolling (window = smooth_window_fast).mean () / df[feat].shift (smooth_window_fast).rolling (window = smooth_window_slow).mean ())
+    
+    #merges the macro dataframe into the features dataframe
+    ds.mergeMacroDf(df)
+    
+    return
+
+def load_claims_data_wrap (ds, **kwargs):
+    filename = parse_kwargs ('filename', 'initial_claims.csv', **kwargs)
+    feat = parse_kwargs (['feat', 'feature', 'series'], None, **kwargs)
+    df = ds.loadMacroData (filename = 'initial_claims.csv', bReturnMacroDf=True,
+                           offset_macro_timeframe = 1)
+    
+    if feat is None:
+        feat = df.columns [0]
+    
+    #computes an additional feature in the macro dataframe
+    df[feat + '_Change'] = np.log(df[feat].rolling (window = 4).mean () / df[feat].shift (4).rolling (window = 12).mean ())
+    
+    #merges the macro dataframe into the features dataframe
+    ds.mergeMacroDf(df)
