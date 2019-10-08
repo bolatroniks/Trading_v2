@@ -23,6 +23,8 @@ from Framework.Dataset.Oanda.candlesv2 import *
 from Config.const_and_paths import *
 import os
 
+from fredapi import Fred
+
 func_list = get_TA_CdL_Func_List ()
 
 #checks if a column name has a suffix like _D, _H4, ...
@@ -1034,7 +1036,9 @@ class Dataset():
     
     #this funcion loads a separate dataframe containing, for instance, Macro data
     #Implied vols, VIX, CESI, etc
-    def loadMacroData (self, filename, 
+    def loadMacroData (self, 
+                       fred_series_name = None,
+                       filename = None, 
                        path = CONFIG_MACRO_DATA_PATH, 
                        bReturnMacroDf = False,
                        offset_macro_timeframe = 0,
@@ -1042,7 +1046,13 @@ class Dataset():
                        sel_cols = None, #columns of the macro dataframe selected
                        suffix = 'macro',
                        ):
-        macro_df = pd.read_csv (os.path.join (path, filename))
+        
+        if fred_series_name is not None:
+            fred = Fred(api_key = open(FRED_API_KEY_FILENAME).readline ().replace ('\n', ''))
+            macro_df = fred.get_series (fred_series_name).to_frame ()
+            macro_df.columns = [fred_series_name]
+        elif filename is not None:
+            macro_df = pd.read_csv (os.path.join (path, filename))
         
         if len (macro_df.columns) > 1:
             macro_df = indexDf (macro_df, macro_df.columns[0])
@@ -1071,7 +1081,7 @@ class Dataset():
             sel_cols = macro_df.columns
             
         for col in sel_cols:
-            if col + '_' + suffix not in self.f_df.columns:
+            if str(col) + str('_') + str(suffix) not in self.f_df.columns:
                 bMerge = True
         macro_df.columns = [col + '_' + suffix for col in macro_df.columns]
                 

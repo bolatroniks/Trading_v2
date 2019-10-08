@@ -60,7 +60,7 @@ xv_df.Position.plot ()
 plt.legend (loc='best')
 plt.show ()
 
-if False:
+if True:
     #refactored SPX price only
     ret_list = []
     seeds = range (50)

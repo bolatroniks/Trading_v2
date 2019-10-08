@@ -11,9 +11,11 @@ dataset_path = u'/home/joanna/Desktop/Projects/Trading/datasets'
 V20_PATH = join(project_path, u'v20-python-master/src')
 OANDA_PATH = r'/home/renato/Desktop/Projects/v20-python-master/src'
 OANDA_ORDER_PATH = join(project_path, u'v20-python-master/src/order')
-V20_CONF= join(project_path, project_name, u'Framework/Dataset/Oanda/.v20.conf')
+V20_CONF= join(project_path, project_name, u'datasets/Oanda/.v20.conf')
 OANDA_ACCOUNT_ID = '101-004-4638013-001'
 OANDA_MARKET_ORDER_SCRIPT = 'market.py'
+
+FRED_API_KEY_FILENAME = join(project_path, project_name, u'datasets/Macro/.fred_api_key.txt')
 
 C_UTILS_PATH = join(project_path, project_name, u'C_and_CPP/Csource/C_arraytest')
 CPP_UTILS_PATH = join(project_path, project_name, u'C_and_CPP/cpp_utils/cpp_utils_v2/bin/Debug')
