@@ -154,7 +154,7 @@ if True:
     
     #this gene is extremely low frequency, need to find the best use for it
     #maybe just preventer, or preventer + momentum
-    if False:
+    if True:
         c.add_gene(timeframe = 'D',
                            func_dict = {'dummy':{'func':reer_fred_wrap,
                                                                   'kwargs':{ 
