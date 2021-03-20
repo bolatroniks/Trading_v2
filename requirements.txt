@@ -33,7 +33,7 @@ ipython-genutils==0.2.0
 isodate==0.6.0
 jdcal==1.4.1
 jedi==0.14.1
-Jinja2==2.10.1
+Jinja2==2.11.3
 jsonlines==1.2.0
 jsonpointer==2.0
 jsonschema==3.0.2
